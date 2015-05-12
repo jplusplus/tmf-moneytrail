@@ -1,7 +1,9 @@
 
 var margin = {top: 40, right: 10, bottom: 10, left: 10},
-    width = 600 - margin.left - margin.right,
-    height = 1000 - margin.top - margin.bottom;
+//    width = 600 - margin.left - margin.right,
+//    height = 1000 - margin.top - margin.bottom;
+      width = document.getElementById("main").clientWidth,
+      height = document.getElementById("main").clientHeight;
 
 var color = d3.scale.category20c();
 
@@ -11,7 +13,7 @@ var scale = d3.scale.linear()
 
 var treemap = d3.layout.treemap()
     .size([width, height])
-    .sticky(true)
+    //.sticky(true)
     .sort(function comparator(a, b) { return b.amount - a.amount; })
     .value(function(d) { return scale(d.amount); });
 
