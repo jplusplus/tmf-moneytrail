@@ -1,0 +1,65 @@
+{
+    "children": [
+        {
+            "amount": 10000000000,
+            "color": "#FF530D",
+            "text": "Lorem ipsum dolor sit amet, meis volumus nam ad, ei civibus adipisci comprehensam pri. Maiorum invenire periculis an eam, an has blandit efficiendi, cu mea placerat vivendum dissentiet. Quo ad quod viris scribentur, te pertinax concludaturque vis, in insolens maiestatis sit. Omittam recusabo mnesarchum sit ea. Vis sale melius ea, his cu dico cetero.",
+            "title": "Deportations 2000-2014"
+        },
+        {
+            "amount": 30000000,
+            "color": "#E80C7A",
+            "text": "Lorem ipsum dolor sit amet, meis volumus nam ad, ei civibus adipisci comprehensam pri. Maiorum invenire periculis an eam, an has blandit efficiendi, cu mea placerat vivendum dissentiet. Quo ad quod viris scribentur, te pertinax concludaturque vis, in insolens maiestatis sit. Omittam recusabo mnesarchum sit ea. Vis sale melius ea, his cu dico cetero.",
+            "title": "EURODAC"
+        },
+        {
+            "amount": 100000000,
+            "color": "#0D62FF",
+            "text": "Assum dicunt perpetua no sea. Est in nullam legere accommodare, in commune laboramus mediocritatem usu. Semper impetus an cum. Ne vix justo euismod ocurreret. Id enim oblique legimus usu. In liber munere invidunt sed.",
+            "title": "Research Projects"
+        },
+        {
+            "amount": 3000000,
+            "color": "#0C93E8",
+            "text": "Tibique oportere consetetur eam at. Ea vel tale elitr, ad duo sumo prima animal, eam debitis complectitur ne. Has eligendi contentiones ea, no vero mucius euismod usu. Tation vocibus at per, te aliquid albucius nam. Sed cu enim possit, vis te esse latine bonorum, mei dicam reprimique liberavisse ex. Nibh comprehensam an sea.",
+            "title": "MARISS"
+        },
+        {
+            "amount": 3000000,
+            "color": "#1FFF04",
+            "text": "Eu simul noster timeam mei, aliquip voluptua pri cu, ad eam habeo ridens. Munere malorum his ei, vis denique liberavisse vituperatoribus ex. Consul impedit euripidis nam te, facilis detraxit platonem ut sed. Cum at summo elitr, ne mundi nonumy feugait per. Ut sit omnes recusabo, porro sonet vim et.",
+            "title": "Mellila Wall"
+        },
+        {
+            "amount": 3000000,
+            "color": "#6FE808",
+            "text": "Lorem ipsum dolor sit amet, meis volumus nam ad, ei civibus adipisci comprehensam pri. Maiorum invenire periculis an eam, an has blandit efficiendi, cu mea placerat vivendum dissentiet. Quo ad quod viris scribentur, te pertinax concludaturque vis, in insolens maiestatis sit. Omittam recusabo mnesarchum sit ea. Vis sale melius ea, his cu dico cetero.",
+            "title": "Ceuta Wall"
+        },
+        {
+            "amount": 3000000,
+            "color": "#D0FF09",
+            "text": "Assum dicunt perpetua no sea. Est in nullam legere accommodare, in commune laboramus mediocritatem usu. Semper impetus an cum. Ne vix justo euismod ocurreret. Id enim oblique legimus usu. In liber munere invidunt sed.",
+            "title": "Greek Wall"
+        },
+        {
+            "amount": 4000000,
+            "color": "#08E834",
+            "text": "Tibique oportere consetetur eam at. Ea vel tale elitr, ad duo sumo prima animal, eam debitis complectitur ne. Has eligendi contentiones ea, no vero mucius euismod usu. Tation vocibus at per, te aliquid albucius nam. Sed cu enim possit, vis te esse latine bonorum, mei dicam reprimique liberavisse ex. Nibh comprehensam an sea.",
+            "title": "Bulgarian Wall"
+        },
+        {
+            "amount": 5000000,
+            "color": "#FFD53E",
+            "text": "Eu simul noster timeam mei, aliquip voluptua pri cu, ad eam habeo ridens. Munere malorum his ei, vis denique liberavisse vituperatoribus ex. Consul impedit euripidis nam te, facilis detraxit platonem ut sed. Cum at summo elitr, ne mundi nonumy feugait per. Ut sit omnes recusabo, porro sonet vim et.",
+            "title": "Detention Center in Ukraine"
+        },
+        {
+            "amount": 10000000,
+            "color": "#E551E8",
+            "text": "Lorem ipsum dolor sit amet, meis volumus nam ad, ei civibus adipisci comprehensam pri. Maiorum invenire periculis an eam, an has blandit efficiendi, cu mea placerat vivendum dissentiet. Quo ad quod viris scribentur, te pertinax concludaturque vis, in insolens maiestatis sit. Omittam recusabo mnesarchum sit ea. Vis sale melius ea, his cu dico cetero.",
+            "title": "Donations to Libya"
+        }
+    ],
+    "name": "demotree"
+}
