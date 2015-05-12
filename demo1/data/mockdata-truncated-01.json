@@ -4,13 +4,41 @@
             "amount": 10000000000,
             "color": "#FF530D",
             "text": "Lorem ipsum dolor sit amet, meis volumus nam ad, ei civibus adipisci comprehensam pri. Maiorum invenire periculis an eam, an has blandit efficiendi, cu mea placerat vivendum dissentiet. Quo ad quod viris scribentur, te pertinax concludaturque vis, in insolens maiestatis sit. Omittam recusabo mnesarchum sit ea. Vis sale melius ea, his cu dico cetero.",
-            "title": "Deportations 2000-2014"
+            "title": "Deportations 2000-2014",
+            "subnodes": [
+                {
+                    "amount": 3000000,
+                    "color": "#FF2325",
+                    "text": "Lorem ipsum dolor sit amet, meis volumus nam ad, ei civibus adipisci comprehensam pri. Maiorum invenire periculis an eam, an has blandit efficiendi, cu mea placerat vivendum dissentiet. Quo ad quod viris scribentur, te pertinax concludaturque vis, in insolens maiestatis sit. Omittam recusabo mnesarchum sit ea. Vis sale melius ea, his cu dico cetero.",
+                    "title": "Deportation sub-node"
+                },
+                {
+                    "amount": 3000000,
+                    "color": "#FF2325",
+                    "text": "Lorem ipsum dolor sit amet, meis volumus nam ad, ei civibus adipisci comprehensam pri. Maiorum invenire periculis an eam, an has blandit efficiendi, cu mea placerat vivendum dissentiet. Quo ad quod viris scribentur, te pertinax concludaturque vis, in insolens maiestatis sit. Omittam recusabo mnesarchum sit ea. Vis sale melius ea, his cu dico cetero.",
+                    "title": "Deportation sub-node 2"
+                }
+            ]
         },
         {
             "amount": 30000000,
             "color": "#E80C7A",
             "text": "Lorem ipsum dolor sit amet, meis volumus nam ad, ei civibus adipisci comprehensam pri. Maiorum invenire periculis an eam, an has blandit efficiendi, cu mea placerat vivendum dissentiet. Quo ad quod viris scribentur, te pertinax concludaturque vis, in insolens maiestatis sit. Omittam recusabo mnesarchum sit ea. Vis sale melius ea, his cu dico cetero.",
-            "title": "EURODAC"
+            "title": "EURODAC",
+            "subnodes": [
+                {
+                    "amount": 3000000,
+                    "color": "#FF2325",
+                    "text": "Lorem ipsum dolor sit amet, meis volumus nam ad, ei civibus adipisci comprehensam pri. Maiorum invenire periculis an eam, an has blandit efficiendi, cu mea placerat vivendum dissentiet. Quo ad quod viris scribentur, te pertinax concludaturque vis, in insolens maiestatis sit. Omittam recusabo mnesarchum sit ea. Vis sale melius ea, his cu dico cetero.",
+                    "title": "EURODAC sub-node"
+                },
+                {
+                    "amount": 3000000,
+                    "color": "#FF2325",
+                    "text": "Lorem ipsum dolor sit amet, meis volumus nam ad, ei civibus adipisci comprehensam pri. Maiorum invenire periculis an eam, an has blandit efficiendi, cu mea placerat vivendum dissentiet. Quo ad quod viris scribentur, te pertinax concludaturque vis, in insolens maiestatis sit. Omittam recusabo mnesarchum sit ea. Vis sale melius ea, his cu dico cetero.",
+                    "title": "EURODAC sub-node 2"
+                }
+            ]
         },
         {
             "amount": 100000000,
