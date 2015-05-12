@@ -15,7 +15,7 @@ var treemap = d3.layout.treemap()
     .sort(function comparator(a, b) { return b.amount - a.amount; })
     .value(function(d) { return scale(d.amount); });
 
-var div = d3.select("body").append("div")
+var div = d3.select("#main").append("div")
     .style("position", "relative")
     .style("width", (width + margin.left + margin.right) + "px")
     .style("height", (height + margin.top + margin.bottom) + "px")
@@ -29,7 +29,8 @@ d3.json('/data/mockdata-truncated-01.json', function (error, data) {
         .attr("class", "node")
         .call(position)
         .style("background", function(d) { return d.children ? null : color(d.title); })
-        .text(function(d) { return d.children ? null : d.title; });
+        .append("span") /* titles inside a span */
+            .text(function(d) { return d.children ? null : d.title;});
 
     d3.selectAll("input").on("change", function change() {
       var value = this.value === "count"
