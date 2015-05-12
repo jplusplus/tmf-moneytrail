@@ -31,6 +31,28 @@ d3.json('/data/mockdata-truncated-01.json', function (error, data) {
         .style("background", function(d) { return d.children ? null : color(d.title); })
         .text(function(d) { return d.children ? null : d.title; });
 
+    var subnodes = node.each( function(d) { 
+      if (d.subnodes) { 
+        n = d3.select(this).selectAll(".subnode")
+            .data(d.subnodes)
+          .enter().append("div")
+
+            .style("position", "relative")
+            .style("width", "30px")
+            .style("height", "30px")
+            .style("left", "5px")
+            .style("top", "5px")
+
+            .attr("class", "subnode")
+            .call(position)
+            .style("background", function(s) { return color(s.title); })
+            .text(function(s) { return s.title; });
+                  ;
+        console.log(n);
+        // n.subnodes.each( function(s) { console.log(s) });
+      } 
+    });
+
     d3.selectAll("input").on("change", function change() {
       var value = this.value === "count"
           ? function() { return 1; }
