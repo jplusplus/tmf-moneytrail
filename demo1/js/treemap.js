@@ -42,6 +42,11 @@ function drawTreemap() {
         node.append("span") /* titles inside spans */
           .text(function(d) { return d.title; });
 
+        node.append("div") /* Info text */
+          .attr("class", "tooltip")
+          .append("p")
+          .html(function(d) { return d.text ? marked(d.text) : null; });
+
         var subnodes = node.each( function(d) { 
           if (d.subnodes) { 
             n = d3.select(this).selectAll(".subnode")
