@@ -2,12 +2,10 @@ var container = document.getElementById("main")
 
 function drawTreemap() {
 
-    // remove previous if it exists
+    // remove previous container if it exists
     d3.select('#treemap-container').remove();
 
     var margin = {top: 40, right: 10, bottom: 10, left: 10},
-    //    width = 600 - margin.left - margin.right,
-    //    height = 1000 - margin.top - margin.bottom;
           width = container.offsetWidth,
           height = container.offsetHeight;
 
@@ -21,7 +19,6 @@ function drawTreemap() {
 
     var treemap = d3.layout.treemap()
         .size([width, height])
-        //.sticky(true)
         .sort(function comparator(a, b) { return b.amount - a.amount; })
         .value(function(d) { return scale(d.amount); });
 
@@ -29,8 +26,6 @@ function drawTreemap() {
         .style("position", "relative")
         .style("width", (width + margin.left + margin.right) + "px")
         .style("height", (height + margin.top + margin.bottom) + "px")
-        //.style("left", margin.left + "px")
-        //.style("top", margin.top + "px")
         .attr("id", "treemap-container");
 
     d3.json('/data/mockdata-truncated-01.json', function (error, data) {
@@ -39,9 +34,10 @@ function drawTreemap() {
           .enter().append("div")
             .attr("class", "node")
             .call(position)
-            .style("background", function(d) { return d.children ? null : color(d.title); })
-            .append("span") /* titles inside a span */
-                .text(function(d) { return d.children ? null : d.title;});
+            .style("background", function(d) { return color(d.title); });
+
+        node.append("span") /* titles inside spans */
+          .text(function(d) { return d.children ? null : d.title;});
 
         var subnodes = node.each( function(d) { 
           if (d.subnodes) { 
@@ -57,13 +53,14 @@ function drawTreemap() {
 
                 .attr("class", "subnode")
                 .call(position)
-                .style("background", function(s) { return color(s.title); })
-                .text(function(s) { return s.title; });
-                      ;
-            console.log(n);
-            // n.subnodes.each( function(s) { console.log(s) });
+                .style("background", function(s) { return color(s.title); });
+
+            n.append("span") /* titles inside spans */
+              .text(function(s) { return s.title;});
           } 
         });
+
+
 
         d3.selectAll("input").on("change", function change() {
           var value = this.value === "count"
