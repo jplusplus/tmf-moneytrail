@@ -36,27 +36,26 @@ function drawTreemap() {
             .call(position)
             .style("background", function(d) { return color(d.title); });
 
+        // remove root node
+        node.filter(function(d) { return d.title == null; }).remove()
+
         node.append("span") /* titles inside spans */
-          .text(function(d) { return d.children ? null : d.title;});
+          .text(function(d) { return d.title; });
 
         var subnodes = node.each( function(d) { 
           if (d.subnodes) { 
             n = d3.select(this).selectAll(".subnode")
                 .data(d.subnodes)
               .enter().append("div")
-
-                .style("position", "relative")
+                // FIXME: Get proper dimensions from the subnode's amount
                 .style("width", "30px")
                 .style("height", "30px")
-                .style("left", "5px")
-                .style("top", "5px")
-
                 .attr("class", "subnode")
                 .call(position)
                 .style("background", function(s) { return color(s.title); });
 
             n.append("span") /* titles inside spans */
-              .text(function(s) { return s.title;});
+              .text(function(s) { return s.title; });
           } 
         });
 
