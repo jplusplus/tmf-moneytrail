@@ -1,5 +1,18 @@
 var container = document.getElementById("main") 
 
+// create hashes from strings
+// from https://stackoverflow.com/a/7616484
+String.prototype.hashCode = function() {
+    var hash = 0, i, chr, len;
+      if (this.length == 0) return hash;
+        for (i = 0, len = this.length; i < len; i++) {
+              chr   = this.charCodeAt(i);
+                  hash  = ((hash << 5) - hash) + chr;
+                      hash |= 0; // Convert to 32bit integer
+                        }
+          return hash;
+};
+
 function drawTreemap() {
 
     // remove previous container if it exists
@@ -28,16 +41,21 @@ function drawTreemap() {
         .style("height", (height + margin.top + margin.bottom) + "px")
         .attr("id", "treemap-container");
 
+    var modals = d3.select("body").append("div")
+        .attr("id", "modals-container");
+
     d3.json('/data/mockdata-truncated-01.json', function (error, data) {
       var node = div.datum(data).selectAll(".node")
             .data(treemap.nodes)
           .enter().append("div")
             .attr("class", "node")
+            .attr("data-reveal-id", function(d) { return "modal-" + Math.abs(d.title.hashCode()); })
             .call(position)
             .style("background", function(d) { return color(d.title); });
 
+
         // remove root node
-        node.filter(function(d) { return d.title == null; }).remove()
+        node.filter(function(d) { return d.title == "root"; }).remove()
 
         // the node div contains a node-contents div, which itself
         // contains the title, amount and subnodes
@@ -46,12 +64,16 @@ function drawTreemap() {
         contents.append("span") // title
           .text(function(d) { return d.title; });
 
-        /*
-        node.append("div") // Info text 
-          .attr("class", "tooltip")
-          .append("p")
-          .html(function(d) { return d.text ? marked(d.text) : null; });
-        */
+      var dialog = modals.datum(data).selectAll(".reveal-modal")
+            .data(treemap.nodes)
+          .enter().append("div") // Modal dialog (see Foundation Reveal docs)
+          .attr("id", function(d) { return "modal-" + Math.abs(d.title.hashCode()); })
+          .attr("class", "reveal-modal")
+          .attr("data-reveal", "foo")
+          .attr("aria-labelledby", "modalTitle")
+          .attr("aria-hidden", "true")
+          .attr("role", "dialog")
+          .html(function(d) { return d.text ? marked(d.text) + '<a class="close-reveal-modal" aria-label="Close">&#215;</a>' : null; });
 
         var subnodes = node.each( function(d) { 
           if (d.subnodes) { 

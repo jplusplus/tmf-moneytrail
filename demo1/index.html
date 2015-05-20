@@ -2,9 +2,14 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <script src="js/vendor/modernizr.js"></script>
+    <script src = "js/jquery-2.1.4.min.js"></script>
+    <script src="js/vendor/fastclick.js"></script>
+    <script src = "js/foundation.js"></script>
+    <script src = "js/foundation.reveal.js"></script>
     <script src = "node_modules/d3/d3.js"></script>
     <script src = "js/marked.js"></script>
-    <link rel="stylesheet" href="css/tipso.css"/>
+    <link rel="stylesheet" href="css/foundation.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <title>demo1</title>
 </head>
@@ -16,15 +21,14 @@
             </div>
         </section>
         <section id="main">
+
+
             <script src = "js/treemap.js"></script>
+<a href="#" data-reveal-id="myModal">This is a silly modal, but if I take it out all modals break :s</a> <div id="myModal" class="reveal-modal" data-reveal="" aria-labelledby="modalTitle" aria-hidden="true" role="dialog"> <h2 id="modalTitle">Awesome. I have it.</h2> <p class="lead">Your couch. It is mine.</p> <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p> <a class="close-reveal-modal" aria-label="Close">&#215;</a> </div>
         </section>
     </div><!-- /#page -->
 
-    <script src = "js/jquery-2.1.4.min.js"></script>
-    <script src = "js/tipso.min.js"></script>
-    <script>
-        jQuery('.tipso').tipso({
-        });
-    </script>
+    <script> $(document).foundation(); </script>
+
 </body>
 </html>
