@@ -39,17 +39,23 @@ function drawTreemap() {
         // remove root node
         node.filter(function(d) { return d.title == null; }).remove()
 
-        node.append("span") /* titles inside spans */
+        // the node div contains a node-contents div, which itself
+        // contains the title, amount and subnodes
+        contents = node.append("div")
+          .attr("class", "node-contents"); 
+        contents.append("span") // title
           .text(function(d) { return d.title; });
 
-        node.append("div") /* Info text */
+        /*
+        node.append("div") // Info text 
           .attr("class", "tooltip")
           .append("p")
           .html(function(d) { return d.text ? marked(d.text) : null; });
+        */
 
         var subnodes = node.each( function(d) { 
           if (d.subnodes) { 
-            n = d3.select(this).selectAll(".subnode")
+            n = d3.select(this).select(".node-contents").selectAll(".subnode")
                 .data(d.subnodes)
               .enter().append("div")
                 // FIXME: Get proper dimensions from the subnode's amount
