@@ -49,7 +49,7 @@ function drawTreemap() {
     var modals = d3.select("body").append("div")
         .attr("id", "modals-container");
 
-    d3.json('/data/mockdata-truncated-01.json', function (error, data) {
+    d3.json('/data/mockdata.json', function (error, data) {
       var node = div.datum(data).selectAll(".node")
             .data(treemap.nodes)
           .enter().append("div")
