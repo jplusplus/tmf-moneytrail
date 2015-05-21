@@ -318,7 +318,7 @@ body {;
     overflow: hidden;
     position: absolute;
     clear: both;
-    border-radius: 6px;
+    border-radius: 5px;
     box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
     transition: background-color 0.5s ease;
 }
@@ -330,11 +330,12 @@ body {;
 }
 
 .node-contents {
-    text-align: right;
     position: relative;   
     width: 100%;
     height: 100%;
-    padding: 0.25em;
+    padding: 0.25em 0.25em 0.35em;
+    text-align: right;
+    line-height: 1;
 	zoom:expression(
 	    runtimeStyle.zoom=1,
 	    insertAdjacentHTML('beforeEnd','<span class="after"></span>')
@@ -370,7 +371,7 @@ body {;
     display: inline-block;
     position: relative;
     vertical-align: bottom;
-    bottom: 0;
+    margin-left: 0.1em;
     border-radius: 3px;
     box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
     transition: background-color 0.5s ease;
