@@ -330,15 +330,27 @@ body {;
 }
 
 .node-contents {
-    position: relative;
-    display: table;
+    text-align: right;
+    position: relative;   
     width: 100%;
     height: 100%;
     padding: 0.25em;
+	zoom:expression(
+	    runtimeStyle.zoom=1,
+	    insertAdjacentHTML('beforeEnd','<span class="after"></span>')
+    );	
 }
+
+.node-contents:after{
+    content:"";
+    height:100%;
+    width:0;
+    display: inline-block;
+}	
 
 .node span,
 .subnode span {
+    text-align: left;
     position: absolute;
     display: block;
     float: left;
@@ -355,8 +367,7 @@ body {;
 }
 
 .subnode {
-    display: table-cell;
-    float: right;
+    display: inline-block;
     position: relative;
     vertical-align: bottom;
     bottom: 0;
