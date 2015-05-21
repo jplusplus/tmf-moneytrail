@@ -22,7 +22,7 @@ function getModalContent(node) {
     contents = "";
     contents += '<h2>' + node.title + '</h2>';
     contents += '<h3>' + node.amount + '€</h3>';
-    contents += '<ul>';
+    contents += '<ul class="tags">';
     for (i = 0; i < node.tags.length; ++i) {
       contents += '<li>' + node.tags[i] + '</li>';
     }
