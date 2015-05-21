@@ -18,6 +18,20 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function getModalContent(node) {
+    contents = "";
+    contents += '<h2>' + node.title + '</h2>';
+    contents += '<h3>' + node.amount + '€</h3>';
+    contents += '<ul>';
+    for (i = 0; i < node.tags.length; ++i) {
+      contents += '<li>' + node.tags[i] + '</li>';
+    }
+    contents += '</ul>';
+    contents += marked(node.text);
+    contents += '<a class="close-reveal-modal" aria-label="Close">&#215;</a>';
+    return contents
+}
+
 function drawTreemap() {
 
     // remove previous container if it exists
@@ -54,7 +68,7 @@ function drawTreemap() {
             .data(treemap.nodes)
           .enter().append("div")
             .attr("class", "node")
-            .attr("data-reveal-id", function(d) { return "modal-" + Math.abs(d.title.hashCode()); })
+            .attr("data-reveal-id", function(d) { return "modal-" + d.id; })
             .call(position)
             .style("background", function(d) { return color(d.title); });
 
@@ -72,13 +86,13 @@ function drawTreemap() {
       var dialog = modals.datum(data).selectAll(".reveal-modal")
             .data(treemap.nodes)
           .enter().append("div") // Modal dialog (see Foundation Reveal docs)
-          .attr("id", function(d) { return "modal-" + Math.abs(d.title.hashCode()); })
+          .attr("id", function(d) { return "modal-" + d.id; })
           .attr("class", "reveal-modal")
           .attr("data-reveal", "foo")
           .attr("aria-labelledby", "modalTitle")
           .attr("aria-hidden", "true")
           .attr("role", "dialog")
-          .html(function(d) { return d.text ? marked(d.text) + '<a class="close-reveal-modal" aria-label="Close">&#215;</a>' : null; });
+          .html(function(d) { return d.text ? getModalContent(d) : null; });
 
         var subnodes = node.each( function(d) { 
           if (d.subnodes) { 
