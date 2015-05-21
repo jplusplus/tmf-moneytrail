@@ -13,6 +13,11 @@ String.prototype.hashCode = function() {
           return hash;
 };
 
+function getRandomInt(min, max) {
+    // https://stackoverflow.com/a/1527820
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 function drawTreemap() {
 
     // remove previous container if it exists
@@ -81,8 +86,8 @@ function drawTreemap() {
                 .data(d.subnodes)
               .enter().append("div")
                 // FIXME: Get proper dimensions from the subnode's amount
-                .style("width", "30px")
-                .style("height", "30px")
+                .style("width", function(d) { return getRandomInt(20, 150) + "px"; })
+                .style("height", function(d) { return getRandomInt(20, 150) + "px"; })
                 .attr("class", "subnode")
                 .call(position)
                 .style("background", function(s) { return color(s.title); });
