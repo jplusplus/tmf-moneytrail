@@ -370,7 +370,6 @@ body {;
 .node-details span {
     display: block;
     position: relative;
-    padding: 0.425em 0 0;
 }
 
 .node-amount {
@@ -379,6 +378,7 @@ body {;
 }	
 
 .node-title {
+    padding: 0.25em 0 0;
 }
 
 .subnode {
@@ -420,14 +420,16 @@ body {;
     border-radius: 5px;
 }
 
-.reveal-modal * {
+.reveal-modal h1, 
+.reveal-modal h2,
+.reveal-modal h3,
+.reveal-modal h4 {
     line-height: 1;
 }
 
 .reveal-modal .close-reveal-modal {
     color: #ccc;
     cursor: pointer;
-    font-size: 1.5rem;
     font-weight: bold;
     line-height: 1;
     position: absolute;
@@ -450,5 +452,6 @@ body {;
     border-radius: 3px;
 }
 
+.reveal-modal .tags li:first-child { margin-left: 0; }
 
 
