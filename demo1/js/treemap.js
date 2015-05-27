@@ -112,11 +112,21 @@ function drawTreemap() {
                 .style("width", function(d) { return getRandomInt(20, 150) + "px"; })
                 .style("height", function(d) { return getRandomInt(20, 150) + "px"; })
                 .attr("class", "subnode")
+                .attr("data-reveal-id", function(d) { return "modal-" + d.id; })
                 .call(position)
                 .style("background", function(s) { return color(s.title); });
 
             n.append("span") /* titles inside spans */
               .text(function(s) { return s.title; });
+
+            dialog.append("div")
+              .attr("id", function(d) { return "modal-" + d.id; })
+              .attr("class", "reveal-modal")
+              .attr("data-reveal", "foo")
+              .attr("aria-labelledby", "modalTitle")
+              .attr("aria-hidden", "true")
+              .attr("role", "dialog")
+              .html(function(d) { return d.text ? getModalContent(d) : null; });
           } 
         });
 
