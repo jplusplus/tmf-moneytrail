@@ -241,6 +241,10 @@ font-family: 'Roboto Condensed Bold';
 src: local('Roboto Condensed Bold'), url('../fonts/RobotoCondensed-Bold.ttf') format('truetype');
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Condensed Light';
+}
+
 #header h1 {
     font-family: 'Roboto Condensed Light';
     font-size: 1.25em;
