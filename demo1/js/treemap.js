@@ -18,6 +18,11 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function formatAmount(amount) {
+    return amount + " €";
+}
+
+
 function getModalContent(node) {
     contents = "";
     contents += '<h2>' + node.title + '</h2>';
@@ -80,7 +85,11 @@ function drawTreemap() {
         // contains the title, amount and subnodes
         contents = node.append("div")
           .attr("class", "node-contents"); 
+        contents.append("span") // amount
+          .attr("class", "node-amount")
+          .text(function(d) { return formatAmount(d.amount); });
         contents.append("span") // title
+          .attr("class", "node-title")
           .text(function(d) { return d.title; });
 
       var dialog = modals.datum(data).selectAll(".reveal-modal")
@@ -103,11 +112,21 @@ function drawTreemap() {
                 .style("width", function(d) { return getRandomInt(20, 150) + "px"; })
                 .style("height", function(d) { return getRandomInt(20, 150) + "px"; })
                 .attr("class", "subnode")
+                .attr("data-reveal-id", function(d) { return "modal-" + d.id; })
                 .call(position)
                 .style("background", function(s) { return color(s.title); });
 
             n.append("span") /* titles inside spans */
               .text(function(s) { return s.title; });
+
+            dialog.append("div")
+              .attr("id", function(d) { return "modal-" + d.id; })
+              .attr("class", "reveal-modal")
+              .attr("data-reveal", "foo")
+              .attr("aria-labelledby", "modalTitle")
+              .attr("aria-hidden", "true")
+              .attr("role", "dialog")
+              .html(function(d) { return d.text ? getModalContent(d) : null; });
           } 
         });
 
