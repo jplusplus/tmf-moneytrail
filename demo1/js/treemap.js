@@ -18,6 +18,11 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+function formatAmount(amount) {
+    return amount + " €";
+}
+
+
 function getModalContent(node) {
     contents = "";
     contents += '<h2>' + node.title + '</h2>';
@@ -80,7 +85,11 @@ function drawTreemap() {
         // contains the title, amount and subnodes
         contents = node.append("div")
           .attr("class", "node-contents"); 
+        contents.append("span") // amount
+          .attr("class", "node-amount")
+          .text(function(d) { return formatAmount(d.amount); });
         contents.append("span") // title
+          .attr("class", "node-title")
           .text(function(d) { return d.title; });
 
       var dialog = modals.datum(data).selectAll(".reveal-modal")
