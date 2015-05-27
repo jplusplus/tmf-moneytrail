@@ -42,9 +42,9 @@ function drawTreemap() {
     // remove previous container if it exists
     d3.select('#treemap-container').remove();
 
-    var margin = {top: 40, right: 10, bottom: 10, left: 10},
-          width = container.offsetWidth,
-          height = container.offsetHeight;
+    var margin = {top: 40, right: 10, bottom: 10, left: 10};
+    var width = container.offsetWidth < 800 ? container.offsetWidth : 800;
+    var height = container.offsetHeight;
 
     console.log([width, height]);
 
@@ -56,6 +56,7 @@ function drawTreemap() {
 
     var treemap = d3.layout.treemap()
         .size([width, height])
+        .ratio(2)
         .sort(function comparator(a, b) { return b.amount - a.amount; })
         .value(function(d) { return scale(d.amount); });
 
@@ -84,12 +85,12 @@ function drawTreemap() {
         // the node div contains a node-contents div, which itself
         // contains the title, amount and subnodes
         contents = node.append("div")
-          .attr("class", "node-contents");
-          
-        contents.append("span") // amount
+          .attr("class", "node-contents"); 
+        contents_text = contents.append("p");
+        contents_text.append("span") // amount
           .attr("class", "node-amount")
           .text(function(d) { return formatAmount(d.amount); });
-        contents.append("span") // title
+        contents_text.append("span") // title
           .attr("class", "node-title")
           .text(function(d) { return d.title; });
 
