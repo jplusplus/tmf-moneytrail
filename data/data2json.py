@@ -14,6 +14,8 @@ outdata = {}
 outdata['title'] = 'root'
 outdata['children'] = []
 
+all_tags = []
+
 
 def get_object_from_id(l, id):
     for row in l['children']:
@@ -31,6 +33,8 @@ for row in data:
         tags = row['Tags']
         del row['Tags']
         row['tags'] = [t.strip() for t in tags.split(',')]
+        for tag in row['tags']:
+            all_tags.append(tag)
         outdata['children'].append(row)
     else:
         parent_row = get_object_from_id(outdata, row['parent_id'])
@@ -39,5 +43,14 @@ for row in data:
         else:
             parent_row['subnodes'].append(row)
 
+import codecs
+f = codecs.open("data.json", "w", "utf-8")
+f.write(json.dumps(outdata))
+f.close()
 
-print json.dumps(outdata, indent=2)
+# remove duplicate tags
+all_tags = list(set(all_tags))
+tagdict = {"tags": all_tags}
+tf = open("tags.json", "w")
+tf.write(json.dumps(tagdict))
+tf.close()
