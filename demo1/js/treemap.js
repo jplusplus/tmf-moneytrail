@@ -86,7 +86,8 @@ function drawTreemap() {
         // contains the title, amount and subnodes
         contents = node.append("div")
           .attr("class", "node-contents"); 
-        contents_text = contents.append("p");
+        contents_text = contents.append("p")
+	  .attr("class", "node-details")
         contents_text.append("span") // amount
           .attr("class", "node-amount")
           .text(function(d) { return formatAmount(d.amount); });
