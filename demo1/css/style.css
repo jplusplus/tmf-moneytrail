@@ -258,6 +258,10 @@ h1, h2, h3, h4, h5, h6 {
     font-style: normal;
 }
 
+.ui-widget * {
+    font: 100%/1 'Roboto Condensed', 'DejaVu Sans', Arial, sans-serif;
+}
+
 /* Layout
 */
 
@@ -286,7 +290,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-body {;
+body {
     font: 100%/1 'Roboto Condensed', 'DejaVu Sans', Arial, sans-serif;
     color: #3b322d;
     /* pattern by http://jorickvanhees.com */
@@ -294,7 +298,7 @@ body {;
 }
 
 #page {
-    max-width: 62.5em; /*  1000px : 16 = 62.5em */
+    max-width: 50em; /*  1000px : 16 = 62.5em */
     margin: 40px auto;
 }
 
