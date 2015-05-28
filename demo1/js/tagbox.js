@@ -8,7 +8,7 @@
      names = data.tags;
    });
 
-   // Autocomplete setup, straight from the jQuery UI accent example
+   // Autocomplete setup, most comes straight from the jQuery UI accent example
    var accentMap = {
      "á": "a",
      "ö": "o"
@@ -21,6 +21,7 @@
      return ret;
    };
    jQuery( "#filters" ).autocomplete({
+     // init
      source: function( request, response ) {
        var matcher = new RegExp( jQuery.ui.autocomplete.escapeRegex( request.term ), "i" );
        response( jQuery.grep( names, function( value ) {

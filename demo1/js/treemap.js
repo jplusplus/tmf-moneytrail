@@ -28,8 +28,11 @@ function getModalContent(node) {
     contents += '<h2>' + node.title + '</h2>';
     contents += '<h3>' + node.amount + '€</h3>';
     contents += '<ul class="tags">';
-    for (i = 0; i < node.tags.length; ++i) {
-      contents += '<li>' + node.tags[i] + '</li>';
+    // FIXME: Subnodes should inherit the parent node's tags
+    if (node.tags) {
+      for (i = 0; i < node.tags.length; ++i) {
+        contents += '<li>' + node.tags[i] + '</li>';
+      }
     }
     contents += '</ul>';
     contents += marked(node.text);
@@ -51,8 +54,8 @@ function drawTreemap() {
     var color = d3.scale.category20c();
 
     var scale = d3.scale.linear()
-                        .domain([2000000, 10000000000])
-                        .range([10, 200]);
+                        .domain([3000000, 10000000000])
+                        .range([7, 200]);
 
     var treemap = d3.layout.treemap()
         .size([width, height])
@@ -80,7 +83,7 @@ function drawTreemap() {
 
 
         // remove root node
-        node.filter(function(d) { return d.title == "root"; }).remove()
+        node.filter(function(d) { return d.title == "root"; }).style("display", "none").style("visibility", "hidden");
 
         // the node div contains a node-contents div, which itself
         // contains the title, amount and subnodes
@@ -122,14 +125,17 @@ function drawTreemap() {
             n.append("span") /* titles inside spans */
               .text(function(s) { return s.title; });
 
-            dialog.append("div")
-              .attr("id", function(d) { return "modal-" + d.id; })
-              .attr("class", "reveal-modal")
-              .attr("data-reveal", "foo")
-              .attr("aria-labelledby", "modalTitle")
-              .attr("aria-hidden", "true")
-              .attr("role", "dialog")
-              .html(function(d) { return d.text ? getModalContent(d) : null; });
+            jQuery.each(d.subnodes, function(i) {
+              s = d.subnodes[i]; 
+              dialog.append("div")
+                .attr("id", function(x) { return "modal-" + s.id; })
+                .attr("class", "reveal-modal")
+                .attr("data-reveal", "foo")
+                .attr("aria-labelledby", "modalTitle")
+                .attr("aria-hidden", "true")
+                .attr("role", "dialog")
+                .html(function(x) { return s.text ? getModalContent(s) : null; });
+              });
           } 
         });
 
