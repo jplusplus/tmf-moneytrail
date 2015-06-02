@@ -13,24 +13,9 @@ var scale = d3.scale.linear()
 // HELPER FUNCTIONS
 
 // Fetch GET parameters
-
+// https://stackoverflow.com/a/21210643
 var queryDict = {}
 location.search.substr(1).split("&").forEach(function(item) {queryDict[item.split("=")[0]] = item.split("=")[1]})
-
-// create hashes from strings
-// from https://stackoverflow.com/a/7616484
-String.prototype.hashCode = function() {
-    var hash = 0, i, chr, len;
-      if (this.length == 0) return hash;
-        for (i = 0, len = this.length; i < len; i++) {
-              chr   = this.charCodeAt(i);
-                  hash  = ((hash << 5) - hash) + chr;
-                      hash |= 0; // Convert to 32bit integer
-                        }
-          return hash;
-};
-
-// VIZ-SPECIFIC FUNCTIONS
 
 function formatAmount(amount) {
     return amount + " €";
@@ -53,13 +38,15 @@ function getSubnodeDims(subnode, nodes) {
     // horizontal node
     subnode_h = parent_h - 10;
     subnode_w = parent_w * ratio;
+    if (subnode_w < 20) { subnode_w = 20; }
   }
   else {
     // vertical node
-    subnode_w = parent_w - 10;
-    subnode_h = parent_h * ratio;
+    subnode_w = Math.round(parent_w - 10);
+    subnode_h = Math.round(parent_h * ratio);
+    if (subnode_h < 20) { subnode_h = 20; }
   }
-  // console.log("dims: ", subnode_w, subnode_h)
+  console.log(subnode.title + "dims: " + subnode_w + "x" + subnode_h)
   return [subnode_w, subnode_h];
 }
 
