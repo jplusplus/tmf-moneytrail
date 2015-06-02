@@ -19,30 +19,39 @@ all_tags = []
 
 def get_object_from_id(l, id):
     for row in l['children']:
-        if row['ID'] == id:
+        if row['id'] == id:
             return row
     return None
 
+
+def replace_field_name(row, name, newname):
+    if row.get(name) is not None:
+        row[newname] = row[name]
+        del row[name]
+    return row
+
+
 for row in data:
-    if not row['Parent']:
-        # don't include the parent_id row
-        del row['Parent']
-        # change col names
-        row['title'] = row['Title']
-        del row['Title']
-        row['text'] = row['Text']
-        del row['Text']
-        # make amount into a proper int
-        row['amount'] = int(row['Amount'])
-        # turn tags into a list
-        tags = row['Tags']
-        del row['Tags']
-        row['tags'] = [t.strip() for t in tags.split(',')]
+    # change col names
+    replace_field_name(row, "Title", "title")
+    replace_field_name(row, "Text", "text")
+    replace_field_name(row, "ID", "id")
+    replace_field_name(row, "Amount", "amount")
+    replace_field_name(row, "Parent", "parent")
+    replace_field_name(row, "Tags", "tags")
+    # turn tags into a list
+    if row.get('tags'):
+        row['tags'] = [t.strip() for t in row['tags'].split(',')]
         for tag in row['tags']:
             all_tags.append(tag)
+    # amounts should be int
+    row['amount'] = int(row['amount'])
+    if not row.get('parent'):
+        # this is a node
         outdata['children'].append(row)
     else:
-        parent_row = get_object_from_id(outdata, row['Parent'])
+        # this is a subnode
+        parent_row = get_object_from_id(outdata, row['parent'])
         if not parent_row.get('subnodes'):
             parent_row['subnodes'] = [row]
         else:
