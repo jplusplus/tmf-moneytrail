@@ -253,10 +253,6 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 2px;
 }
 
-#header h1:hover{
-    padding: 5px;
-}
-
 #header h1 em {
     font-family: 'Roboto Condensed Bold';
     font-style: normal;
