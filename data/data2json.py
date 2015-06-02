@@ -8,7 +8,7 @@ our viz.
 import csv
 import json
 
-data = csv.DictReader(open("mockdata2.csv"))
+data = csv.DictReader(open("data-initial.csv"))
 
 outdata = {}
 outdata['title'] = 'root'
@@ -19,16 +19,21 @@ all_tags = []
 
 def get_object_from_id(l, id):
     for row in l['children']:
-        if row['id'] == id:
+        if row['ID'] == id:
             return row
     return None
 
 for row in data:
-    if not row['parent_id']:
+    if not row['Parent']:
         # don't include the parent_id row
-        del row['parent_id']
+        del row['Parent']
+        # change col names
+        row['title'] = row['Title']
+        del row['Title']
+        row['text'] = row['Text']
+        del row['Text']
         # make amount into a proper int
-        row['amount'] = int(row['amount'])
+        row['amount'] = int(row['Amount'])
         # turn tags into a list
         tags = row['Tags']
         del row['Tags']
@@ -37,7 +42,7 @@ for row in data:
             all_tags.append(tag)
         outdata['children'].append(row)
     else:
-        parent_row = get_object_from_id(outdata, row['parent_id'])
+        parent_row = get_object_from_id(outdata, row['Parent'])
         if not parent_row.get('subnodes'):
             parent_row['subnodes'] = [row]
         else:

@@ -1,5 +1,8 @@
 var container = document.getElementById("main") 
 
+
+// HELPER FUNCTIONS
+
 // create hashes from strings
 // from https://stackoverflow.com/a/7616484
 String.prototype.hashCode = function() {
@@ -22,6 +25,7 @@ function formatAmount(amount) {
     return amount + " €";
 }
 
+// VIZ-SPECIFIC FUNCTIONS
 
 function getModalContent(node) {
     contents = "";
@@ -40,8 +44,14 @@ function getModalContent(node) {
     return contents
 }
 
-function drawTreemap() {
+function position() {
+  this.style("left", function(d) { return d.x + "px"; })
+      .style("top", function(d) { return d.y + "px"; })
+      .style("width", function(d) { return Math.max(0, d.dx - 1) + "px"; })
+      .style("height", function(d) { return Math.max(0, d.dy - 1) + "px"; });
+}
 
+function drawTreemap() {
     // remove previous container if it exists
     d3.select('#treemap-container').remove();
 
@@ -49,10 +59,7 @@ function drawTreemap() {
     var width = container.offsetWidth < 800 ? container.offsetWidth : 800;
     var height = container.offsetHeight;
 
-    console.log([width, height]);
-
     var color = d3.scale.category20c();
-
     var scale = d3.scale.linear()
                         .domain([3000000, 10000000000])
                         .range([7, 200]);
@@ -72,6 +79,7 @@ function drawTreemap() {
     var modals = d3.select("body").append("div")
         .attr("id", "modals-container");
 
+    // the magic happens here
     d3.json('/data/data.json', function (error, data) {
       var node = div.datum(data).selectAll(".node")
             .data(treemap.nodes)
@@ -155,15 +163,9 @@ function drawTreemap() {
     });
 }
 
-function position() {
-  this.style("left", function(d) { return d.x + "px"; })
-      .style("top", function(d) { return d.y + "px"; })
-      .style("width", function(d) { return Math.max(0, d.dx - 1) + "px"; })
-      .style("height", function(d) { return Math.max(0, d.dy - 1) + "px"; });
-}
-
 drawTreemap();
 
+// redraw on resize
 d3.select(window).on('resize', resize); 
 
 function resize() {
