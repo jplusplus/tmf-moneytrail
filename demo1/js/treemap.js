@@ -1,4 +1,4 @@
-var container = document.getElementById("main") 
+var container = document.getElementById("main")
 
 
 // HELPER FUNCTIONS
@@ -79,8 +79,7 @@ function drawTreemap() {
     var modals = d3.select("body").append("div")
         .attr("id", "modals-container");
 
-    // the magic happens here
-    d3.json('/data/data.json', function (error, data) {
+    d3.json('./data/data.json', function (error, data) {
       var node = div.datum(data).selectAll(".node")
             .data(treemap.nodes)
           .enter().append("div")
@@ -90,13 +89,13 @@ function drawTreemap() {
             .style("background", function(d) { return color(d.title); });
 
 
-        // remove root node
+        // hide root node
         node.filter(function(d) { return d.title == "root"; }).style("display", "none").style("visibility", "hidden");
 
         // the node div contains a node-contents div, which itself
         // contains the title, amount and subnodes
         contents = node.append("div")
-          .attr("class", "node-contents"); 
+          .attr("class", "node-contents");
         contents_text = contents.append("p")
 	  .attr("class", "node-details")
         contents_text.append("span") // amount
@@ -117,8 +116,8 @@ function drawTreemap() {
           .attr("role", "dialog")
           .html(function(d) { return d.text ? getModalContent(d) : null; });
 
-        var subnodes = node.each( function(d) { 
-          if (d.subnodes) { 
+        var subnodes = node.each( function(d) {
+          if (d.subnodes) {
             n = d3.select(this).select(".node-contents").selectAll(".subnode")
                 .data(d.subnodes)
               .enter().append("div")
@@ -134,7 +133,7 @@ function drawTreemap() {
               .text(function(s) { return s.title; });
 
             jQuery.each(d.subnodes, function(i) {
-              s = d.subnodes[i]; 
+              s = d.subnodes[i];
               dialog.append("div")
                 .attr("id", function(x) { return "modal-" + s.id; })
                 .attr("class", "reveal-modal")
@@ -144,7 +143,7 @@ function drawTreemap() {
                 .attr("role", "dialog")
                 .html(function(x) { return s.text ? getModalContent(s) : null; });
               });
-          } 
+          }
         });
 
 
@@ -165,8 +164,12 @@ function drawTreemap() {
 
 drawTreemap();
 
+<<<<<<< HEAD
 // redraw on resize
 d3.select(window).on('resize', resize); 
+=======
+d3.select(window).on('resize', resize);
+>>>>>>> 48d8b8a111bdadf502d1e978ba44ac072c942623
 
 function resize() {
   width = container.clientWidth,
