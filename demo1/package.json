@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "MIT",
+  "license": "GNU AFFERO GENERAL PUBLIC LICENSE",
   "devDependencies": {
     "browser-sync": "^1.7.2",
     "gulp": "^3.8.10",
