@@ -330,12 +330,6 @@ body {
     transition: background-color 0.5s ease;
 }
 
-.node:hover,
-.node:focus {
-    cursor: pointer;
-    box-shadow: inset 0 0 8px rgba(0,0,0,0.4); 
-}
-
 .node-contents {
     position: relative;   
     width: 100%;
@@ -348,12 +342,17 @@ body {
 	    insertAdjacentHTML('beforeEnd','<span class="after"></span>')
     );	
 }
-
 .node-contents:after{
     content:"";
     height:100%;
     width:0;
     display: inline-block;
+}
+
+.node:hover .node-contents,
+.node:focus .node-contents {
+    cursor: pointer;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.4); 
 }
 
 .node-details {
@@ -437,8 +436,10 @@ body {
     font-weight: bold;
     line-height: 1;
     position: absolute;
-    right: 1.375rem;
+    right: 0.875rem;
     top: 0.625rem;
+    display: block;
+    padding: 0 0.25em;
 }
 
 .reveal-modal .tags {
