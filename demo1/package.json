@@ -1,5 +1,5 @@
 {
-  "name": "demo1",
+  "name": "tmf-moneytrail",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -11,8 +11,5 @@
   "devDependencies": {
     "browser-sync": "^1.7.2",
     "gulp": "^3.8.10"
-  },
-  "dependencies": {
-    "d3": "^3.4.13"
   }
 }
