@@ -1,27 +1,54 @@
 var container = document.getElementById("main")
 
-// create hashes from strings
-// from https://stackoverflow.com/a/7616484
-String.prototype.hashCode = function() {
-    var hash = 0, i, chr, len;
-      if (this.length == 0) return hash;
-        for (i = 0, len = this.length; i < len; i++) {
-              chr   = this.charCodeAt(i);
-                  hash  = ((hash << 5) - hash) + chr;
-                      hash |= 0; // Convert to 32bit integer
-                        }
-          return hash;
-};
+var margin = {top: 40, right: 10, bottom: 10, left: 10};
+var width = container.offsetWidth < 800 ? container.offsetWidth : 800;
+var height = container.offsetHeight;
 
-function getRandomInt(min, max) {
-    // https://stackoverflow.com/a/1527820
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+var color = d3.scale.category20c();
+var scale = d3.scale.linear()
+                    .domain([3000000, 10000000000])
+                    .range([30, 300]);
+
+
+// HELPER FUNCTIONS
+
+// Fetch GET parameters
+// https://stackoverflow.com/a/21210643
+var queryDict = {}
+location.search.substr(1).split("&").forEach(function(item) {queryDict[item.split("=")[0]] = item.split("=")[1]})
 
 function formatAmount(amount) {
     return amount + " €";
 }
 
+function getNodeById(node_obj, id) {
+  result = node_obj.filter(function(n) { return n.id == id })[0][0];
+  return result;
+}
+
+function getSubnodeDims(subnode, nodes) {
+  // console.log("subnode: ", subnode.title, subnode.amount);
+  node = getNodeById(nodes, subnode['parent']);
+  // console.log("parent: ", node.__data__.title);
+  parent_w = node.offsetWidth;
+  parent_h = node.offsetHeight;
+  ratio = subnode.amount / node.__data__.amount;
+  // console.log("ratio: ", ratio);
+  if (parent_w > parent_h) {
+    // horizontal node
+    subnode_h = parent_h - 10;
+    subnode_w = parent_w * ratio;
+    if (subnode_w < 20) { subnode_w = 20; }
+  }
+  else {
+    // vertical node
+    subnode_w = Math.round(parent_w - 10);
+    subnode_h = Math.round(parent_h * ratio);
+    if (subnode_h < 20) { subnode_h = 20; }
+  }
+  console.log(subnode.title + "dims: " + subnode_w + "x" + subnode_h)
+  return [subnode_w, subnode_h];
+}
 
 function getModalContent(node) {
     contents = "";
@@ -37,25 +64,20 @@ function getModalContent(node) {
     contents += '</ul>';
     contents += marked(node.text);
     contents += '<a class="close-reveal-modal" aria-label="Close">&#215;</a>';
-    return contents
+    return contents;
+}
+
+function position() {
+  this.style("left", function(d) { return d.x + "px"; })
+      .style("top", function(d) { return d.y + "px"; })
+      .style("width", function(d) { return Math.max(0, d.dx - 1) + "px"; })
+      .style("height", function(d) { return Math.max(0, d.dy - 1) + "px"; });
 }
 
 function drawTreemap() {
-
     // remove previous container if it exists
     d3.select('#treemap-container').remove();
 
-    var margin = {top: 40, right: 10, bottom: 10, left: 10};
-    var width = container.offsetWidth < 800 ? container.offsetWidth : 800;
-    var height = container.offsetHeight;
-
-    console.log([width, height]);
-
-    var color = d3.scale.category20c();
-
-    var scale = d3.scale.linear()
-                        .domain([3000000, 10000000000])
-                        .range([7, 200]);
 
     var treemap = d3.layout.treemap()
         .size([width, height])
@@ -82,7 +104,7 @@ function drawTreemap() {
             .style("background", function(d) { return color(d.title); });
 
 
-        // remove root node
+        // hide root node
         node.filter(function(d) { return d.title == "root"; }).style("display", "none").style("visibility", "hidden");
 
         // the node div contains a node-contents div, which itself
@@ -115,12 +137,12 @@ function drawTreemap() {
                 .data(d.subnodes)
               .enter().append("div")
                 // FIXME: Get proper dimensions from the subnode's amount
-                .style("width", function(d) { return getRandomInt(20, 150) + "px"; })
-                .style("height", function(d) { return getRandomInt(20, 150) + "px"; })
+                .style("width", function(d) { return getSubnodeDims(d, node)[0] + "px"; })
+                .style("height", function(d) { return getSubnodeDims(d, node)[1] + "px"; })
                 .attr("class", "subnode")
                 .attr("data-reveal-id", function(d) { return "modal-" + d.id; })
                 .call(position)
-                .style("background", function(s) { return color(s.title); });
+                // .style("background", function(s) { return color(s.title); });
 
             n.append("span") /* titles inside spans */
               .text(function(s) { return s.title; });
@@ -155,21 +177,14 @@ function drawTreemap() {
     });
 }
 
-function position() {
-  this.style("left", function(d) { return d.x + "px"; })
-      .style("top", function(d) { return d.y + "px"; })
-      .style("width", function(d) { return Math.max(0, d.dx - 1) + "px"; })
-      .style("height", function(d) { return Math.max(0, d.dy - 1) + "px"; });
-}
-
 drawTreemap();
 
+// redraw on resize
 d3.select(window).on('resize', resize);
 
 function resize() {
   width = container.clientWidth,
   height = container.clientHeight;
-  console.log([width, height]);
   drawTreemap();
 }
 
