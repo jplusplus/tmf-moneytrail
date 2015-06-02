@@ -164,12 +164,8 @@ function drawTreemap() {
 
 drawTreemap();
 
-<<<<<<< HEAD
 // redraw on resize
-d3.select(window).on('resize', resize); 
-=======
 d3.select(window).on('resize', resize);
->>>>>>> 48d8b8a111bdadf502d1e978ba44ac072c942623
 
 function resize() {
   width = container.clientWidth,
