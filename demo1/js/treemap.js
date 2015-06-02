@@ -1,5 +1,14 @@
 var container = document.getElementById("main")
 
+var margin = {top: 40, right: 10, bottom: 10, left: 10};
+var width = container.offsetWidth < 800 ? container.offsetWidth : 800;
+var height = container.offsetHeight;
+
+var color = d3.scale.category20c();
+var scale = d3.scale.linear()
+                    .domain([3000000, 10000000000])
+                    .range([30, 300]);
+
 
 // HELPER FUNCTIONS
 
@@ -16,16 +25,38 @@ String.prototype.hashCode = function() {
           return hash;
 };
 
-function getRandomInt(min, max) {
-    // https://stackoverflow.com/a/1527820
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+// VIZ-SPECIFIC FUNCTIONS
 
 function formatAmount(amount) {
     return amount + " €";
 }
 
-// VIZ-SPECIFIC FUNCTIONS
+function getNodeById(node_obj, id) {
+  result = node_obj.filter(function(n) { return n.id == id })[0][0];
+  return result;
+}
+
+function getSubnodeDims(subnode, nodes) {
+  // console.log("subnode: ", subnode.title, subnode.amount);
+  node = getNodeById(nodes, subnode['parent']);
+  // console.log("parent: ", node.__data__.title);
+  parent_w = node.offsetWidth;
+  parent_h = node.offsetHeight;
+  ratio = subnode.amount / node.__data__.amount;
+  // console.log("ratio: ", ratio);
+  if (parent_w > parent_h) {
+    // horizontal node
+    subnode_h = parent_h - 10;
+    subnode_w = parent_w * ratio;
+  }
+  else {
+    // vertical node
+    subnode_w = parent_w - 10;
+    subnode_h = parent_h * ratio;
+  }
+  // console.log("dims: ", subnode_w, subnode_h)
+  return [subnode_w, subnode_h];
+}
 
 function getModalContent(node) {
     contents = "";
@@ -41,7 +72,7 @@ function getModalContent(node) {
     contents += '</ul>';
     contents += marked(node.text);
     contents += '<a class="close-reveal-modal" aria-label="Close">&#215;</a>';
-    return contents
+    return contents;
 }
 
 function position() {
@@ -55,14 +86,6 @@ function drawTreemap() {
     // remove previous container if it exists
     d3.select('#treemap-container').remove();
 
-    var margin = {top: 40, right: 10, bottom: 10, left: 10};
-    var width = container.offsetWidth < 800 ? container.offsetWidth : 800;
-    var height = container.offsetHeight;
-
-    var color = d3.scale.category20c();
-    var scale = d3.scale.linear()
-                        .domain([3000000, 10000000000])
-                        .range([7, 200]);
 
     var treemap = d3.layout.treemap()
         .size([width, height])
@@ -122,8 +145,8 @@ function drawTreemap() {
                 .data(d.subnodes)
               .enter().append("div")
                 // FIXME: Get proper dimensions from the subnode's amount
-                .style("width", function(d) { return getRandomInt(20, 150) + "px"; })
-                .style("height", function(d) { return getRandomInt(20, 150) + "px"; })
+                .style("width", function(d) { return getSubnodeDims(d, node)[0] + "px"; })
+                .style("height", function(d) { return getSubnodeDims(d, node)[1] + "px"; })
                 .attr("class", "subnode")
                 .attr("data-reveal-id", function(d) { return "modal-" + d.id; })
                 .call(position)
@@ -170,7 +193,6 @@ d3.select(window).on('resize', resize);
 function resize() {
   width = container.clientWidth,
   height = container.clientHeight;
-  console.log([width, height]);
   drawTreemap();
 }
 
