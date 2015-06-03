@@ -377,7 +377,7 @@ body {
 
 .node-amount {
     font-family: 'Roboto Condensed Bold';
-    font-size: 1.45em;
+    font-size: 1.45rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -391,8 +391,6 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
     color: #fff;
     text-align: left;
-    font-size: 0.75rem;
-    line-height: 0.95;
     display: inline-block;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -413,6 +411,24 @@ body {
     cursor: pointer;
     border: 1px solid rgba(255, 255, 255, 0.8);
 }
+
+.subnode-details {
+    font-size: 0.75rem;
+    line-height: 0.95;
+}
+
+.subnode-details span {
+    display: block;
+    position: relative;
+}
+
+.subnode-amount {
+    font-family: 'Roboto Condensed Bold';
+    font-size: 0.875rem;
+    margin-bottom: 2px;
+}	
+
+
 
 
 /* Filters
