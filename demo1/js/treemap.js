@@ -7,7 +7,8 @@ var height = container.offsetHeight;
 var color = d3.scale.category20c();
 var scale = d3.scale.linear()
                     .domain([40000000, 10000000000])
-                    .range([40, 10000]);
+                    // .range([40, 10000]); // proportional values
+                    .range([600, 10000]);
 
 // HELPER FUNCTIONS
 
