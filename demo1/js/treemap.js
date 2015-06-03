@@ -18,17 +18,20 @@ var queryDict = {}
 location.search.substr(1).split("&").forEach(function(item) {queryDict[item.split("=")[0]] = item.split("=")[1]})
 
 function formatAmount(amount) {
+    // Stub function to return properly formatted amounts
     return amount + " €";
 }
 
 function getNodeById(node_obj, id) {
+  // Gets a node by its id number, node_obj is a D3 selection containing all nodes
   result = node_obj.filter(function(n) { return n.id == id })[0][0];
   return result;
 }
 
 function getSubnodeDims(subnode, nodes) {
-  // console.log("subnode: ", subnode.title, subnode.amount);
+  // Calculates dimensions (width and height) for a single subnode based on its amount.
   node = getNodeById(nodes, subnode['parent']);
+  // console.log("subnode: ", subnode.title, subnode.amount);
   // console.log("parent: ", node.__data__.title);
   parent_w = node.offsetWidth;
   parent_h = node.offsetHeight;
@@ -51,6 +54,7 @@ function getSubnodeDims(subnode, nodes) {
 }
 
 function getModalContent(node) {
+    // Generate the HTML to be placed inside a node's modal dialog.
     contents = "";
     contents += '<h2>' + node.title + '</h2>';
     contents += '<h3>' + node.amount + '€</h3>';
@@ -68,6 +72,7 @@ function getModalContent(node) {
 }
 
 function position() {
+  // Called on every element redraw to determine its position
   this.style("left", function(d) { return d.x + "px"; })
       .style("top", function(d) { return d.y + "px"; })
       .style("width", function(d) { return Math.max(0, d.dx - 1) + "px"; })
@@ -75,25 +80,27 @@ function position() {
 }
 
 function drawTreemap() {
-    // remove previous container if it exists
+    // Main draw function. Gets called on each redraw.
+
+    // Remove previous container if it exists
     d3.select('#treemap-container').remove();
-
-
+    // Set up the treemap
     var treemap = d3.layout.treemap()
         .size([width, height])
         .ratio(2)
         .sort(function comparator(a, b) { return b.amount - a.amount; })
         .value(function(d) { return scale(d.amount); });
-
+    // Add the treemap container div
     var div = d3.select("#main").append("div")
         .style("position", "relative")
         .style("width", (width + margin.left + margin.right) + "px")
         .style("height", (height + margin.top + margin.bottom) + "px")
         .attr("id", "treemap-container");
-
+    // Add the modals container div
     var modals = d3.select("body").append("div")
         .attr("id", "modals-container");
 
+    // Populate the treemap
     d3.json('./data/data.json', function (error, data) {
       var node = div.datum(data).selectAll(".node")
             .data(treemap.nodes)
@@ -103,83 +110,81 @@ function drawTreemap() {
             .call(position)
             .style("background", function(d) { return color(d.title); });
 
+      // Hide the root node
+      node.filter(function(d) { return d.title == "root"; }).style("display", "none").style("visibility", "hidden");
+      // Each node div contains a node-contents div, which itself
+      // contains the title, amount and subnodes
+      contents = node.append("div")
+        .attr("class", "node-contents");
+      contents_text = contents.append("p")
+        .attr("class", "node-details")
+      contents_text.append("span") // amount
+        .attr("class", "node-amount")
+        .text(function(d) { return formatAmount(d.amount); });
+      contents_text.append("span") // title
+        .attr("class", "node-title")
+        .text(function(d) { return d.title; });
 
-        // hide root node
-        node.filter(function(d) { return d.title == "root"; }).style("display", "none").style("visibility", "hidden");
-
-        // the node div contains a node-contents div, which itself
-        // contains the title, amount and subnodes
-        contents = node.append("div")
-          .attr("class", "node-contents");
-        contents_text = contents.append("p")
-	  .attr("class", "node-details")
-        contents_text.append("span") // amount
-          .attr("class", "node-amount")
-          .text(function(d) { return formatAmount(d.amount); });
-        contents_text.append("span") // title
-          .attr("class", "node-title")
-          .text(function(d) { return d.title; });
-
+      // Create the hidden dialog divs
       var dialog = modals.datum(data).selectAll(".reveal-modal")
             .data(treemap.nodes)
           .enter().append("div") // Modal dialog (see Foundation Reveal docs)
-          .attr("id", function(d) { return "modal-" + d.id; })
-          .attr("class", "reveal-modal")
-          .attr("data-reveal", "foo")
-          .attr("aria-labelledby", "modalTitle")
-          .attr("aria-hidden", "true")
-          .attr("role", "dialog")
-          .html(function(d) { return d.text ? getModalContent(d) : null; });
+            .attr("id", function(d) { return "modal-" + d.id; })
+            .attr("class", "reveal-modal")
+            .attr("data-reveal", "foo")
+            .attr("aria-labelledby", "modalTitle")
+            .attr("aria-hidden", "true")
+            .attr("role", "dialog")
+            .html(function(d) { return d.text ? getModalContent(d) : null; });
 
-        var subnodes = node.each( function(d) {
-          if (d.subnodes) {
-            n = d3.select(this).select(".node-contents").selectAll(".subnode")
-                .data(d.subnodes)
-              .enter().append("div")
-                // FIXME: Get proper dimensions from the subnode's amount
-                .style("width", function(d) { return getSubnodeDims(d, node)[0] + "px"; })
-                .style("height", function(d) { return getSubnodeDims(d, node)[1] + "px"; })
-                .attr("class", "subnode")
-                .attr("data-reveal-id", function(d) { return "modal-" + d.id; })
-                .call(position)
-                // .style("background", function(s) { return color(s.title); });
+      // Add the subnodes to the treemap
+      var subnodes = node.each( function(d) {
+        if (d.subnodes) {
+          n = d3.select(this).select(".node-contents").selectAll(".subnode")
+              .data(d.subnodes)
+            .enter().append("div")
+              .style("width", function(d) { return getSubnodeDims(d, node)[0] + "px"; })
+              .style("height", function(d) { return getSubnodeDims(d, node)[1] + "px"; })
+              .attr("class", "subnode")
+              .attr("data-reveal-id", function(d) { return "modal-" + d.id; })
+              .call(position)
 
-            n.append("span") /* titles inside spans */
-              .text(function(s) { return s.title; });
+          n.append("span") // title
+            .text(function(s) { return s.title; });
 
-            jQuery.each(d.subnodes, function(i) {
-              s = d.subnodes[i];
-              dialog.append("div")
-                .attr("id", function(x) { return "modal-" + s.id; })
-                .attr("class", "reveal-modal")
-                .attr("data-reveal", "foo")
-                .attr("aria-labelledby", "modalTitle")
-                .attr("aria-hidden", "true")
-                .attr("role", "dialog")
-                .html(function(x) { return s.text ? getModalContent(s) : null; });
-              });
-          }
-        });
+          // Attach the dialogs to each subnode
+          jQuery.each(d.subnodes, function(i) {
+            s = d.subnodes[i];
+            dialog.append("div")
+              .attr("id", function(x) { return "modal-" + s.id; })
+              .attr("class", "reveal-modal")
+              .attr("data-reveal", "foo")
+              .attr("aria-labelledby", "modalTitle")
+              .attr("aria-hidden", "true")
+              .attr("role", "dialog")
+              .html(function(x) { return s.text ? getModalContent(s) : null; });
+          });
+        }
+      });
 
+      // Redistribute treemap elements on data change
+      d3.selectAll("input").on("change", function change() {
+        var value = this.value === "count"
+            ? function() { return 1; }
+            : function(d) { return scale(d.amount); };
 
-
-        d3.selectAll("input").on("change", function change() {
-          var value = this.value === "count"
-              ? function() { return 1; }
-              : function(d) { return scale(d.amount); };
-
-          node
-              .data(treemap.value(value).nodes)
-            .transition()
-              .duration(1500)
-              .call(position);
-        });
+        node
+            .data(treemap.value(value).nodes)
+          .transition()
+            .duration(1500)
+            .call(position);
+      });
     });
 }
 
 drawTreemap();
 
-// redraw on resize
+// Redraw on resize
 d3.select(window).on('resize', resize);
 
 function resize() {
