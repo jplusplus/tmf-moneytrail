@@ -326,9 +326,16 @@ body {
     position: absolute;
     clear: both;
     border-radius: 5px;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     /*box-shadow: inset 0 0 5px rgba(0,0,0,0.2);*/
     transition: border-color 0.5s ease;
+}
+
+.node:hover,
+.node:focus {
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.3);
+/*    box-shadow: inset 0 0 8px rgba(0,0,0,0.4); */
 }
 
 .node-contents {
@@ -351,13 +358,6 @@ body {
     display: inline-block;
 }
 
-.node:hover,
-.node:focus {
-    cursor: pointer;
-    border: 2px solid rgba(0,0,0,0.2);
-/*    box-shadow: inset 0 0 8px rgba(0,0,0,0.4); */
-}
-
 .node-details {
     text-align: left;
     font-size: 0.875em;
@@ -376,7 +376,7 @@ body {
 }
 
 .node-amount {
-    font-family: 'Roboto Condensed Light';
+    font-family: 'Roboto Condensed Bold';
     font-size: 1.45em;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -388,7 +388,7 @@ body {
 }
 
 .subnode {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
     color: #fff;
     text-align: left;
     font-size: 0.75rem;
@@ -400,7 +400,7 @@ body {
     position: relative;
     vertical-align: bottom;
     padding: 0.425rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     margin-left: 0.1rem;
     margin-top: 0.1rem;
     border-radius: 3px;
@@ -411,7 +411,7 @@ body {
 .subnode:hover,
 .subnode:focus {
     cursor: pointer;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 
