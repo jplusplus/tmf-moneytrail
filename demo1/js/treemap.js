@@ -154,6 +154,7 @@ function drawTreemap() {
 
       // Add the subnodes to the treemap
       var subnodes = node.each( function(d) {
+        // Only care about nodes that have children
         if (d.subnodes) {
           n = d3.select(this).select(".node-contents").selectAll(".subnode")
               .data(d.subnodes)
@@ -164,7 +165,8 @@ function drawTreemap() {
               .attr("data-reveal-id", function(d) { return "modal-" + d.id; })
               .call(position)
 
-          n.append("span") // title
+          // Add their titles
+          n.append("span")
             .text(function(s) { return s.title; });
 
           // Attach the dialogs to each subnode
