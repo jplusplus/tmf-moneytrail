@@ -7,7 +7,7 @@ var height = container.offsetHeight;
 var color = d3.scale.category20c();
 var scale = d3.scale.linear()
                     .domain([40000000, 10000000000])
-                    .range([20, 500]);
+                    .range([40, 10000]);
 
 // HELPER FUNCTIONS
 
@@ -100,7 +100,8 @@ function drawTreemap() {
     // Set up the treemap
     var treemap = d3.layout.treemap()
         .size([width, height])
-        .ratio(2)
+        .ratio(1.5)
+        .sticky(true)
         .sort(function comparator(a, b) { return b.amount - a.amount; })
         .value(function(d) { return scale(d.amount); });
     // Add the treemap container div
