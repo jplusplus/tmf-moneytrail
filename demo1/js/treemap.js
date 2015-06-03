@@ -11,10 +11,24 @@ var scale = d3.scale.linear()
 
 // HELPER FUNCTIONS
 
-// Fetch GET parameters
+// Get language from GET params, if specified, otherwise default to English
 // https://stackoverflow.com/a/21210643
 var queryDict = {}
 location.search.substr(1).split("&").forEach(function(item) {queryDict[item.split("=")[0]] = item.split("=")[1]})
+var lang = "en"
+if (queryDict.lang) { 
+  lang = queryDict.lang; 
+}
+console.log(lang);
+
+// Set location of data file based on language
+var datafile = "data.json"
+if (lang == "fr") {
+  datafile = "data-fr.json";
+}
+if (lang == "de") {
+  datafile = "data-de.json";
+}
 
 function formatAmount(amount) {
     // Stub function to return properly formatted amounts
@@ -48,7 +62,7 @@ function getSubnodeDims(subnode, nodes) {
     subnode_h = Math.round(parent_h * ratio);
     if (subnode_h < 20) { subnode_h = 20; }
   }
-  console.log(subnode.title + "dims: " + subnode_w + "x" + subnode_h)
+  // console.log(subnode.title + "dims: " + subnode_w + "x" + subnode_h)
   return [subnode_w, subnode_h];
 }
 
