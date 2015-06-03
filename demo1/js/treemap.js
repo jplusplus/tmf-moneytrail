@@ -23,12 +23,12 @@ if (queryDict.lang) {
 console.log(lang);
 
 // Set location of data file based on language
-var datafile = "data.json"
+var datafile = "./data/data.json"
 if (lang == "fr") {
-  datafile = "data-fr.json";
+  datafile = "./data/data-fr.json";
 }
 if (lang == "de") {
-  datafile = "data-de.json";
+  datafile = "./data/data-de.json";
 }
 
 function formatAmount(amount) {
@@ -116,7 +116,7 @@ function drawTreemap() {
         .attr("id", "modals-container");
 
     // Populate the treemap
-    d3.json('./data/data.json', function (error, data) {
+    d3.json(datafile, function (error, data) {
       var node = div.datum(data).selectAll(".node")
             .data(treemap.nodes)
           .enter().append("div")
@@ -181,6 +181,9 @@ function drawTreemap() {
           });
         }
       });
+      // hack for bottom alignment
+      // node.select(".node-contents").append("span")
+      //    .attr("class", "after")
 
       // Redistribute treemap elements on data change
       d3.selectAll("input").on("change", function change() {
