@@ -123,7 +123,7 @@ function drawTreemap() {
             .attr("class", "node")
             .attr("data-reveal-id", function(d) { return "modal-" + d.id; })
             .call(position)
-            .style("background", function(d) { return color(d.title); });
+            .style("background", function(d) { return d.color; });
 
       // Hide the root node
       node.filter(function(d) { return d.title == "root"; }).style("display", "none").style("visibility", "hidden");
