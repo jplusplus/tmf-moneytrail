@@ -42,6 +42,7 @@ def parse_row(row, outdata, lang="en"):
         del row['Title'], row['Title FR'], row['Text'], row['Text FR']
 
     replace_field_name(row, "ID", "id")
+    replace_field_name(row, "Color", "color")
     replace_field_name(row, "Amount", "amount")
     replace_field_name(row, "Parent", "parent")
     replace_field_name(row, "Tags", "tags")
