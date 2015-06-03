@@ -165,8 +165,14 @@ function drawTreemap() {
               .attr("data-reveal-id", function(d) { return "modal-" + d.id; })
               .call(position)
 
-          // Add their titles
-          n.append("span")
+          // Add their titles and amounts
+          contents = n.append("p")
+            .attr("class", "subnode-details");
+          contents.append("span")
+            .attr("class", "subnode-amount")
+            .text(function(s) { return formatAmount(s.amount); });
+          contents.append("span")
+            .attr("class", "subnode-title")
             .text(function(s) { return s.title; });
 
           // Attach the dialogs to each subnode
