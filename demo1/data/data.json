@@ -5,7 +5,7 @@
       "tags": "", 
       "amount": 954717510, 
       "id": "1",
-      "color": "#6c3920", 
+      "color": "#e28956", 
       "subnodes": [
         {
           "parent": "1", 
@@ -32,7 +32,7 @@
       "tags": "", 
       "amount": 230000000, 
       "id": "3",
-      "color": "#6c4a20",
+      "color": "#c19a64",
       "subnodes": [
         {
           "parent": "3", 
@@ -51,7 +51,7 @@
       "tags": "", 
       "amount": 74658000, 
       "id": "4",
-      "color": "#4e6c20", 
+      "color": "#edd084", 
       "text": "The EU and member states have helped Tunisia (under Ben Ali's rule), Egypt, Libya, Algeria and Mauritania to prevent refugees and migrants from crossing into Europe, most often disregarding concerns for human rights.", 
       "title": "Technical assistance to neighboring dictatorships"
     }, 
@@ -60,7 +60,7 @@
       "tags": "", 
       "amount": 13200000000, 
       "id": "5",
-      "color": "#206c29", 
+      "color": "#e1e3a7", 
       "text": "Member states spend lavishly to deport foreigners in charter planes or buses or to offer them incentives for voluntary returns. This figure does not include deportations within Europe under the Dublin Regulation.", 
       "title": "Deportations"
     }, 
@@ -69,7 +69,7 @@
       "tags": "", 
       "amount": 76600000, 
       "id": "6",
-      "color": "#206c51",  
+      "color": "#a2dcd5",  
       "subnodes": [
         {
           "parent": "6", 
@@ -88,7 +88,7 @@
       "tags": "", 
       "amount": 223940000, 
       "id": "7", 
-      "color": "#206c6a",  
+      "color": "#74c8b7",  
       "text": "Drones, speedboats, night vision goggles, jeeps... Border guards went on a shopping spree that hugely benefited Airbus, Indra and other arms manufacturers.", 
       "title": "Gear for European border guards"
     }, 
@@ -97,7 +97,7 @@
       "tags": "", 
       "amount": 45800000, 
       "id": "8", 
-      "color": "#20546c", 
+      "color": "#87beb9", 
       "text": "The EU and member states have built ready-to-use detention centers for migrants and refugees in Libya and Ukraine.", 
       "title": "Detention centers in third countries"
     }
