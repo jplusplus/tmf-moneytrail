@@ -334,7 +334,7 @@ body {
     position: relative;   
     width: 100%;
     height: 100%;
-    padding: 0.25em 0.25em 0.35em;
+    padding: 0.25em;
     text-align: right;
     line-height: 1;
 	zoom:expression(
@@ -342,10 +342,11 @@ body {
 	    insertAdjacentHTML('beforeEnd','<span class="after"></span>')
     );	
 }
+
 .node-contents:after{
-    content:"";
-    height:100%;
-    width:0;
+    content: "";
+    height: 100%;
+    width: 100%;
     display: inline-block;
 }
 
@@ -361,9 +362,6 @@ body {
     line-height: 1;
     position: absolute;
     display: block;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
     width: 90%;
     top: 0.45em;
     left: 0.45em;
@@ -378,6 +376,9 @@ body {
 .node-amount {
     font-family: 'Roboto Condensed Light';
     font-size: 1.45em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }	
 
 .node-title {
@@ -385,8 +386,10 @@ body {
 }
 
 .subnode {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
     text-align: left;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     line-height: 0.95;
     display: inline-block;
     overflow: hidden;
@@ -395,7 +398,7 @@ body {
     position: relative;
     vertical-align: bottom;
     padding: 0.425rem;
-    border: 0.2rem solid rgba(255, 255, 255, 0.4);
+    border: 1px solid #fff;
     margin-left: 0.1rem;
     margin-top: 0.1rem;
     border-radius: 3px;
@@ -406,7 +409,7 @@ body {
 .subnode:hover,
 .subnode:focus {
     cursor: pointer;
-    border: 0.2rem solid #fff;
+    border: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 
