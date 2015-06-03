@@ -1,0 +1,110 @@
+{
+  "children": [
+    {
+      "parent": "", 
+      "tags": "", 
+      "amount": 954717510, 
+      "id": "1", 
+      "color": "#e28956", 
+      "subnodes": [
+        {
+          "parent": "1", 
+          "tags": "", 
+          "amount": 669600000, 
+          "id": "2", 
+          "color": "", 
+          "text": "David avait visit\u00e9 d\u2019anciennes fortifications de la ligne Maginot, mais rien de semblable. M\u00eame le Simserhof, situ\u00e9 \u00e0 proximit\u00e9 de Bitche, semblait petit \u00e0 c\u00f4t\u00e9 de cette porte. Mais David n\u2019\u00e9tait pas au bout de sa surprise.", 
+          "title": "Titre"
+        }, 
+        {
+          "parent": "1", 
+          "tags": "", 
+          "amount": 8117510, 
+          "id": "9", 
+          "color": "", 
+          "text": "Comme je viens de te le dire Florence, ce n\u2019est malheureusement pas une blague. David a travaill\u00e9 sur deux anciennes technologies abandonn\u00e9es depuis longtemps et il les a coupl\u00e9e.", 
+          "title": "Titre"
+        }
+      ], 
+      "text": "La route commen\u00e7a \u00e0 s\u2019enfoncer. On ne voyait plus les grillages sur les cot\u00e9s, mais juste des rochers. Et soudain, les voitures s\u2019arr\u00eat\u00e8rent devant une \u00e9norme porte en m\u00e9tal entour\u00e9e de b\u00e9ton. D\u2019\u00e9normes blocs de b\u00e9ton.", 
+      "title": "Titre"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "amount": 230000000, 
+      "id": "3", 
+      "color": "#c19a64", 
+      "subnodes": [
+        {
+          "parent": "3", 
+          "tags": "", 
+          "amount": 16000000, 
+          "id": "11", 
+          "color": "", 
+          "text": "Florence avait l\u2019esprit un peu m\u00e9lang\u00e9 entre ce Pr\u00e9lude qui ne lui apportait que des questions sans r\u00e9ponse et \u00ab son \u00bb David. Pr\u00e9lude avait r\u00e9veill\u00e9 brusquement un sentiment que Florence avait au plus profond d\u2019elle.", 
+          "title": "Titre"
+        }
+      ], 
+      "text": "Il avait d\u2019abord commencer par r\u00e9cup\u00e9rer des informations depuis l\u2019ordinateur de David, puis il \u00e9tait all\u00e9 les chercher sur Internet. Il avait lui m\u00eame programm\u00e9 l\u2019ordinateur de David afin d\u2019avoir un premier lien vers le monde ext\u00e9rieur : la voix.", 
+      "title": "Titre"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "amount": 74658000, 
+      "id": "4", 
+      "color": "#edd084", 
+      "text": "Il pouvait entendre la voix de David, mais ne la comprenait pas. C\u2019est alors qu\u2019il a d\u00e9cider d\u2019aller lui m\u00eame \u00e0 l\u2019information. Il s\u2019est alors \u2018transport\u00e9\u2019 sur Internet afin de choisir une nouvelle \u2018maison\u2019.", 
+      "title": "Titre"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "amount": 13200000000, 
+      "id": "5", 
+      "color": "#e1e3a7", 
+      "text": "Il lui a \u00e9t\u00e9 beaucoup plus facile de programmer ce nouvel ordinateur afin d\u2019entendre une nouvelle voix.", 
+      "title": "Titre"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "amount": 76600000, 
+      "id": "6", 
+      "color": "#a2dcd5", 
+      "subnodes": [
+        {
+          "parent": "6", 
+          "tags": "", 
+          "amount": 47000000, 
+          "id": "10", 
+          "color": "", 
+          "text": "S\u00e9par\u00e9es, elles ne valaient rien, mais, il les a r\u00e9unis et a d\u00e9marr\u00e9 le processus. Comme tu dois le savoir, il y a maintenant plus d\u2019ordinateur sur terre que d\u2019humains et tous ces ordinateurs sont connect\u00e9s entres eux gr\u00e2ce aux r\u00e9seau des r\u00e9seaux : Internet.", 
+          "title": "Titre"
+        }
+      ], 
+      "text": "Oui et non. Ce n'est pas une blague, mais David y est pour quelque chose. Il a cr\u00e9\u00e9 un programme sans le savoir. Ce programme se nomme Pr\u00e9lude. Il vit sur Internet \u00e0 travers tout le r\u00e9seau.", 
+      "title": "Titre"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "amount": 223940000, 
+      "id": "7", 
+      "color": "#74c8b7", 
+      "text": "Chaque ordinateur connect\u00e9 connais Pr\u00e9lude. Chaque ordinateur est une partie de Pr\u00e9lude. Le r\u00e9seau est Pr\u00e9lude.", 
+      "title": "Titre"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "amount": 45800000, 
+      "id": "8", 
+      "color": "#87beb9", 
+      "text": "David n\u2019a pas fait grand chose, il a juste cr\u00e9\u00e9 un embryon de programme. Mais ce programme s\u2019est d\u00e9velopp\u00e9 lui-m\u00eame.", 
+      "title": "Titre"
+    }
+  ], 
+  "title": "root"
+}
