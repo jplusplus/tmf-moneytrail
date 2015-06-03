@@ -80,7 +80,7 @@ def generate_json_file(lang="en"):
         f = codecs.open("data-fr.json", "w", "utf-8")
     elif lang == "de":
         f = codecs.open("data-de.json", "w", "utf-8")
-    f.write(json.dumps(outdata))
+    f.write(json.dumps(outdata, indent=2))
     f.close()
 
 generate_json_file(lang="en")

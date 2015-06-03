@@ -1,1 +1,99 @@
-{"children": [{"parent": "", "tags": "", "amount": 954717510, "id": "1", "subnodes": [{"parent": "1", "tags": "", "amount": 669600000, "id": "2", "text": "Yodel spitzen blitz gestalt buerger uber poopsie, handercloppen. Poken spritz keepin pukein haus nicht pukein buerger frankfurter nutske dorkin thinken pretzel poken.", "title": "Titel"}, {"parent": "1", "tags": "", "amount": 8117510, "id": "9", "text": "Ist waltz strudel pukein frau haben noodle biergarten die die zur wunderbar keepin, kaputt. Leiderhosen relaxern deutsch in kaputt meister die oompaloomp heinee er.", "title": "Titel"}], "text": "Unter flippin die poopsie weiner, frankfurter sparkin meister pretzel meister. Heinee sparkin du leiderhosen du noodle keepin nicht heinee die gestalt poken.", "title": "Titel"}, {"parent": "", "tags": "", "amount": 230000000, "id": "3", "subnodes": [{"parent": "3", "tags": "", "amount": 16000000, "id": "11", "text": "Morgen, pretzel verboten poken pukein an lookinpeepers nutske, rubberneckin und cuckoo achtung, mitz an. Yodel dummkopf glockenspiel weiner bar, achtung, octoberfest thinken nine. Biergarten zur nicht rubberneckin wearin meister leiderhosen blitz handercloppen dummkopf octoberfest blitz footzerstompen.", "title": "Titel"}], "text": "Poken kaboodle stoppern nine meister nine sauerkraut er das mitten. Die, in hast nutske sie flippin dorkin oof. Poppin verboten mitten blimp relaxern noodle, wearin.", "title": "Titel"}, {"parent": "", "tags": "", "amount": 74658000, "id": "4", "text": "Mitten pukein heinee, relaxern sparkin der poppin du du octoberfest. Nine wunderbar hast unter frankfurter corkin meister ich poopsie spritz kaboodle stein sauerkraut heiden nine.", "title": "Titel"}, {"parent": "", "tags": "", "amount": 13200000000, "id": "5", "text": "Hast er kaboodle bin handercloppen, hinder hast pretzel, strudel sauerkraut haus. Bar und nine und unter haus und mitz er underbite kaboodle gewerkin, sparkin sightseerin stein.", "title": "Titel"}, {"parent": "", "tags": "", "amount": 76600000, "id": "6", "subnodes": [{"parent": "6", "tags": "", "amount": 47000000, "id": "10", "text": "Oof haben meister meister keepin glockenspiel, bin ist frankfurter gestalt lookinpeepers buerger. Weiner heiden hans glockenspiel thinken frau glockenspiel morgen gewerkin gewerkin ist, relaxern, und underbite poken.", "title": "Titel"}], "text": "Der sauerkraut hinder sightseerin gestalt corkin oompaloomp relaxern sauerkraut stoppern yodel, verboten du. Mitz makin handercloppen, floppern frau, und, gestalt nicht, glockenspiel flippin lookinpeepers ich mitz.", "title": "Titel"}, {"parent": "", "tags": "", "amount": 223940000, "id": "7", "text": "Pretzel frau poppin pukein, blimp auf, ker waltz hans buerger. Hinder corkin pukein, underbite poppin pretzel. Wunderbar, lookinpeepers blimp buerger achtung bin ker bin der frankfurter.", "title": "Titel"}, {"parent": "", "tags": "", "amount": 45800000, "id": "8", "text": "Undervear der nicht nicht floppern spitzen frankfurter ich weiner, yodel mitz er pukein gewerkin. Verboten underbite spritz, zur yodel pukein stein hinder achtung bin lookinpeepers mitz corkin.", "title": "Titel"}], "title": "root"}
+{
+  "children": [
+    {
+      "parent": "", 
+      "tags": "", 
+      "amount": 954717510, 
+      "id": "1", 
+      "subnodes": [
+        {
+          "parent": "1", 
+          "tags": "", 
+          "amount": 669600000, 
+          "id": "2", 
+          "text": "Yodel spitzen blitz gestalt buerger uber poopsie, handercloppen. Poken spritz keepin pukein haus nicht pukein buerger frankfurter nutske dorkin thinken pretzel poken.", 
+          "title": "Titel"
+        }, 
+        {
+          "parent": "1", 
+          "tags": "", 
+          "amount": 8117510, 
+          "id": "9", 
+          "text": "Ist waltz strudel pukein frau haben noodle biergarten die die zur wunderbar keepin, kaputt. Leiderhosen relaxern deutsch in kaputt meister die oompaloomp heinee er.", 
+          "title": "Titel"
+        }
+      ], 
+      "text": "Unter flippin die poopsie weiner, frankfurter sparkin meister pretzel meister. Heinee sparkin du leiderhosen du noodle keepin nicht heinee die gestalt poken.", 
+      "title": "Titel"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "amount": 230000000, 
+      "id": "3", 
+      "subnodes": [
+        {
+          "parent": "3", 
+          "tags": "", 
+          "amount": 16000000, 
+          "id": "11", 
+          "text": "Morgen, pretzel verboten poken pukein an lookinpeepers nutske, rubberneckin und cuckoo achtung, mitz an. Yodel dummkopf glockenspiel weiner bar, achtung, octoberfest thinken nine. Biergarten zur nicht rubberneckin wearin meister leiderhosen blitz handercloppen dummkopf octoberfest blitz footzerstompen.", 
+          "title": "Titel"
+        }
+      ], 
+      "text": "Poken kaboodle stoppern nine meister nine sauerkraut er das mitten. Die, in hast nutske sie flippin dorkin oof. Poppin verboten mitten blimp relaxern noodle, wearin.", 
+      "title": "Titel"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "amount": 74658000, 
+      "id": "4", 
+      "text": "Mitten pukein heinee, relaxern sparkin der poppin du du octoberfest. Nine wunderbar hast unter frankfurter corkin meister ich poopsie spritz kaboodle stein sauerkraut heiden nine.", 
+      "title": "Titel"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "amount": 13200000000, 
+      "id": "5", 
+      "text": "Hast er kaboodle bin handercloppen, hinder hast pretzel, strudel sauerkraut haus. Bar und nine und unter haus und mitz er underbite kaboodle gewerkin, sparkin sightseerin stein.", 
+      "title": "Titel"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "amount": 76600000, 
+      "id": "6", 
+      "subnodes": [
+        {
+          "parent": "6", 
+          "tags": "", 
+          "amount": 47000000, 
+          "id": "10", 
+          "text": "Oof haben meister meister keepin glockenspiel, bin ist frankfurter gestalt lookinpeepers buerger. Weiner heiden hans glockenspiel thinken frau glockenspiel morgen gewerkin gewerkin ist, relaxern, und underbite poken.", 
+          "title": "Titel"
+        }
+      ], 
+      "text": "Der sauerkraut hinder sightseerin gestalt corkin oompaloomp relaxern sauerkraut stoppern yodel, verboten du. Mitz makin handercloppen, floppern frau, und, gestalt nicht, glockenspiel flippin lookinpeepers ich mitz.", 
+      "title": "Titel"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "amount": 223940000, 
+      "id": "7", 
+      "text": "Pretzel frau poppin pukein, blimp auf, ker waltz hans buerger. Hinder corkin pukein, underbite poppin pretzel. Wunderbar, lookinpeepers blimp buerger achtung bin ker bin der frankfurter.", 
+      "title": "Titel"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "amount": 45800000, 
+      "id": "8", 
+      "text": "Undervear der nicht nicht floppern spitzen frankfurter ich weiner, yodel mitz er pukein gewerkin. Verboten underbite spritz, zur yodel pukein stein hinder achtung bin lookinpeepers mitz corkin.", 
+      "title": "Titel"
+    }
+  ], 
+  "title": "root"
+}
