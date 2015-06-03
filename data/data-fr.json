@@ -5,12 +5,14 @@
       "tags": "", 
       "amount": 954717510, 
       "id": "1", 
+      "color": "#e28956", 
       "subnodes": [
         {
           "parent": "1", 
           "tags": "", 
           "amount": 669600000, 
           "id": "2", 
+          "color": "", 
           "text": "David avait visit\u00e9 d\u2019anciennes fortifications de la ligne Maginot, mais rien de semblable. M\u00eame le Simserhof, situ\u00e9 \u00e0 proximit\u00e9 de Bitche, semblait petit \u00e0 c\u00f4t\u00e9 de cette porte. Mais David n\u2019\u00e9tait pas au bout de sa surprise.", 
           "title": "Titre"
         }, 
@@ -19,6 +21,7 @@
           "tags": "", 
           "amount": 8117510, 
           "id": "9", 
+          "color": "", 
           "text": "Comme je viens de te le dire Florence, ce n\u2019est malheureusement pas une blague. David a travaill\u00e9 sur deux anciennes technologies abandonn\u00e9es depuis longtemps et il les a coupl\u00e9e.", 
           "title": "Titre"
         }
@@ -31,12 +34,14 @@
       "tags": "", 
       "amount": 230000000, 
       "id": "3", 
+      "color": "#c19a64", 
       "subnodes": [
         {
           "parent": "3", 
           "tags": "", 
           "amount": 16000000, 
           "id": "11", 
+          "color": "", 
           "text": "Florence avait l\u2019esprit un peu m\u00e9lang\u00e9 entre ce Pr\u00e9lude qui ne lui apportait que des questions sans r\u00e9ponse et \u00ab son \u00bb David. Pr\u00e9lude avait r\u00e9veill\u00e9 brusquement un sentiment que Florence avait au plus profond d\u2019elle.", 
           "title": "Titre"
         }
@@ -49,6 +54,7 @@
       "tags": "", 
       "amount": 74658000, 
       "id": "4", 
+      "color": "#edd084", 
       "text": "Il pouvait entendre la voix de David, mais ne la comprenait pas. C\u2019est alors qu\u2019il a d\u00e9cider d\u2019aller lui m\u00eame \u00e0 l\u2019information. Il s\u2019est alors \u2018transport\u00e9\u2019 sur Internet afin de choisir une nouvelle \u2018maison\u2019.", 
       "title": "Titre"
     }, 
@@ -57,6 +63,7 @@
       "tags": "", 
       "amount": 13200000000, 
       "id": "5", 
+      "color": "#e1e3a7", 
       "text": "Il lui a \u00e9t\u00e9 beaucoup plus facile de programmer ce nouvel ordinateur afin d\u2019entendre une nouvelle voix.", 
       "title": "Titre"
     }, 
@@ -65,12 +72,14 @@
       "tags": "", 
       "amount": 76600000, 
       "id": "6", 
+      "color": "#a2dcd5", 
       "subnodes": [
         {
           "parent": "6", 
           "tags": "", 
           "amount": 47000000, 
           "id": "10", 
+          "color": "", 
           "text": "S\u00e9par\u00e9es, elles ne valaient rien, mais, il les a r\u00e9unis et a d\u00e9marr\u00e9 le processus. Comme tu dois le savoir, il y a maintenant plus d\u2019ordinateur sur terre que d\u2019humains et tous ces ordinateurs sont connect\u00e9s entres eux gr\u00e2ce aux r\u00e9seau des r\u00e9seaux : Internet.", 
           "title": "Titre"
         }
@@ -83,6 +92,7 @@
       "tags": "", 
       "amount": 223940000, 
       "id": "7", 
+      "color": "#74c8b7", 
       "text": "Chaque ordinateur connect\u00e9 connais Pr\u00e9lude. Chaque ordinateur est une partie de Pr\u00e9lude. Le r\u00e9seau est Pr\u00e9lude.", 
       "title": "Titre"
     }, 
@@ -91,6 +101,7 @@
       "tags": "", 
       "amount": 45800000, 
       "id": "8", 
+      "color": "#87beb9", 
       "text": "David n\u2019a pas fait grand chose, il a juste cr\u00e9\u00e9 un embryon de programme. Mais ce programme s\u2019est d\u00e9velopp\u00e9 lui-m\u00eame.", 
       "title": "Titre"
     }
