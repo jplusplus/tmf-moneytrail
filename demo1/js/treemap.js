@@ -33,7 +33,11 @@ if (lang == "de") {
 
 function formatAmount(amount) {
     // Stub function to return properly formatted amounts
-    return amount + " €";
+    if (amount / 1000000 > 1) {
+      return Math.round(amount / 1000000) + " million €"
+    } else {
+      return amount + " €";
+    }
 }
 
 function getNodeById(node_obj, id) {
@@ -46,15 +50,15 @@ function getSubnodeDims(subnode, nodes) {
   // Calculates dimensions (width and height) for a single subnode based on its amount.
   node = getNodeById(nodes, subnode['parent']);
   // console.log("subnode: ", subnode.title, subnode.amount);
-  // console.log("parent: ", node.__data__.title);
+  // console.log("parent: ", node.__data__.title, node.__data__.amount);
   parent_w = node.offsetWidth;
   parent_h = node.offsetHeight;
   ratio = subnode.amount / node.__data__.amount;
   // console.log("ratio: ", ratio);
   if (parent_w > parent_h) {
     // horizontal node
-    subnode_h = parent_h - 10;
-    subnode_w = parent_w * ratio;
+    subnode_h = Math.round(parent_h - 10);
+    subnode_w = Math.round(parent_w * ratio);
     if (subnode_w < 20) { subnode_w = 20; }
   }
   else {
@@ -63,7 +67,7 @@ function getSubnodeDims(subnode, nodes) {
     subnode_h = Math.round(parent_h * ratio);
     if (subnode_h < 20) { subnode_h = 20; }
   }
-  // console.log(subnode.title + "dims: " + subnode_w + "x" + subnode_h)
+  // console.log(subnode.title + " dims: " + subnode_w + "x" + subnode_h)
   return [subnode_w, subnode_h];
 }
 
