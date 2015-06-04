@@ -1,14 +1,14 @@
 var container = document.getElementById("main")
 
+var scale = d3.scale.linear()
+                    .domain([40000000, 10000000000])
+                    //.range([40, 10000]); // proportional values
+                    .range([300, 10000]);
 var margin = {top: 40, right: 10, bottom: 10, left: 10};
 var width = container.offsetWidth < 800 ? container.offsetWidth : 800;
 var height = container.offsetHeight;
 
 var color = d3.scale.category20c();
-var scale = d3.scale.linear()
-                    .domain([40000000, 10000000000])
-                    // .range([40, 10000]); // proportional values
-                    .range([600, 10000]);
 
 // HELPER FUNCTIONS
 
@@ -20,7 +20,6 @@ var lang = "en"
 if (queryDict.lang) { 
   lang = queryDict.lang; 
 }
-console.log(lang);
 
 // Set location of data file based on language
 var datafile = "./data/data.json"
@@ -97,23 +96,35 @@ function position() {
       .style("height", function(d) { return Math.max(0, d.dy - 1) + "px"; });
 }
 
+
+// Set up the treemap
+var treemap = d3.layout.treemap()
+    .size([width, height])
+    .ratio(0.8)
+    .sticky(true)
+    .sort(function comparator(a, b) { return b.amount - a.amount; })
+    .value(function(d) { return scale(d.amount); });
+    
+
 function drawTreemap() {
     // Main draw function. Gets called on each redraw.
 
-    // Remove previous container if it exists
+    width = container.offsetWidth < 800 ? container.offsetWidth : 800;
+    height = container.offsetHeight;
+    console.log(width, height);
+    treemap.size([width, height]);
+
+    // Remove existing containers
     d3.select('#treemap-container').remove();
-    // Set up the treemap
-    var treemap = d3.layout.treemap()
-        .size([width, height])
-        .ratio(1.5)
-        .sticky(true)
-        .sort(function comparator(a, b) { return b.amount - a.amount; })
-        .value(function(d) { return scale(d.amount); });
+    d3.select('#modals-container').remove();
+
     // Add the treemap container div
     var div = d3.select("#main").append("div")
         .style("position", "relative")
-        .style("width", (width + margin.left + margin.right) + "px")
-        .style("height", (height + margin.top + margin.bottom) + "px")
+        .style("width", width + "px")
+        .style("height", height + "px")
+        //.style("width", (width + margin.left + margin.right) + "px")
+        //.style("height", (height + margin.top + margin.bottom) + "px")
         .attr("id", "treemap-container");
     // Add the modals container div
     var modals = d3.select("body").append("div")
