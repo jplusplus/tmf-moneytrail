@@ -3,7 +3,7 @@ var container = document.getElementById("main")
 var scale = d3.scale.linear()
                     .domain([40000000, 10000000000])
                     //.range([40, 10000]); // proportional values
-                    .range([300, 10000]);
+                    .range([200, 10000]);
 var margin = {top: 40, right: 10, bottom: 10, left: 10};
 var width = container.offsetWidth < 800 ? container.offsetWidth : 800;
 var height = container.offsetHeight;
