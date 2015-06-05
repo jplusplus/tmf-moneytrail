@@ -1,14 +1,14 @@
 var container = document.getElementById("main")
 
+var scale = d3.scale.linear()
+                    .domain([40000000, 10000000000])
+                    //.range([40, 10000]); // proportional values
+                    .range([200, 10000]);
 var margin = {top: 40, right: 10, bottom: 10, left: 10};
 var width = container.offsetWidth < 800 ? container.offsetWidth : 800;
 var height = container.offsetHeight;
 
 var color = d3.scale.category20c();
-var scale = d3.scale.linear()
-                    .domain([40000000, 10000000000])
-                    // .range([40, 10000]); // proportional values
-                    .range([600, 10000]);
 
 // HELPER FUNCTIONS
 
@@ -20,7 +20,6 @@ var lang = "en"
 if (queryDict.lang) { 
   lang = queryDict.lang; 
 }
-console.log(lang);
 
 // Set location of data file based on language
 var datafile = "./data/data.json"
@@ -33,7 +32,11 @@ if (lang == "de") {
 
 function formatAmount(amount) {
     // Stub function to return properly formatted amounts
-    return amount + " €";
+    if (amount / 1000000 > 1) {
+      return Math.round(amount / 1000000) + " million €"
+    } else {
+      return amount + " €";
+    }
 }
 
 function getNodeById(node_obj, id) {
@@ -46,15 +49,15 @@ function getSubnodeDims(subnode, nodes) {
   // Calculates dimensions (width and height) for a single subnode based on its amount.
   node = getNodeById(nodes, subnode['parent']);
   // console.log("subnode: ", subnode.title, subnode.amount);
-  // console.log("parent: ", node.__data__.title);
+  // console.log("parent: ", node.__data__.title, node.__data__.amount);
   parent_w = node.offsetWidth;
   parent_h = node.offsetHeight;
   ratio = subnode.amount / node.__data__.amount;
   // console.log("ratio: ", ratio);
   if (parent_w > parent_h) {
     // horizontal node
-    subnode_h = parent_h - 10;
-    subnode_w = parent_w * ratio;
+    subnode_h = Math.round(parent_h - 10);
+    subnode_w = Math.round(parent_w * ratio);
     if (subnode_w < 20) { subnode_w = 20; }
   }
   else {
@@ -63,7 +66,7 @@ function getSubnodeDims(subnode, nodes) {
     subnode_h = Math.round(parent_h * ratio);
     if (subnode_h < 20) { subnode_h = 20; }
   }
-  // console.log(subnode.title + "dims: " + subnode_w + "x" + subnode_h)
+  // console.log(subnode.title + " dims: " + subnode_w + "x" + subnode_h)
   return [subnode_w, subnode_h];
 }
 
@@ -93,23 +96,35 @@ function position() {
       .style("height", function(d) { return Math.max(0, d.dy - 1) + "px"; });
 }
 
+
+// Set up the treemap
+var treemap = d3.layout.treemap()
+    .size([width, height])
+    .ratio(0.8)
+    .sticky(true)
+    .sort(function comparator(a, b) { return b.amount - a.amount; })
+    .value(function(d) { return scale(d.amount); });
+    
+
 function drawTreemap() {
     // Main draw function. Gets called on each redraw.
 
-    // Remove previous container if it exists
+    width = container.offsetWidth < 800 ? container.offsetWidth : 800;
+    height = container.offsetHeight;
+    console.log(width, height);
+    treemap.size([width, height]);
+
+    // Remove existing containers
     d3.select('#treemap-container').remove();
-    // Set up the treemap
-    var treemap = d3.layout.treemap()
-        .size([width, height])
-        .ratio(1.5)
-        .sticky(true)
-        .sort(function comparator(a, b) { return b.amount - a.amount; })
-        .value(function(d) { return scale(d.amount); });
+    d3.select('#modals-container').remove();
+
     // Add the treemap container div
     var div = d3.select("#main").append("div")
         .style("position", "relative")
-        .style("width", (width + margin.left + margin.right) + "px")
-        .style("height", (height + margin.top + margin.bottom) + "px")
+        .style("width", width + "px")
+        .style("height", height + "px")
+        //.style("width", (width + margin.left + margin.right) + "px")
+        //.style("height", (height + margin.top + margin.bottom) + "px")
         .attr("id", "treemap-container");
     // Add the modals container div
     var modals = d3.select("body").append("div")
