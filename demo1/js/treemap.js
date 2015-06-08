@@ -2,8 +2,8 @@ var container = document.getElementById("main")
 
 var scale = d3.scale.linear()
                     .domain([40000000, 10000000000])
-                    //.range([40, 10000]); // proportional values
-                    .range([200, 10000]);
+                    .range([40, 10000]); // proportional values
+                    //.range([300, 10000]);
 var margin = {top: 40, right: 10, bottom: 10, left: 10};
 var width = container.offsetWidth < 800 ? container.offsetWidth : 800;
 var height = container.offsetHeight;
@@ -102,7 +102,7 @@ function position() {
 // Set up the treemap
 var treemap = d3.layout.treemap()
     .size([width, height])
-    .ratio(0.8)
+    .ratio(0.3)
     .sticky(true)
     .sort(function comparator(a, b) { return b.amount - a.amount; })
     .value(function(d) { return scale(d.amount); });
@@ -169,7 +169,6 @@ function drawTreemap() {
             .attr("role", "dialog")
             .html(function(d) { return d.text ? getModalContent(d) : null; });
 
-      // Add the subnodes to the treemap
       var subnodes = node.each( function(d) {
         // Only care about nodes that have children
         if (d.subnodes) {
