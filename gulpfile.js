@@ -14,7 +14,7 @@ gulp.task('browser-sync', function() {
 
 gulp.task('deploy', function() {
   return gulp.src("**/*").pipe($.ghPages({
-    remoteUrl: "git@github.com:jplusplus/mf2-moneytrail.git"
+    remoteUrl: "git@github.com:jplusplus/tmf-moneytrail.git"
   }));
 });
 
