@@ -1,3 +1,8 @@
+build:
+	cd data; python data2json.py
+	mv data/*.json demo1/data/
+
+
 install:
 	cd demo1; npm install
 

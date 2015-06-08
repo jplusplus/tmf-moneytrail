@@ -1,0 +1,118 @@
+{
+  "i18n": {
+    "decimal_separator": ",", 
+    "title": "The Migrants Files", 
+    "thousands_separator": "space", 
+    "millions_abbrev": "m", 
+    "subtitle": "O rasto do dinheiro", 
+    "millions": "milh\u00f5es"
+  }, 
+  "children": [
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#e28956", 
+      "text": "Dummy", 
+      "title": "Dummy", 
+      "amount": 954717510, 
+      "subnodes": [
+        {
+          "parent": "1", 
+          "tags": "", 
+          "color": "", 
+          "text": "Dummy", 
+          "title": "Dummy", 
+          "amount": 669600000, 
+          "id": "2"
+        }, 
+        {
+          "parent": "1", 
+          "tags": "", 
+          "color": "", 
+          "text": "Dummy", 
+          "title": "Dummy", 
+          "amount": 8117510, 
+          "id": "9"
+        }
+      ], 
+      "id": "1"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#c19a64", 
+      "text": "Dummy", 
+      "title": "Dummy", 
+      "amount": 230000000, 
+      "subnodes": [
+        {
+          "parent": "3", 
+          "tags": "", 
+          "color": "", 
+          "text": "Dummy", 
+          "title": "Dummy", 
+          "amount": 16000000, 
+          "id": "11"
+        }
+      ], 
+      "id": "3"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#edd084", 
+      "text": "Dummy", 
+      "title": "Dummy", 
+      "amount": 74658000, 
+      "id": "4"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#e1e3a7", 
+      "text": "Dummy", 
+      "title": "Dummy", 
+      "amount": 13200000000, 
+      "id": "5"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#a2dcd5", 
+      "text": "Dummy", 
+      "title": "Dummy", 
+      "amount": 76600000, 
+      "subnodes": [
+        {
+          "parent": "6", 
+          "tags": "", 
+          "color": "", 
+          "text": "Dummy", 
+          "title": "Dummy", 
+          "amount": 47000000, 
+          "id": "10"
+        }
+      ], 
+      "id": "6"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#74c8b7", 
+      "text": "Dummy", 
+      "title": "Dummy", 
+      "amount": 225710000, 
+      "id": "7"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#87beb9", 
+      "text": "Dummy", 
+      "title": "Dummy", 
+      "amount": 45800000, 
+      "id": "8"
+    }
+  ], 
+  "title": "root"
+}
