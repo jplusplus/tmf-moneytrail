@@ -9,9 +9,6 @@ import csv
 import json
 
 
-all_tags = []
-
-
 def get_object_from_id(l, id):
     for row in l['children']:
         if row['id'] == id:
@@ -45,12 +42,6 @@ def parse_row(row, outdata, lang="en"):
     replace_field_name(row, "Color", "color")
     replace_field_name(row, "Amount", "amount")
     replace_field_name(row, "Parent", "parent")
-    replace_field_name(row, "Tags", "tags")
-    # turn tags into a list
-    if row.get('tags'):
-        row['tags'] = [t.strip() for t in row['tags'].split(',')]
-        for tag in row['tags']:
-            all_tags.append(tag)
     # amounts should be int
     row['amount'] = int(row['amount'])
     if not row.get('parent'):
@@ -87,10 +78,3 @@ def generate_json_file(lang="en"):
 generate_json_file(lang="en")
 generate_json_file(lang="fr")
 generate_json_file(lang="de")
-
-# remove duplicate tags and generate tag file
-all_tags = list(set(all_tags))
-tagdict = {"tags": all_tags}
-tf = open("tags.json", "w")
-tf.write(json.dumps(tagdict))
-tf.close()
