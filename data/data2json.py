@@ -7,6 +7,22 @@ our viz.
 
 import csv
 import json
+import urllib2
+
+VIZ_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1wC72sDmuN-mvwgMcSWhO-R3E-1wmSE19B_KiW7RBRSc/export?format=csv&gid=397042903"
+TRANSLATION_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1wC72sDmuN-mvwgMcSWhO-R3E-1wmSE19B_KiW7RBRSc/export?format=csv&gid=1180374955"
+
+
+def fetch_viz_data():
+    response = urllib2.urlopen(VIZ_SHEET_CSV_URL)
+    data = csv.DictReader(response)
+    return data
+
+
+def fetch_translation_data():
+    response = urllib2.urlopen(TRANSLATION_SHEET_CSV_URL)
+    data = csv.DictReader(response)
+    return data
 
 
 def get_object_from_id(l, id):
@@ -23,27 +39,29 @@ def replace_field_name(row, name, newname):
     return row
 
 
-def parse_row(row, outdata, lang="en"):
-    # change col names
-    if lang == "en":
-        replace_field_name(row, "Title", "title")
-        replace_field_name(row, "Text", "text")
-        del row['Title FR'], row['Title DE'], row['Text FR'], row['Text DE']
-    elif lang == "fr":
-        replace_field_name(row, "Title FR", "title")
-        replace_field_name(row, "Text FR", "text")
-        del row['Title'], row['Title DE'], row['Text'], row['Text DE']
-    elif lang == "de":
-        replace_field_name(row, "Title DE", "title")
-        replace_field_name(row, "Text DE", "text")
-        del row['Title'], row['Title FR'], row['Text'], row['Text FR']
-
-    replace_field_name(row, "ID", "id")
-    replace_field_name(row, "Color", "color")
-    replace_field_name(row, "Amount", "amount")
-    replace_field_name(row, "Parent", "parent")
+def parse_row(row, outdata, lang="en-US"):
     # amounts should be int
-    row['amount'] = int(row['amount'])
+    row['amount'] = int(row['amount'].replace(",", ""))
+
+    fields_to_remove = []
+    if lang == "en-US":
+        # remove all other languages
+        for field in row:
+            if field.startswith(("title-", "text-")):
+                fields_to_remove.append(field)
+    else:
+        # remove all other languages
+        for field in row:
+            if field in ("title", "text") or (field.startswith(("title-", "text-")) and field not in ("title-" + lang, "text-" + lang)):
+                fields_to_remove.append(field)
+    for field in fields_to_remove:
+        del row[field]
+
+    if not lang == "en-US":
+        # convert field names to remove lang suffix
+        replace_field_name(row, "title-" + lang, "title")
+        replace_field_name(row, "text-" + lang, "text")
+
     if not row.get('parent'):
         # this is a node
         outdata['children'].append(row)
@@ -56,25 +74,63 @@ def parse_row(row, outdata, lang="en"):
             parent_row['subnodes'].append(row)
 
 
-def generate_json_file(lang="en"):
-    outdata = {}
-    outdata['title'] = 'root'
-    outdata['children'] = []
+def generate_json_files(langs=("en-US",)):
+    for lang in langs:
+        outdata = {}
+        outdata['title'] = 'root'
+        outdata['children'] = []
 
-    data = csv.DictReader(open("data-translations-mock.csv"))
-    for row in data:
-        parse_row(row, outdata, lang)
+        # populate JSON with objects
+        viz_data = fetch_viz_data()
+        for row in viz_data:
+            parse_row(row, outdata, lang)
 
-    import codecs
-    if lang == "en":
-        f = codecs.open("data.json", "w", "utf-8")
-    elif lang == "fr":
-        f = codecs.open("data-fr.json", "w", "utf-8")
-    elif lang == "de":
-        f = codecs.open("data-de.json", "w", "utf-8")
-    f.write(json.dumps(outdata, indent=2))
-    f.close()
+        # add the i18n details (decimal separators, etc)
+        trans_data = fetch_translation_data()
+        relevant_row = [r for r in trans_data if r['lang'] == lang][0]
+        i18n_info = {}
+        i18n_info['title'] = relevant_row['title']
+        i18n_info['subtitle'] = relevant_row['subtitle']
+        i18n_info['thousands_separator'] = relevant_row['thousands_separator']
+        i18n_info['decimal_separator'] = relevant_row['decimal_separator']
+        i18n_info['millions'] = relevant_row['millions']
+        i18n_info['millions_abbrev'] = relevant_row['millions_abbrev']
+        outdata['i18n'] = i18n_info
 
-generate_json_file(lang="en")
-generate_json_file(lang="fr")
-generate_json_file(lang="de")
+        import codecs
+        if lang == "en-US":
+            f = codecs.open("data.json", "w", "utf-8")
+        else:
+            f = codecs.open("data-%s.json" % lang, "w", "utf-8")
+        f.write(json.dumps(outdata, indent=2))
+        f.close()
+
+
+def detect_langs(viz_data, trans_data):
+    langs = ["en-US"]
+    # See which langs are in the viz data
+    text_langs = [l.replace("text-", "") for l in viz_data.next().keys() if l.startswith("text-")]
+    title_langs = [l.replace("title-", "") for l in viz_data.next().keys() if l.startswith("title-")]
+    if not text_langs == title_langs:
+        orphan_langs = [l for l in text_langs if l not in title_langs]
+        raise ValueError("Please double-check that all languages have a title and text field! (offending languages: %s)" % " ".join(orphan_langs))
+    viz_langs = title_langs
+    # And cross-reference with the translation data
+    trans_langs = [r['lang'] for r in trans_data]
+    # en-US is in by default
+    trans_langs.remove("en-US")
+    if not viz_langs == trans_langs:
+        orphan_langs = [l for l in viz_langs if l not in trans_langs]
+        raise ValueError("Please double-check that all languages are specified in the Translation Extra sheet! (offending languages: %s)" % " ".join(orphan_langs))
+    langs.extend(viz_langs)
+    return langs
+
+# First, fetch the most recent data
+viz_data = fetch_viz_data()
+trans_data = fetch_translation_data()
+
+# Detect the existing languages
+langs = detect_langs(viz_data, trans_data)
+print langs
+
+generate_json_files(langs)
