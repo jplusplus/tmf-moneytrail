@@ -4,8 +4,8 @@ Steps for adding a translation
 
 The steps to add a new translation involve editing the [working spreadsheet]()
 
-* Determine the translation identifier using the <language>-<country/region>
-  syntax, e.g. _pt-BR_. For more detail, see [this
+* Determine the translation identifier using the [language]-[country/region]
+  syntax, e.g. _pt-BR_. Note the hyphen, don't use underscores! For more detail, see [this
   document](http://www.i18nguy.com/unicode/language-identifiers.html).
 
 * Add the translated titles and texts to the **Items to be visualized** sheet.
