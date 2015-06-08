@@ -1,13 +1,13 @@
 build:
 	cd data; python data2json.py
-	mv data/*.json demo1/data/
+	mv data/*.json app/data/
 
 
 install:
-	cd demo1; npm install
+	cd app; npm install
 
 run:
-	cd demo1; gulp
+	cd app; gulp
 
 deploy:
-	cd demo1; gulp deploy
+	cd app; gulp deploy
