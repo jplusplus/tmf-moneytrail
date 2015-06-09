@@ -92,6 +92,9 @@ def generate_json_files(langs=("en-US",)):
         i18n_info['title'] = relevant_row['title']
         i18n_info['subtitle'] = relevant_row['subtitle']
         i18n_info['thousands_separator'] = relevant_row['thousands_separator']
+        if i18n_info['thousands_separator'] == "space":
+            i18n_info['thousands_separator'] = " "
+
         i18n_info['decimal_separator'] = relevant_row['decimal_separator']
         i18n_info['millions'] = relevant_row['millions']
         i18n_info['millions_abbrev'] = relevant_row['millions_abbrev']

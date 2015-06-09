@@ -18,28 +18,34 @@ var pymChild = null;
 // https://stackoverflow.com/a/21210643
 var queryDict = {}
 location.search.substr(1).split("&").forEach(function(item) {queryDict[item.split("=")[0]] = item.split("=")[1]})
-var lang = "en"
+var lang = ""
 if (queryDict.lang) { 
   lang = queryDict.lang; 
 }
 
 // Set location of data file based on language
 var datafile = "./data/data.json"
-if (lang == "fr") {
-  datafile = "./data/data-fr.json";
-}
-if (lang == "de") {
-  datafile = "./data/data-de.json";
+if (lang) {
+  datafile = "./data/data-" + lang + ".json";
 }
 
-function formatAmount(amount) {
-    // Stub function to return properly formatted amounts
+function formatAmount(amount, i18n) {
+    // Return amount with proper thousands separator according to i18n setting
+    // http://blog.tompawlak.org/number-currency-formatting-javascript
+    return amount.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1" + i18n.thousands_separator) + " €";
+}
+
+function formatVerboseAmount(amount, i18n) {
+    // Return human-readable amount, with "millions" suffix if applicable
     if (amount / 1000000 > 1) {
-      return Math.round(amount / 1000000) + " million €"
+      m_amount = Math.round(amount / 1000000);
+      m_amount = m_amount.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1" + i18n.thousands_separator);
+      return m_amount + " " + i18n.millions + " €";
     } else {
-      return amount + " €";
+      return formatAmount(amount, i18n);
     }
 }
+
 
 function getNodeById(node_obj, id) {
   // Gets a node by its id number, node_obj is a D3 selection containing all nodes
@@ -72,11 +78,11 @@ function getSubnodeDims(subnode, nodes) {
   return [subnode_w, subnode_h];
 }
 
-function getModalContent(node) {
+function getModalContent(node, i18n) {
     // Generate the HTML to be placed inside a node's modal dialog.
     contents = "";
     contents += '<h2>' + node.title + '</h2>';
-    contents += '<h3>' + node.amount + '€</h3>';
+    contents += '<h3>' + formatAmount(node.amount, i18n) + '</h3>';
     contents += '<ul class="tags">';
     // FIXME: Subnodes should inherit the parent node's tags
     if (node.tags) {
@@ -152,7 +158,7 @@ function drawTreemap() {
         .attr("class", "node-details")
       contents_text.append("span") // amount
         .attr("class", "node-amount")
-        .text(function(d) { return formatAmount(d.amount); });
+        .text(function(d) { return d.amount ? formatVerboseAmount(d.amount, data.i18n) : null });
       contents_text.append("span") // title
         .attr("class", "node-title")
         .text(function(d) { return d.title; });
@@ -167,7 +173,7 @@ function drawTreemap() {
             .attr("aria-labelledby", "modalTitle")
             .attr("aria-hidden", "true")
             .attr("role", "dialog")
-            .html(function(d) { return d.text ? getModalContent(d) : null; });
+            .html(function(d) { return d.text ? getModalContent(d, data.i18n) : null; });
 
       var subnodes = node.each( function(d) {
         // Only care about nodes that have children
@@ -186,7 +192,7 @@ function drawTreemap() {
             .attr("class", "subnode-details");
           contents.append("span")
             .attr("class", "subnode-amount")
-            .text(function(s) { return formatAmount(s.amount); });
+            .text(function(s) { return formatVerboseAmount(s.amount, data.i18n); });
           contents.append("span")
             .attr("class", "subnode-title")
             .text(function(s) { return s.title; });
@@ -201,7 +207,7 @@ function drawTreemap() {
               .attr("aria-labelledby", "modalTitle")
               .attr("aria-hidden", "true")
               .attr("role", "dialog")
-              .html(function(x) { return s.text ? getModalContent(s) : null; });
+              .html(function(x) { return s.text ? getModalContent(s, data.i18n) : null; });
           });
         }
       });
