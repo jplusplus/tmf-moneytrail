@@ -337,6 +337,18 @@ body {
     border: 1px solid rgba(0,0,0,0.3);
 }
 
+
+.node:nth-child(5) { /* background gradient for deportations */
+    background: #e1e3a7 !important; /* Old browsers */
+    background: -moz-linear-gradient(top, #e1e3a7 0%, #8f9154 100%) !important; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e1e3a7), color-stop(100%,#8f9154)) !important; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #e1e3a7 0%,#8f9154 100%) !important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #e1e3a7 0%,#8f9154 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #e1e3a7 0%,#8f9154 100%) !important; /* IE10+ */
+    background: linear-gradient(to bottom, #e1e3a7 0%,#8f9154 100%) !important; /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e1e3a7', endColorstr='#8f9154',GradientType=0 ) !important; /* IE6-9 */
+}
+
 .node-contents {
     position: relative;   
     width: 100%;
