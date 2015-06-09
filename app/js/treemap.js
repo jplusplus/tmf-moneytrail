@@ -163,6 +163,9 @@ function drawTreemap() {
         .attr("class", "node-title")
         .text(function(d) { return d.title; });
 
+      // Add the "deportations" class to that box for getting a gradient
+      node.filter(function(d) { return d.id == "5"; }).attr("class", "node deportations");
+
       // Create the hidden dialog divs
       var dialog = modals.datum(data).selectAll(".reveal-modal")
             .data(treemap.nodes)
