@@ -2,7 +2,7 @@
   "i18n": {
     "decimal_separator": ",", 
     "title": "The Migrants Files", 
-    "thousands_separator": "space", 
+    "thousands_separator": " ", 
     "millions_abbrev": "m", 
     "subtitle": "O rasto do dinheiro", 
     "millions": "milh\u00f5es"
