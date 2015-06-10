@@ -47,12 +47,12 @@ def parse_row(row, outdata, lang="en-US"):
     if lang == "en-US":
         # remove all other languages
         for field in row:
-            if field.startswith(("title-", "text-")):
+            if not field or field.startswith(("title-", "text-")):
                 fields_to_remove.append(field)
     else:
         # remove all other languages
         for field in row:
-            if field in ("title", "text") or (field.startswith(("title-", "text-")) and field not in ("title-" + lang, "text-" + lang)):
+            if not field or field in ("title", "text") or (field.startswith(("title-", "text-")) and field not in ("title-" + lang, "text-" + lang)):
                 fields_to_remove.append(field)
     for field in fields_to_remove:
         del row[field]
@@ -114,8 +114,11 @@ def detect_langs(viz_data, trans_data):
     # See which langs are in the viz data
     text_langs = [l.replace("text-", "") for l in viz_data.next().keys() if l.startswith("text-")]
     title_langs = [l.replace("title-", "") for l in viz_data.next().keys() if l.startswith("title-")]
+    text_langs.sort()
+    title_langs.sort()
     if not text_langs == title_langs:
         orphan_langs = [l for l in text_langs if l not in title_langs]
+        orphan_langs.extend([l for l in title_langs if l not in text_langs])
         raise ValueError("Please double-check that all languages have a title and text field! (offending languages: %s)" % " ".join(orphan_langs))
     viz_langs = title_langs
     # And cross-reference with the translation data
