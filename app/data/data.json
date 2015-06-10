@@ -20,19 +20,19 @@
           "parent": "1", 
           "tags": "", 
           "color": "", 
-          "text": "Frontex is the European agency that coordinates efforts in border control and deportations between member states.", 
-          "title": "FRONTEX", 
-          "amount": 669600000, 
-          "id": "2"
+          "text": "EURODAC is the system that stores the fingerprints of all asylum seekers in Europe. The figure does not include the fingerprint scanners bought by member states.", 
+          "title": "EURODAC", 
+          "amount": 8117510, 
+          "id": "9"
         }, 
         {
           "parent": "1", 
           "tags": "", 
           "color": "", 
-          "text": "EURODAC is the system that stores the fingerprints of all asylum seekers in Europe. The figure does not include the fingerprint scanners bought by member states.", 
-          "title": "EURODAC", 
-          "amount": 8117510, 
-          "id": "9"
+          "text": "Frontex is the European agency that coordinates efforts in border control and deportations between member states.", 
+          "title": "FRONTEX", 
+          "amount": 669600000, 
+          "id": "2"
         }
       ], 
       "id": "1"

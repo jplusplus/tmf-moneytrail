@@ -125,6 +125,7 @@ def detect_langs(viz_data, trans_data):
     trans_langs = [r['lang'] for r in trans_data]
     # en-US is in by default
     trans_langs.remove("en-US")
+    trans_langs.sort()
     if not viz_langs == trans_langs:
         orphan_langs = [l for l in viz_langs if l not in trans_langs]
         raise ValueError("Please double-check that all languages are specified in the Translation Extra sheet! (offending languages: %s)" % " ".join(orphan_langs))
