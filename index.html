@@ -29,20 +29,25 @@
             </div>
         </section>
         <section id="main">
+            <!--<img src="media/fallback.png" />-->
             <script src="js/treemap.js"></script>
 
-            <div id="myModal" class="reveal-modal small" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-                <p>&nbsp;</p>
-            </div>
         </section>
         <footer id="credits">
-            <p><a href="">Placeholder credits</a></p>
+            <p><a href="#" data-reveal-id="credits-modal">Placeholder credits</a></p>           
+            <div id="credits-modal" class="reveal-modal small" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                <h2 id="modalTitle">The Migrants Files: <em>The Money Trail</em></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin felis eu purus facilisis fermentum eu sed ipsum. Aenean sed leo tempus, sagittis sem consequat, elementum erat. Integer accumsan arcu congue lacinia malesuada. Aliquam in ipsum libero. Curabitur venenatis urna id massa lobortis ornare. In elementum ipsum at purus hendrerit, vitae interdum nunc viverra. Nulla aliquet purus quis metus sodales tincidunt. Phasellus eu quam sit amet neque gravida convallis. Fusce tempor venenatis lacus ac varius. Donec a nisi purus. Donec ultricies dolor nunc, vitae malesuada sapien bibendum vitae. Mauris lobortis lectus dui, quis rutrum orci mollis non. Maecenas at faucibus libero. Nunc lobortis mauris eget risus commodo convallis. Donec nec venenatis turpis, eget rutrum sapien.</p>
+                <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+            </div>
         </footer>
     </div><!-- /#page -->
 
-    <script> $(document).foundation(); </script>
-    
     <script src="js/pym.min.js"></script>
+    <script>
+        $(document).foundation();
+    </script>
+    
 
 
 </body>
