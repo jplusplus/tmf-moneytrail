@@ -212,7 +212,7 @@ function drawTreemap() {
             .text(function(s) { return s.title; });
 
           // Attach the dialogs to each subnode
-          jQuery.each(d.subnodes, function(i) {
+          $.each(d.subnodes, function(i) {
             s = d.subnodes[i];
             dialog.append("div")
               .attr("id", function(x) { return "modal-" + s.id; })
