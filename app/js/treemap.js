@@ -57,25 +57,31 @@ function getNodeById(node_obj, id) {
 function getSubnodeDims(subnode, nodes) {
   // Calculates dimensions (width and height) for a single subnode based on its amount.
   node = getNodeById(nodes, subnode['parent']);
-  // console.log("subnode: ", subnode.title, subnode.amount);
-  // console.log("parent: ", node.__data__.title, node.__data__.amount);
   parent_w = node.offsetWidth;
   parent_h = node.offsetHeight;
   ratio = subnode.amount / node.__data__.amount;
-  // console.log("ratio: ", ratio);
   if (parent_w > parent_h) {
     // horizontal node
-    subnode_h = Math.round(parent_h - 10);
+    if (subnode.id == 9) {
+      // EURODAC - special case
+      subnode_h = Math.round(parent_h / 6);
+    } else {
+      subnode_h = Math.round(parent_h - 10);
+    }
     subnode_w = Math.round(parent_w * ratio);
-    if (subnode_w < 20) { subnode_w = 20; }
+    if (subnode_w < 50) { subnode_w = 50; }
   }
   else {
     // vertical node
-    subnode_w = Math.round(parent_w - 10);
+    if (subnode.id == 9) {
+      // EURODAC - special case
+      subnode_w = Math.round(parent_w / 6);
+    } else {
+      subnode_w = Math.round(parent_w - 10);
+    }
     subnode_h = Math.round(parent_h * ratio);
-    if (subnode_h < 20) { subnode_h = 20; }
+    if (subnode_h < 40) { subnode_h = 40; }
   }
-  // console.log(subnode.title + " dims: " + subnode_w + "x" + subnode_h)
   return [subnode_w, subnode_h];
 }
 
@@ -109,7 +115,7 @@ function position() {
 // Set up the treemap
 var treemap = d3.layout.treemap()
     .size([width, height])
-    .ratio(0.3)
+    .ratio(0.4)
     .sticky(true)
     .sort(function comparator(a, b) { return b.amount - a.amount; })
     .value(function(d) { return scale(d.amount); });
@@ -148,6 +154,10 @@ function drawTreemap() {
             .attr("data-reveal-id", function(d) { return "modal-" + d.id; })
             .call(position)
             .style("background", function(d) { return d.color; });
+
+      // Set titles according to language
+      $(document).prop("title", data.i18n.title + ": " + data.i18n.subtitle);
+      $('#title').html(data.i18n.title + ": <em>" + data.i18n.subtitle + "</em>");
 
       // Hide the root node
       node.filter(function(d) { return d.title == "root"; }).style("display", "none").style("visibility", "hidden");
