@@ -82,7 +82,7 @@ function getModalContent(node, i18n) {
     // Generate the HTML to be placed inside a node's modal dialog.
     contents = "";
     contents += '<h2>' + node.title + '</h2>';
-    contents += '<h3>' + formatAmount(node.amount, i18n) + '</h3>';
+    contents += '<h3 class="amount">' + formatAmount(node.amount, i18n) + '</h3>';
     contents += '<ul class="tags">';
     // FIXME: Subnodes should inherit the parent node's tags
     if (node.tags) {
@@ -163,12 +163,15 @@ function drawTreemap() {
         .attr("class", "node-title")
         .text(function(d) { return d.title; });
 
+      // Add the "deportations" class to that box for getting a gradient
+      node.filter(function(d) { return d.id == "5"; }).attr("class", "node deportations");
+
       // Create the hidden dialog divs
       var dialog = modals.datum(data).selectAll(".reveal-modal")
             .data(treemap.nodes)
           .enter().append("div") // Modal dialog (see Foundation Reveal docs)
             .attr("id", function(d) { return "modal-" + d.id; })
-            .attr("class", "reveal-modal")
+            .attr("class", "reveal-modal small")
             .attr("data-reveal", "foo")
             .attr("aria-labelledby", "modalTitle")
             .attr("aria-hidden", "true")
@@ -202,7 +205,7 @@ function drawTreemap() {
             s = d.subnodes[i];
             dialog.append("div")
               .attr("id", function(x) { return "modal-" + s.id; })
-              .attr("class", "reveal-modal")
+              .attr("class", "reveal-modal small")
               .attr("data-reveal", "foo")
               .attr("aria-labelledby", "modalTitle")
               .attr("aria-hidden", "true")
@@ -244,6 +247,7 @@ function resize() {
   height = container.clientHeight;
   drawTreemap();
 }
+
 
 $(window).load(function() {
     // This is instantiating the child message with a callback but AFTER the D3 charts are drawn.
