@@ -215,10 +215,7 @@ function drawTreemap() {
               .attr("class", "subnode")
               .attr("data-toggle", "modal")
               .attr("id", function(d) { return "subnode-" + d.id; })
-              //.attr("data-target", function(d) { return "#modal-" + d.id; })
               .call(position);
-
-          n.on("click", function(d, i) { $('#modal-' + d.id)[0].show(); d3.event.stopPropagation(); });
 
           // Add their titles and amounts
           contents = n.append("p")
@@ -241,8 +238,6 @@ function drawTreemap() {
             .attr("role", "dialog")
             .attr("aria-labelledby", function(x) { return "modal-" + s.id + "-label" })
             .attr("aria-hidden", "true");
-
-
             
             modal = subdialog.append("div").attr("class", "modal-dialog modal-sm")
                           .append("div").attr("class", "modal-content");
@@ -259,16 +254,9 @@ function drawTreemap() {
                        .text(function(x) { return s.title });
             modalbody = modal.append("div").attr("class", "modal-body");
             modalbody.html(function(x) { return s.text ? getModalContent(s, data.i18n) : null; });
-              /*
-              .attr("id", function(x) { return "modal-" + s.id; })
-              .attr("class", "reveal-modal small")
-              .attr("data-reveal", "foo")
-              .attr("aria-labelledby", "modalTitle")
-              .attr("aria-hidden", "true")
-              .attr("role", "dialog")
-              .html(function(x) { return s.text ? getModalContent(s, data.i18n) : null; });
-              */
           });
+          // Override Bootstrap's handling of subnode clicks
+          n.on("click", function(d, i) { $('#modal-' + d.id).modal(); d3.event.stopPropagation(); });
         }
       });
 
