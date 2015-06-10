@@ -1,6 +1,13 @@
-# mf2-moneytrail
+In this document, you'll find how to locally install the visualization, as well as generate translations, deploy the site and other details.
 
-In this document, you'll find how to locally install the visualization, as well as generate translations and deploy the site.
+  - [Installation](#installation)
+  - [Running a local web server](#running-a-local-web-server)
+  - [Integrating translations](#integrating-translations)
+  - [Generating static SVG versions](#generating-static-svg-versions)
+  - [Pushing the site to the live server](#pushing-the-site-to-the-live-server)
+  - [Showing the site in different languages](#showing-the-site-in-different-languages)
+  - [Adding a new translation](#adding-a-new-translation)
+
 
 ## Installation
 
