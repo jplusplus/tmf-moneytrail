@@ -211,6 +211,7 @@ function drawTreemap() {
               .style("height", function(d) { return getSubnodeDims(d, node)[1] + "px"; })
               .attr("class", "subnode")
               .attr("data-toggle", "modal")
+              .attr("id", function(d) { return "subnode-" + d.id; })
               .attr("data-target", function(d) { return "#modal-" + d.id; })
               .call(position)
 
@@ -280,6 +281,16 @@ function drawTreemap() {
       });
     });
     
+    // Avoid propagation on subnode clicks
+    // https://groups.google.com/forum/#!topic/twitter-bootstrap-stackoverflow/A9M_ZZ54R10
+    $('div').click(function (e) {
+        console.log("Click!");
+        console.log(e);
+        //e.stopPropagation();
+        //$(e.originalTarget).show();
+        //return false;
+    });
+
     if (pymChild) {
         pymChild.sendHeight();
     }
