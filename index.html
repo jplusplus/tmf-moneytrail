@@ -9,12 +9,12 @@
     <meta property="og:image" content="" />
     <meta property="og:description" content="" />
 
-    <link rel="stylesheet" href="css/foundation.min.css"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
 
     <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/foundation.js"></script>
-    <script src="js/foundation.reveal.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+<!--<script src="js/foundation.reveal.js"></script>-->
     <script src="js/marked.js"></script>
     <script src="js/vendor/fastclick.js"></script>
     <script src="js/vendor/modernizr.js"></script>
@@ -29,26 +29,29 @@
             </div>
         </section>
         <section id="main">
-            <!--<img src="media/fallback.png" />-->
             <script src="js/treemap.js"></script>
-
         </section>
         <footer id="credits">
-            <p><a href="#" data-reveal-id="credits-modal">Placeholder credits</a></p>           
-            <div id="credits-modal" class="reveal-modal small" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-                <h2 id="modalTitle">The Migrants Files: <em>The Money Trail</em></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin felis eu purus facilisis fermentum eu sed ipsum. Aenean sed leo tempus, sagittis sem consequat, elementum erat. Integer accumsan arcu congue lacinia malesuada. Aliquam in ipsum libero. Curabitur venenatis urna id massa lobortis ornare. In elementum ipsum at purus hendrerit, vitae interdum nunc viverra. Nulla aliquet purus quis metus sodales tincidunt. Phasellus eu quam sit amet neque gravida convallis. Fusce tempor venenatis lacus ac varius. Donec a nisi purus. Donec ultricies dolor nunc, vitae malesuada sapien bibendum vitae. Mauris lobortis lectus dui, quis rutrum orci mollis non. Maecenas at faucibus libero. Nunc lobortis mauris eget risus commodo convallis. Donec nec venenatis turpis, eget rutrum sapien.</p>
-                <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-            </div>
+            <p><a href="#" data-toggle="modal" data-target="#credits-modal">Placeholder credits</a></p>  
+            
+            <!-- Modal aria-labelledby is there to reference the modal title -->
+            <div id="credits-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="credits-modal-label" aria-hidden="true">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h2 class="modal-title" id="credits-modal-label">The Migrants Files: <em>The Money Trail</em></h2>
+                        </div><!-- /.modal-header -->
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin felis eu purus facilisis fermentum eu sed ipsum. Aenean sed leo tempus, sagittis sem consequat, elementum erat. Integer accumsan arcu congue lacinia malesuada. Aliquam in ipsum libero. Curabitur venenatis urna id massa lobortis ornare. In elementum ipsum at purus hendrerit, vitae interdum nunc viverra. Nulla aliquet purus quis metus sodales tincidunt. Phasellus eu quam sit amet neque gravida convallis. Fusce tempor venenatis lacus ac varius. Donec a nisi purus. Donec ultricies dolor nunc, vitae malesuada sapien bibendum vitae. Mauris lobortis lectus dui, quis rutrum orci mollis non. Maecenas at faucibus libero. Nunc lobortis mauris eget risus commodo convallis. Donec nec venenatis turpis, eget rutrum sapien.</p>
+                        </div><!-- /.modal-body -->
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /#credits-modal -->
         </footer>
     </div><!-- /#page -->
 
     <script src="js/pym.min.js"></script>
-    <script>
-        $(document).foundation();
-    </script>
     
-
-
 </body>
 </html>

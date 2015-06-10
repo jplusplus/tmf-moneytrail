@@ -22,8 +22,8 @@
           "color": "", 
           "text": "Dummy", 
           "title": "Dummy", 
-          "amount": 669600000, 
-          "id": "2"
+          "amount": 8117510, 
+          "id": "9"
         }, 
         {
           "parent": "1", 
@@ -31,8 +31,8 @@
           "color": "", 
           "text": "Dummy", 
           "title": "Dummy", 
-          "amount": 8117510, 
-          "id": "9"
+          "amount": 669600000, 
+          "id": "2"
         }
       ], 
       "id": "1"

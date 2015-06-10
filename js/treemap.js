@@ -88,10 +88,8 @@ function getSubnodeDims(subnode, nodes) {
 function getModalContent(node, i18n) {
     // Generate the HTML to be placed inside a node's modal dialog.
     contents = "";
-    contents += '<h2>' + node.title + '</h2>';
     contents += '<h3 class="amount">' + formatAmount(node.amount, i18n) + '</h3>';
     contents += '<ul class="tags">';
-    // FIXME: Subnodes should inherit the parent node's tags
     if (node.tags) {
       for (i = 0; i < node.tags.length; ++i) {
         contents += '<li>' + node.tags[i] + '</li>';
@@ -99,7 +97,6 @@ function getModalContent(node, i18n) {
     }
     contents += '</ul>';
     contents += marked(node.text);
-    contents += '<a class="close-reveal-modal" aria-label="Close">&#215;</a>';
     return contents;
 }
 
@@ -151,7 +148,8 @@ function drawTreemap() {
             .data(treemap.nodes)
           .enter().append("div")
             .attr("class", "node")
-            .attr("data-reveal-id", function(d) { return "modal-" + d.id; })
+            .attr("data-toggle", "modal")
+            .attr("data-target", function(d) { return "#modal-" + d.id; })
             .call(position)
             .style("background", function(d) { return d.color; });
 
@@ -178,16 +176,30 @@ function drawTreemap() {
       node.filter(function(d) { return d.id == "5"; }).attr("class", "node deportations");
 
       // Create the hidden dialog divs
-      var dialog = modals.datum(data).selectAll(".reveal-modal")
+      var dialog = modals.datum(data).selectAll(".modal")
             .data(treemap.nodes)
-          .enter().append("div") // Modal dialog (see Foundation Reveal docs)
+          .enter().append("div") // Modal dialog
             .attr("id", function(d) { return "modal-" + d.id; })
-            .attr("class", "reveal-modal small")
-            .attr("data-reveal", "foo")
-            .attr("aria-labelledby", "modalTitle")
-            .attr("aria-hidden", "true")
+            .attr("class", "modal fade")
+            .attr("tabindex", "-1")
             .attr("role", "dialog")
-            .html(function(d) { return d.text ? getModalContent(d, data.i18n) : null; });
+            .attr("aria-labelledby", function(d) { return "modal-" + d.id + "-label" })
+            .attr("aria-hidden", "true");
+      modal = dialog.append("div").attr("class", "modal-dialog modal-sm")
+                    .append("div").attr("class", "modal-content");
+      modalheader = modal.append("div").attr("class", "modal-header");
+      modalheader.append("button")
+                 .attr("type", "button")
+                 .attr("class", "close")
+                 .attr("data-dismiss", "modal")
+                 .attr("aria-label", "Close")
+                 .html(function(d) { return '<span aria-hidden="true">&times;</span>'; });
+      modalheader.append("h2")
+                 .attr("class", "modal-title")
+                 .attr("id", function(d) { return "modal-" + d.id + "-label"; })
+                 .text(function(d) { return d.title });
+      modalbody = modal.append("div").attr("class", "modal-body");
+      modalbody.html(function(d) { return d.text ? getModalContent(d, data.i18n) : null; });
 
       var subnodes = node.each( function(d) {
         // Only care about nodes that have children
@@ -198,7 +210,8 @@ function drawTreemap() {
               .style("width", function(d) { return getSubnodeDims(d, node)[0] + "px"; })
               .style("height", function(d) { return getSubnodeDims(d, node)[1] + "px"; })
               .attr("class", "subnode")
-              .attr("data-reveal-id", function(d) { return "modal-" + d.id; })
+              .attr("data-toggle", "modal")
+              .attr("data-target", function(d) { return "#modal-" + d.id; })
               .call(position)
 
           // Add their titles and amounts
@@ -214,7 +227,33 @@ function drawTreemap() {
           // Attach the dialogs to each subnode
           $.each(d.subnodes, function(i) {
             s = d.subnodes[i];
-            dialog.append("div")
+
+            var subdialog = modals.append("div") // Modal dialog
+            .attr("id", function(x) { return "modal-" + s.id; })
+            .attr("class", "modal fade")
+            .attr("tabindex", "-1")
+            .attr("role", "dialog")
+            .attr("aria-labelledby", function(x) { return "modal-" + s.id + "-label" })
+            .attr("aria-hidden", "true");
+
+
+            
+            modal = subdialog.append("div").attr("class", "modal-dialog modal-sm")
+                          .append("div").attr("class", "modal-content");
+            modalheader = modal.append("div").attr("class", "modal-header");
+            modalheader.append("button")
+                       .attr("type", "button")
+                       .attr("class", "close")
+                       .attr("data-dismiss", "modal")
+                       .attr("aria-label", "Close")
+                       .html(function(x) { return '<span aria-hidden="true">&times;</span>'; });
+            modalheader.append("h2")
+                       .attr("class", "modal-title")
+                       .attr("id", function(d) { return "modal-" + s.id + "-label"; })
+                       .text(function(x) { return s.title });
+            modalbody = modal.append("div").attr("class", "modal-body");
+            modalbody.html(function(x) { return s.text ? getModalContent(s, data.i18n) : null; });
+              /*
               .attr("id", function(x) { return "modal-" + s.id; })
               .attr("class", "reveal-modal small")
               .attr("data-reveal", "foo")
@@ -222,6 +261,7 @@ function drawTreemap() {
               .attr("aria-hidden", "true")
               .attr("role", "dialog")
               .html(function(x) { return s.text ? getModalContent(s, data.i18n) : null; });
+              */
           });
         }
       });
@@ -243,8 +283,7 @@ function drawTreemap() {
     if (pymChild) {
         pymChild.sendHeight();
     }
-    
-
+ 
 }
 
 drawTreemap();
@@ -261,7 +300,6 @@ function resize() {
 
 $(window).load(function() {
     // This is instantiating the child message with a callback but AFTER the D3 charts are drawn.
-
     pymChild = new pym.Child({ renderCallback: drawTreemap });
     
 });
