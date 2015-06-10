@@ -12,6 +12,7 @@ var color = d3.scale.category20c();
 
 var pymChild = null;
 
+
 // HELPER FUNCTIONS
 
 // Get language from GET params, if specified, otherwise default to English
@@ -214,9 +215,6 @@ function drawTreemap() {
           });
         }
       });
-      // hack for bottom alignment
-      // node.select(".node-contents").append("span")
-      //    .attr("class", "after")
 
       // Redistribute treemap elements on data change
       d3.selectAll("input").on("change", function change() {
@@ -235,6 +233,8 @@ function drawTreemap() {
     if (pymChild) {
         pymChild.sendHeight();
     }
+    
+
 }
 
 drawTreemap();
@@ -251,7 +251,9 @@ function resize() {
 
 $(window).load(function() {
     // This is instantiating the child message with a callback but AFTER the D3 charts are drawn.
+
     pymChild = new pym.Child({ renderCallback: drawTreemap });
+    
 });
 
 

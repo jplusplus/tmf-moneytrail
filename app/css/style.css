@@ -498,7 +498,7 @@ body {
 .reveal-modal h2,
 .reveal-modal h3,
 .reveal-modal h4 {
-    line-height: 1;
+    margin-bottom: 0;
 }
 
 .reveal-modal .close-reveal-modal {
