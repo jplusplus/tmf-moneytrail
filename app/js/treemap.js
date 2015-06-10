@@ -121,6 +121,9 @@ var treemap = d3.layout.treemap()
 function drawTreemap() {
     // Main draw function. Gets called on each redraw.
 
+
+
+
     width = container.offsetWidth < 800 ? container.offsetWidth : 800;
     height = container.offsetHeight;
     console.log(width, height);
@@ -212,8 +215,10 @@ function drawTreemap() {
               .attr("class", "subnode")
               .attr("data-toggle", "modal")
               .attr("id", function(d) { return "subnode-" + d.id; })
-              .attr("data-target", function(d) { return "#modal-" + d.id; })
-              .call(position)
+              //.attr("data-target", function(d) { return "#modal-" + d.id; })
+              .call(position);
+
+          n.on("click", function(d, i) { $('#modal-' + d.id)[0].show(); d3.event.stopPropagation(); });
 
           // Add their titles and amounts
           contents = n.append("p")
@@ -281,15 +286,8 @@ function drawTreemap() {
       });
     });
     
-    // Avoid propagation on subnode clicks
-    // https://groups.google.com/forum/#!topic/twitter-bootstrap-stackoverflow/A9M_ZZ54R10
-    $('div').click(function (e) {
-        console.log("Click!");
-        console.log(e);
-        //e.stopPropagation();
-        //$(e.originalTarget).show();
-        //return false;
-    });
+
+
 
     if (pymChild) {
         pymChild.sendHeight();
