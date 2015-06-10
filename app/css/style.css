@@ -66,11 +66,6 @@ dfn {
   font-style: italic;
 }
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 mark {
   background: #ff0;
   color: #000;
@@ -245,21 +240,19 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Condensed Light';
 }
 
-#header h1 {
+#header h1,
+.modal .modal-title {
     font-family: 'Roboto Condensed Light';
-    font-size: 1.25rem;
+    font-size: 24px;
     line-height: 1;
     text-transform: uppercase;
-    letter-spacing: 2px;
 }
 
-#header h1 em {
+#header h1 em,
+.modal .modal-title em {
     font-family: 'Roboto Condensed Bold';
     font-style: normal;
-}
-
-.ui-widget * {
-    font: 100%/1 'Roboto Condensed', 'DejaVu Sans', Arial, sans-serif;
+    letter-spacing: 1px;
 }
 
 /* Layout
@@ -298,7 +291,9 @@ html {
 }
 
 body {
-    font: 100%/1 'Roboto Condensed', 'DejaVu Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-family: 'Roboto Condensed', 'DejaVu Sans', Arial, sans-serif;
+    line-height: 1.2;
     color: #3b322d;
     background-color: transparent;
 }
@@ -387,7 +382,7 @@ body {
 
 .node-details {
     text-align: left;
-    font-size: 0.875rem;
+    font-size: 12px;
     line-height: 1;
     position: absolute;
     display: block;
@@ -404,7 +399,7 @@ body {
 
 .node-amount {
     font-family: 'Roboto Condensed Bold';
-    font-size: 1.25rem;
+    font-size: 18px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -423,7 +418,7 @@ body {
     text-overflow: ellipsis;
     white-space: nowrap;
     position: relative;
-    padding: 0.425rem;
+    padding: 0.425em;
     border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 3px;
     transition: border-color 0.5s ease;
@@ -437,7 +432,7 @@ body {
 }
 
 .subnode-details {
-    font-size: 0.75rem;
+    font-size: 11px;
     line-height: 0.95;
     margin: 0;
     position: absolute;
@@ -452,7 +447,7 @@ body {
 
 .subnode-amount {
     font-family: 'Roboto Condensed Bold';
-    font-size: 0.875rem;
+    font-size: 13px;
     margin-bottom: 2px;
 }
 
@@ -470,29 +465,29 @@ body {
 /*
 .reveal-modal {    
     border-radius: 5px;
-    padding-top: 1.875rem;
-    padding-bottom: 1.875rem;
-    padding-right: 1.875rem;
-    padding-left: 0.875rem;
+    padding-top: 1.875em;
+    padding-bottom: 1.875em;
+    padding-right: 1.875em;
+    padding-left: 0.875em;
     border: 0;
-    border-left: 1rem solid #fff;
+    border-left: 1em solid #fff;
 }
 
 .reveal-modal h3 { letter-spacing: -1px; }
 
-#modal-1, #modal-2, #modal-9 { border-left: 1rem solid #e28956; }
+#modal-1, #modal-2, #modal-9 { border-left: 1em solid #e28956; }
 #modal-1 h3.amount, #modal-2 h3.amount, #modal-9 h3.amount { color: #e28956; }
-#modal-3, #modal-11 { border-left: 1rem solid #c19a64; }
+#modal-3, #modal-11 { border-left: 1em solid #c19a64; }
 #modal-3 h3.amount, #modal-11 h3.amount { color: #c19a64; }
-#modal-4 { border-left: 1rem solid #edd084; }
+#modal-4 { border-left: 1em solid #edd084; }
 #modal-4 h3.amount { color: #edd084; }
-#modal-5 { border-left: 1rem solid #e1e3a7; }
+#modal-5 { border-left: 1em solid #e1e3a7; }
 #modal-5 h3.amount { color: #aaac7e; }
-#modal-6, #modal-10 { border-left: 1rem solid #a2dcd5; }
+#modal-6, #modal-10 { border-left: 1em solid #a2dcd5; }
 #modal-6 h3.amount, #modal-10 h3.amount { color: #83b2ac; }
-#modal-7 { border-left: 1rem solid #74c8b7; }
+#modal-7 { border-left: 1em solid #74c8b7; }
 #modal-7 h3.amount { color: #74c8b7; }
-#modal-8 { border-left: 1rem solid #87beb9; }
+#modal-8 { border-left: 1em solid #87beb9; }
 #modal-8 h3.amount { color: #87beb9; }
 
 .reveal-modal h1, 
@@ -508,13 +503,13 @@ body {
     font-weight: bold;
     line-height: 1;
     position: absolute;
-    right: 0.875rem;
-    top: 0.625rem;
+    right: 0.875em;
+    top: 0.625em;
     display: block;
     padding: 0 0.25em;
 }
 */
-/* Tags were removed
+/* Tags were emoved
 .reveal-modal .tags {
     margin-left: 0;
 }
