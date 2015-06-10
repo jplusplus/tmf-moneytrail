@@ -243,8 +243,7 @@ function drawTreemap() {
     if (pymChild) {
         pymChild.sendHeight();
     }
-    
-
+ 
 }
 
 drawTreemap();
@@ -261,7 +260,6 @@ function resize() {
 
 $(window).load(function() {
     // This is instantiating the child message with a callback but AFTER the D3 charts are drawn.
-
     pymChild = new pym.Child({ renderCallback: drawTreemap });
     
 });
