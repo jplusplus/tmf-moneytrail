@@ -154,6 +154,10 @@ function drawTreemap() {
             .call(position)
             .style("background", function(d) { return d.color; });
 
+      // Set titles according to language
+      $(document).prop("title", data.i18n.title + ": " + data.i18n.subtitle);
+      $('#title').html(data.i18n.title + ": <em>" + data.i18n.subtitle + "</em>");
+
       // Hide the root node
       node.filter(function(d) { return d.title == "root"; }).style("display", "none").style("visibility", "hidden");
       // Each node div contains a node-contents div, which itself
