@@ -20,19 +20,19 @@
           "parent": "1", 
           "tags": "", 
           "color": "", 
-          "text": "Frontex \u00e4r EU:s gr\u00e4nskontrollbyr\u00e5 som koordinerar gr\u00e4nskontrollinsatser och deportationer.", 
-          "title": "Frontex", 
-          "amount": 669600000, 
-          "id": "2"
+          "text": "Eurodac \u00e4r registret f\u00f6r alla asyls\u00f6kandes fingeravtryck. I summan ing\u00e5r inte kostnaden f\u00f6r l\u00e4ndernas ink\u00f6p av scannrar.", 
+          "title": "Eurodac", 
+          "amount": 8117510, 
+          "id": "9"
         }, 
         {
           "parent": "1", 
           "tags": "", 
           "color": "", 
-          "text": "Eurodac \u00e4r registret f\u00f6r alla asyls\u00f6kandes fingeravtryck. I summan ing\u00e5r inte kostnaden f\u00f6r l\u00e4ndernas ink\u00f6p av scannrar.", 
-          "title": "Eurodac", 
-          "amount": 8117510, 
-          "id": "9"
+          "text": "Frontex \u00e4r EU:s gr\u00e4nskontrollbyr\u00e5 som koordinerar gr\u00e4nskontrollinsatser och deportationer.", 
+          "title": "Frontex", 
+          "amount": 669600000, 
+          "id": "2"
         }
       ], 
       "id": "1"

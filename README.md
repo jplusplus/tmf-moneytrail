@@ -27,7 +27,11 @@ Running
 
     make build
 
-will pull the latest version of the shared Google Sheet and integrate all the translations available. This conversion script doesn't require any dependencies. In case you run into an error, please [file an issue](https://github.com/jplusplus/tmf-moneytrail/issues/new) and we'll head in to fix things.
+will pull the latest version of the shared Google Sheet and integrate all the translations available. This conversion script doesn't require any dependencies. 
+
+After building, check if there were changes to the repo (with `git status`). If there are, commit them and deploy the changes (using `make deploy`, see below).
+
+In case you run into an error, please [file an issue](https://github.com/jplusplus/tmf-moneytrail/issues/new) and we'll head in to fix things.
 
 ## Generating static SVG versions
 
