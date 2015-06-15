@@ -49,7 +49,7 @@
           "parent": "3", 
           "tags": "", 
           "color": "", 
-          "text": "5 specifika s\u00e4kerhetsprojekt var specifikt inriktade p\u00e5 att f\u00f6rfina och komplettera hunds\u00f6k p\u00e5 artificiell v\u00e4g.", 
+          "text": "Fem s\u00e4kerhetsprojekt var specifikt inriktade p\u00e5 att f\u00f6rfina och komplettera hunds\u00f6k p\u00e5 artificiell v\u00e4g.", 
           "title": "Forskning p\u00e5 konstgjorda n\u00e4sor f\u00f6r att uppt\u00e4cka migranter", 
           "amount": 16000000, 
           "id": "11"
@@ -61,7 +61,7 @@
       "parent": "", 
       "tags": "", 
       "color": "#edd084", 
-      "text": "Under kritik fr\u00e5n MR-organisationer har Europas l\u00e4nder st\u00f6tt Tunisien (under diktator Ben Ali), Egypten, Libyen, Algeriet och Mauretanien i syfte att f\u00e5 hj\u00e4lp med att hindra migranter och flyktingar att ta sig till Europa.", 
+      "text": "Trots kritik fr\u00e5n MR-organisationer har Europas l\u00e4nder st\u00f6tt Tunisien, Egypten, Libyen, Algeriet och Mauretanien i utbyte mot att hindra migranter och flyktingar att ta sig till Europa.", 
       "title": "St\u00f6d till angr\u00e4nsande brutala regimer", 
       "amount": 74658000, 
       "id": "4"
@@ -70,7 +70,7 @@
       "parent": "", 
       "tags": "", 
       "color": "#e1e3a7", 
-      "text": "Kostnaderna f\u00f6r att deportera utl\u00e4nningar med flyg eller buss \u00e4r enorma. \u00c4ven s\u00e4rskilt \u00e5terv\u00e4ndandest\u00f6d utbetalas, ocks\u00e5 till de som tv\u00e5ngsdeporteras. I siffrorna ing\u00e5r inte kostnader f\u00f6r s\u00e5 kallade Dublin-deportationer inom Europa.", 
+      "text": "Kostnaderna f\u00f6r att deportera utl\u00e4nningar med flyg eller buss \u00e4r enorma. Ofta utbetalas \u00e5terv\u00e4ndandest\u00f6d, ocks\u00e5 till de som tv\u00e5ngsdeporteras. I siffrorna ing\u00e5r inte kostnader f\u00f6r s\u00e5 kallade Dublin-deportationer inom Europa.", 
       "title": "Deporteringar", 
       "amount": 11300000000, 
       "id": "5"
@@ -79,8 +79,8 @@
       "parent": "", 
       "tags": "", 
       "color": "#a2dcd5", 
-      "text": "Murar och st\u00e4ngsel har rests vid gr\u00e4nserna av Spanien, Grekland och Bulgarien.", 
-      "title": "Murar", 
+      "text": "Barri\u00e4rer och st\u00e4ngsel har rests vid gr\u00e4nserna av Spanien, Grekland och Bulgarien.", 
+      "title": "Bef\u00e4stningar", 
       "amount": 76600000, 
       "subnodes": [
         {
@@ -99,7 +99,7 @@
       "parent": "", 
       "tags": "", 
       "color": "#74c8b7", 
-      "text": "Dr\u00f6nare, motorb\u00e5tar, nattkikare, jeepar\u2026 Gr\u00e4nspolisens shoppingslista har gynnat Airbus, Indra och andra f\u00f6rsvarstillverkare.", 
+      "text": "Dr\u00f6nare, motorb\u00e5tar, nattkikare, jeepar etc. Gr\u00e4nspolisens shoppingslista har gynnat Airbus, Indra och andra f\u00f6rsvarstillverkare.", 
       "title": "Utrustning till gr\u00e4nsvakter", 
       "amount": 225710000, 
       "id": "7"
