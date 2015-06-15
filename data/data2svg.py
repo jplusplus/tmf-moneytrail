@@ -27,7 +27,7 @@ for item in t_items:
 
 # Create SVG files for each language
 for lang in langs:
-    if lang == "en-US":
+    if lang == "en-US" or not lang in millions_trans:
         continue
     new_svg = svg
     new_svg = new_svg.replace("million", millions_trans[lang])
