@@ -72,4 +72,6 @@ Below pym.js add the following
         <script>
             var pymParent = new pym.Parent('mf-moneytrail', 'http://jplusplus.github.io/tmf-moneytrail/index.html', {});
         </script>
+        
+Pym.js will generate the `<iframe>` code inside the `<div id="mf-moneytrail"></div>` div.
 
