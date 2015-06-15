@@ -1,0 +1,118 @@
+{
+  "i18n": {
+    "decimal_separator": ",", 
+    "title": "The Migrants Files (Teczki imigrant\u00f3w)", 
+    "thousands_separator": " ", 
+    "millions_abbrev": "mln", 
+    "subtitle": "Na tropie pieni\u0119dzy", 
+    "millions": "milion\u00f3w"
+  }, 
+  "children": [
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#e28956", 
+      "text": "Od 1999 r., kontrola graniczna i migracje s\u0105 wsp\u00f3lna spraw\u0105 kraj\u00f3w europejskich. Poszczeg\u00f3lne pa\u0144stwa cz\u0142onkowskie wyda\u0142y ju\u017c blisko 1 miliarda euro na uzgodnienie dzia\u0142a\u0144 w ramach takich program\u00f3w i agencji jak, Seahorse network, Frontex, Eurodac, eu-LISA i innych.", 
+      "title": "Wsp\u00f3lna koordynacja na szczeblu europejskim", 
+      "amount": 954717510, 
+      "subnodes": [
+        {
+          "parent": "1", 
+          "tags": "", 
+          "color": "", 
+          "text": "EURODAC jest systemem przechowywania odcisk\u00f3w palc\u00f3w os\u00f3b ubiegaj\u0105cych si\u0119 o azyl w Europie. Ta liczba nie obejmuje koszt\u00f3w zakupu skaner\u00f3w odcisk\u00f3w przez poszczeg\u00f3lne pa\u0144stwa cz\u0142onkowskie.", 
+          "title": "EURODAC", 
+          "amount": 8117510, 
+          "id": "9"
+        }, 
+        {
+          "parent": "1", 
+          "tags": "", 
+          "color": "", 
+          "text": "Frontex - to Europejska Agencja Zarz\u0105dzania Wsp\u00f3\u0142prac\u0105 Operacyjn\u0105 na Granicach Zewn\u0119trznych Pa\u0144stw Cz\u0142onkowskich Unii Europejskiej. Zajmuje si\u0119 koordynacj\u0105 wsp\u00f3\u0142pracy stra\u017cy granicznej oraz deportacji w poszczeg\u00f3lnych krajach.", 
+          "title": "FRONTEX", 
+          "amount": 669600000, 
+          "id": "2"
+        }
+      ], 
+      "id": "1"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#c19a64", 
+      "text": "Od 2000 r. do tej pory kraje UE wyda\u0142y ponad 60 mld euro na programy rozwojowo-badawcze. Co najmniej 39 z tych program\u00f3w skupia\u0142o si\u0119 na tym, jak nie dopu\u015bci\u0107 do Europy imigrant\u00f3w i uchod\u017ac\u00f3w.", 
+      "title": "Programy rozwojowo-badawcze", 
+      "amount": 230000000, 
+      "subnodes": [
+        {
+          "parent": "3", 
+          "tags": "", 
+          "color": "", 
+          "text": "Pi\u0119\u0107 projekt\u00f3w badawczo-rozwojowych mia\u0142o na celu stworzenie \u201esztucznych nos\u00f3w\u201d, kt\u00f3re potrafi\u0105 wyczu\u0107 uchod\u017ac\u00f3w i imigrant\u00f3w pr\u00f3buj\u0105cych  ukry\u0107 si\u0119 przy punktach kontroli granicznej.", 
+          "title": "Badania nad \u201esztucznymi nosami\" do \u201ewyw\u0105chiwania\u201d imigrant\u00f3w i uchod\u017ac\u00f3w", 
+          "amount": 16000000, 
+          "id": "11"
+        }
+      ], 
+      "id": "3"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#edd084", 
+      "text": "Unia Europejska i poszczeg\u00f3lne pa\u0144stwa cz\u0142onkowskie pomaga\u0142y Tunezji (pod rz\u0105dami Zina Al-Abidina Ben Alego), Egiptowi, Libii, Algierii oraz Mauretanii w powstrzymaniu imigrant\u00f3w i uchod\u017ac\u00f3w - najcz\u0119\u015bciej z pogwa\u0142ceniem praw cz\u0142owieka - przed ucieczk\u0105 do Europy.", 
+      "title": "Pomoc dla s\u0105siaduj\u0105cych z Europ\u0105 dyktatur", 
+      "amount": 74658000, 
+      "id": "4"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#e1e3a7", 
+      "text": "Pa\u0144stwa cz\u0142onkowskie nie \u017ca\u0142owa\u0142y \u015brodk\u00f3w na deportacje cudzoziemc\u00f3w samolotami czarterowymi, specjalnymi autokarami i oferowa\u0142y im zach\u0119ty do dobrowolnego powrotu. Ta liczba nie obejmuje deportacji na podstawie Konwencji Dubli\u0144skiej.", 
+      "title": "Deportacje", 
+      "amount": 11300000000, 
+      "id": "5"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#a2dcd5", 
+      "text": "Mury wzniesione przez pa\u0144stwa cz\u0142onkowskie na granicach Hiszpanii, Grecji i Bu\u0142garii", 
+      "title": "Fortyfikowanie granic (mury, systemy sygnalizacji)", 
+      "amount": 76600000, 
+      "subnodes": [
+        {
+          "parent": "6", 
+          "tags": "", 
+          "color": "", 
+          "text": "Budowa 11-kilometrowego muru kosztowa\u0142a hiszpa\u0144skich\npodatnik\u00f3w 40 mln euro, a jego utrzymanie - kolejne 10 mln euro.", 
+          "title": "Mur wok\u00f3\u0142 Melilli", 
+          "amount": 47000000, 
+          "id": "10"
+        }
+      ], 
+      "id": "6"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#74c8b7", 
+      "text": "Drony, szybkie \u0142odzie, noktowizory, teren\u00f3wki... Stra\u017c graniczna posz\u0142a na zakupy, na czym niezwykle skorzysta\u0142y firmy produkuj\u0105ce uzbrojenie, jak np. Airbus, Indra oraz inne.", 
+      "title": "Sprz\u0119t dla stra\u017cy granicznej", 
+      "amount": 225710000, 
+      "id": "7"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#87beb9", 
+      "text": "Pa\u0144stwa nale\u017c\u0105ce do UE wybudowa\u0142y gotowe o\u015brodki dla zatrzymanych imigrant\u00f3w i uchod\u017ac\u00f3w w Libii i na Ukrainie.", 
+      "title": "O\u015brodki dla cudzoziemc\u00f3w w krajach poza UE", 
+      "amount": 45800000, 
+      "id": "8"
+    }
+  ], 
+  "title": "root"
+}

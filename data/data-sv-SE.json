@@ -1,0 +1,118 @@
+{
+  "i18n": {
+    "decimal_separator": ",", 
+    "title": "The Migrants Files", 
+    "thousands_separator": " ", 
+    "millions_abbrev": "milj", 
+    "subtitle": "Hit g\u00e5r pengarna", 
+    "millions": "miljoner"
+  }, 
+  "children": [
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#e28956", 
+      "text": "Sedan 1999 \u00e4r gr\u00e4nskontroll och migration europeiska fr\u00e5gor. Medlemsl\u00e4nder har lagt n\u00e4ra en miljard euro p\u00e5 att koordinera insatserna, via Seahorse, Frontex, Eurodac, eu-LISA med flera.", 
+      "title": "Koordinering mellan l\u00e4nderna", 
+      "amount": 954717510, 
+      "subnodes": [
+        {
+          "parent": "1", 
+          "tags": "", 
+          "color": "", 
+          "text": "Eurodac \u00e4r registret f\u00f6r alla asyls\u00f6kandes fingeravtryck. I summan ing\u00e5r inte kostnaden f\u00f6r l\u00e4ndernas ink\u00f6p av scannrar.", 
+          "title": "Eurodac", 
+          "amount": 8117510, 
+          "id": "9"
+        }, 
+        {
+          "parent": "1", 
+          "tags": "", 
+          "color": "", 
+          "text": "Frontex \u00e4r EU:s gr\u00e4nskontrollbyr\u00e5 som koordinerar gr\u00e4nskontrollinsatser och deportationer.", 
+          "title": "Frontex", 
+          "amount": 669600000, 
+          "id": "2"
+        }
+      ], 
+      "id": "1"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#c19a64", 
+      "text": "\u00d6ver 60 miljarder euro har lagts p\u00e5 europeiska forsknings- och utvecklingsprogram sedan 2000. Minst 39 s\u00e4kerhetsprojekt var inriktade p\u00e5 att h\u00e5lla migranter och flyktingar borta.", 
+      "title": "Forskningsprogram", 
+      "amount": 230000000, 
+      "subnodes": [
+        {
+          "parent": "3", 
+          "tags": "", 
+          "color": "", 
+          "text": "Fem s\u00e4kerhetsprojekt var specifikt inriktade p\u00e5 att f\u00f6rfina och komplettera hunds\u00f6k p\u00e5 artificiell v\u00e4g.", 
+          "title": "Forskning p\u00e5 konstgjorda n\u00e4sor f\u00f6r att uppt\u00e4cka migranter", 
+          "amount": 16000000, 
+          "id": "11"
+        }
+      ], 
+      "id": "3"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#edd084", 
+      "text": "Trots kritik fr\u00e5n MR-organisationer har Europas l\u00e4nder st\u00f6tt Tunisien, Egypten, Libyen, Algeriet och Mauretanien i utbyte mot att hindra migranter och flyktingar att ta sig till Europa.", 
+      "title": "St\u00f6d till angr\u00e4nsande l\u00e4nder", 
+      "amount": 74658000, 
+      "id": "4"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#e1e3a7", 
+      "text": "Kostnaderna f\u00f6r att deportera utl\u00e4nningar med flyg eller buss \u00e4r enorma. Ofta utbetalas \u00e5terv\u00e4ndandest\u00f6d, ocks\u00e5 till de som tv\u00e5ngsdeporteras. I siffrorna ing\u00e5r inte kostnader f\u00f6r s\u00e5 kallade Dublin-deportationer inom Europa.", 
+      "title": "Deporteringar", 
+      "amount": 11300000000, 
+      "id": "5"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#a2dcd5", 
+      "text": "Barri\u00e4rer och st\u00e4ngsel har rests vid gr\u00e4nserna av Spanien, Grekland och Bulgarien.", 
+      "title": "Bef\u00e4stningar", 
+      "amount": 76600000, 
+      "subnodes": [
+        {
+          "parent": "6", 
+          "tags": "", 
+          "color": "", 
+          "text": "Det 11 kilometer l\u00e5nga st\u00e4ngslet kostade n\u00e4ra 40 miljoner euro att bygga. Nu betalar Spaniens skattebetalare 10 miljoner euro i \u00e5rlig drift.", 
+          "title": "Melilla-st\u00e4ngslet", 
+          "amount": 47000000, 
+          "id": "10"
+        }
+      ], 
+      "id": "6"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#74c8b7", 
+      "text": "Dr\u00f6nare, motorb\u00e5tar, nattkikare, jeepar etc. Gr\u00e4nspolisens shoppingslista har gynnat Airbus, Indra och andra f\u00f6rsvarstillverkare.", 
+      "title": "Utrustning till gr\u00e4nsvakter", 
+      "amount": 225710000, 
+      "id": "7"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#87beb9", 
+      "text": "L\u00e4ger f\u00f6r migranter och flyktingar har byggts i Libyen och Ukraina.", 
+      "title": "L\u00e4ger och f\u00f6rvar i tredje land", 
+      "amount": 45800000, 
+      "id": "8"
+    }
+  ], 
+  "title": "root"
+}
