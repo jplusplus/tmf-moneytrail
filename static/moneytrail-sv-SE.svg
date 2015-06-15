@@ -23,7 +23,7 @@
    inkscape:export-ydpi="90"><metadata
      id="metadata3442"><rdf:RDF><cc:Work
          rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs3440"><linearGradient
        inkscape:collect="always"
        id="linearGradient4464"><stop
@@ -198,9 +198,9 @@
      inkscape:window-height="879"
      id="namedview3438"
      showgrid="false"
-     inkscape:zoom="2.6302411"
-     inkscape:cx="346.11627"
-     inkscape:cy="2432.9039"
+     inkscape:zoom="1.8598613"
+     inkscape:cx="368.54717"
+     inkscape:cy="2363.3118"
      inkscape:window-x="0"
      inkscape:window-y="19"
      inkscape:window-maximized="1"
@@ -257,7 +257,7 @@
          sodipodi:nodetypes="sssssssss" /><path
          inkscape:connector-curvature="0"
          id="path3611"
-         d="m 282.08499,768.24005 275.93607,0 c 1.363,0 2.472,-1.109 2.472,-2.473 l 0,-50.60905 c 0,-1.367 -1.109,-2.477 -2.472,-2.477 l -275.93607,0 c -1.367,0 -2.477,1.11 -2.477,2.477 l 0,50.60905 c 0,1.364 1.11,2.473 2.477,2.473 z"
+         d="m 286.88499,768.24005 271.13607,0 c 1.363,0 2.472,-1.109 2.472,-2.473 l 0,-50.60905 c 0,-1.367 -1.109,-2.477 -2.472,-2.477 l -271.13607,0 c -1.367,0 -2.477,1.11 -2.477,2.477 l 0,50.60905 c 0,1.364 1.11,2.473 2.477,2.473 z"
          style="fill:#a2dcd5;fill-opacity:1;stroke:none"
          sodipodi:nodetypes="sssssssss" /><path
          style="fill:#e28956;fill-opacity:1"
@@ -268,16 +268,16 @@
          sodipodi:nodetypes="sssssssss"
          inkscape:connector-curvature="0"
          id="path3605"
-         d="m 93.522685,768.24005 85.807835,0 c 1.363,0 2.472,-1.109 2.472,-2.473 l 0,-50.60905 c 0,-1.367 -1.109,-2.477 -2.472,-2.477 l -85.807835,0 c -1.367,0 -2.477,1.11 -2.477,2.477 l 0,50.60905 c 0,1.364 1.11,2.473 2.477,2.473 z"
+         d="m 98.322685,768.24005 85.807835,0 c 1.363,0 2.472,-1.109 2.472,-2.473 l 0,-50.60905 c 0,-1.367 -1.109,-2.477 -2.472,-2.477 l -85.807835,0 c -1.367,0 -2.477,1.11 -2.477,2.477 l 0,50.60905 c 0,1.364 1.11,2.473 2.477,2.473 z"
          style="fill:#edd084;fill-opacity:1;stroke:none" /><path
          style="fill:#a2dcd5;fill-opacity:1;stroke:none"
-         d="m 36.225034,768.236 50.107678,0 c 1.363,0 2.472,-1.109 2.472,-2.473 l 0,-50.851 c 0,-1.367 -1.109,-2.477 -2.472,-2.477 l -50.107678,0 c -1.367,0 -2.477,1.11 -2.477,2.477 l 0,50.851 c 0,1.364 1.11,2.473 2.477,2.473 z"
+         d="m 36.225034,768.236 54.907678,0 c 1.363,0 2.472,-1.109 2.472,-2.473 l 0,-50.851 c 0,-1.367 -1.109,-2.477 -2.472,-2.477 l -54.907678,0 c -1.367,0 -2.477,1.11 -2.477,2.477 l 0,50.851 c 0,1.364 1.11,2.473 2.477,2.473 z"
          id="path3607"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="sssssssss" /><path
          sodipodi:nodetypes="sssssssss"
          style="fill:#a2dcd5;fill-opacity:1;stroke:none"
-         d="m 186.594,768.24005 87.75,0 c 1.363,0 2.472,-1.109 2.472,-2.473 l 0,-50.60905 c 0,-1.367 -1.109,-2.477 -2.472,-2.477 l -87.75,0 c -1.367,0 -2.477,1.11 -2.477,2.477 l 0,50.60905 c 0,1.364 1.11,2.473 2.477,2.473 z"
+         d="m 191.394,768.24005 87.75,0 c 1.363,0 2.472,-1.109 2.472,-2.473 l 0,-50.60905 c 0,-1.367 -1.109,-2.477 -2.472,-2.477 l -87.75,0 c -1.367,0 -2.477,1.11 -2.477,2.477 l 0,50.60905 c 0,1.364 1.11,2.473 2.477,2.473 z"
          id="path3754"
          inkscape:connector-curvature="0" /><text
          sodipodi:linespacing="125%"
@@ -289,7 +289,7 @@
            id="tspan3482"
            sodipodi:role="line"
            y="-697.88245"
-           x="139.04749">955 million €</tspan></text>
+           x="139.04749">955 miljoner €</tspan></text>
 <text
          sodipodi:linespacing="100%"
          y="-685.39496"
@@ -300,7 +300,7 @@
            id="tspan3494"
            sodipodi:role="line"
            y="-685.39496"
-           x="139.04749">European coordination efforts</tspan></text>
+           x="139.04749">Koordinering mellan länderna</tspan></text>
 <g
          transform="translate(33.335819,0)"
          id="g4648"><path
@@ -317,7 +317,7 @@
              x="229.59"
              y="-567.43872"
              sodipodi:role="line"
-             id="tspan3508">670 million €</tspan></text>
+             id="tspan3508">670 miljoner €</tspan></text>
 <text
            transform="scale(1,-1)"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;line-height:125%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
@@ -328,36 +328,36 @@
              x="229.59"
              y="-558.20245"
              sodipodi:role="line"
-             id="tspan3532">FRONTEX</tspan></text>
+             id="tspan3532">Frontex</tspan></text>
 </g><g
          transform="translate(-310.54187,0)"
          id="g4641"><path
            sodipodi:nodetypes="sssssssss"
            style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:0.17582421;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-           d="m 565.82,579.035 -39.299,0 c -0.621,0 -1.125,-0.504 -1.125,-1.125 l 0,-22.949 c 0,-0.621 0.504,-1.125 1.125,-1.125 l 39.299,0 c 0.621,0 1.125,0.504 1.125,1.125 l 0,22.949 c 0,0.621 -0.504,1.125 -1.125,1.125 z"
+           d="m 565.82,575.835 -45.699,0 c -0.621,0 -1.125,-0.504 -1.125,-1.125 l 0,-19.749 c 0,-0.621 0.504,-1.125 1.125,-1.125 l 45.699,0 c 0.621,0 1.125,0.504 1.125,1.125 l 0,19.749 c 0,0.621 -0.504,1.125 -1.125,1.125 z"
            id="path3548"
            inkscape:connector-curvature="0" /><text
            transform="scale(1,-1)"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9px;line-height:125%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
            id="text3558"
-           x="527.01501"
+           x="521.35486"
            y="-565.83875"
            sodipodi:linespacing="125%"><tspan
-             x="527.01501"
+             x="521.35486"
              y="-565.83875"
              sodipodi:role="line"
-             id="tspan3560">8 million €</tspan></text>
+             id="tspan3560">8 miljoner €</tspan></text>
 <text
            transform="scale(1,-1)"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;line-height:125%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
            id="text3582"
-           x="527.01501"
+           x="521.35486"
            y="-556.60248"
            sodipodi:linespacing="125%"><tspan
-             x="527.01501"
+             x="521.35486"
              y="-556.60248"
              sodipodi:role="line"
-             id="tspan3584">EURODAC</tspan></text>
+             id="tspan3584">Eurodac</tspan></text>
 </g><path
          style="fill:#c19a64;fill-opacity:1"
          sodipodi:nodetypes="sssssssss"
@@ -369,14 +369,14 @@
          d="m 129.18886,579.035 -91.125,0 c -0.621,0 -1.125,-0.504 -1.125,-1.125 l 0,-22.949 c 0,-0.621 0.504,-1.125 1.125,-1.125 l 91.125,0 c 0.621,0 1.125,0.504 1.125,1.125 l 0,22.949 c 0,0.621 -0.504,1.125 -1.125,1.125 z"
          style="fill:#000000;fill-opacity:0.17582421;fill-rule:nonzero;stroke:none" /><text
          y="-755.93243"
-         x="93.822495"
+         x="98.62249"
          id="text3672"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11px;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          transform="scale(1,-1)"><tspan
            id="tspan3674"
            sodipodi:role="line"
            y="-755.93243"
-           x="93.822495">75 million €</tspan></text>
+           x="98.62249">75 miljoner €</tspan></text>
 <text
          sodipodi:linespacing="100%"
          y="-743.44495"
@@ -398,7 +398,7 @@
            id="tspan3704"
            sodipodi:role="line"
            y="-535.88245"
-           x="36.447502">13,200 million €</tspan></text>
+           x="36.447502">11.3 billion €</tspan></text>
 <text
          sodipodi:linespacing="100%"
          y="-523.39496"
@@ -409,76 +409,76 @@
            id="tspan3716"
            sodipodi:role="line"
            y="-523.39496"
-           x="36.447502">Deportations</tspan></text>
+           x="36.447502">Deporteringar</tspan></text>
 <text
          y="-755.93243"
-         x="186.97249"
+         x="191.77251"
          id="text3726"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11px;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          transform="scale(1,-1)"><tspan
            id="tspan3728"
            sodipodi:role="line"
            y="-755.93243"
-           x="186.97249">77 million €</tspan></text>
+           x="191.77251">77 miljoner €</tspan></text>
 <text
          sodipodi:linespacing="100%"
          y="-743.44495"
-         x="186.97249"
+         x="191.77251"
          id="text3738"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;line-height:100%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          transform="scale(1,-1)"><tspan
            id="tspan3740"
            sodipodi:role="line"
            y="-743.44495"
-           x="186.97249">Fortiﬁcations (walls)</tspan></text>
+           x="191.77251">Befästningar</tspan></text>
 <path
          style="fill:#000000;fill-opacity:0.17582421;fill-rule:nonzero;stroke:none"
-         d="m 273.63246,740.32763 -81.89662,0 c -0.621,0 -1.125,-0.504 -1.125,-1.125 l 0,-23.61033 c 0,-0.621 0.504,-1.125 1.125,-1.125 l 81.89662,0 c 0.621,0 1.125,0.504 1.125,1.125 l 0,23.61033 c 0,0.621 -0.504,1.125 -1.125,1.125 z"
+         d="m 278.43246,740.32763 -81.89662,0 c -0.621,0 -1.125,-0.504 -1.125,-1.125 l 0,-23.61033 c 0,-0.621 0.504,-1.125 1.125,-1.125 l 81.89662,0 c 0.621,0 1.125,0.504 1.125,1.125 l 0,23.61033 c 0,0.621 -0.504,1.125 -1.125,1.125 z"
          id="path3756"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="sssssssss" /><text
          sodipodi:linespacing="125%"
          y="-725.55756"
-         x="230.92494"
+         x="277.98633"
          id="text3766"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9px;line-height:125%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:9px;line-height:125%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
          transform="scale(1,-1)"><tspan
            id="tspan3768"
            sodipodi:role="line"
            y="-725.55756"
-           x="230.92494">47 million €</tspan></text>
+           x="277.98633">47 miljoner €</tspan></text>
 <text
          sodipodi:linespacing="125%"
          y="-716.32135"
-         x="233.29071"
+         x="277.94421"
          id="text3790"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;line-height:125%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;line-height:125%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:end;writing-mode:lr-tb;text-anchor:end;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
          transform="scale(1,-1)"><tspan
            id="tspan3792"
            sodipodi:role="line"
            y="-716.32135"
-           x="233.29071">Melilla wall</tspan></text>
+           x="277.94421">Melilla-stängslet</tspan></text>
 <text
          y="-755.93243"
-         x="282.14749"
+         x="286.94751"
          id="text3802"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:11px;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Bold';writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          transform="scale(1,-1)"><tspan
            id="tspan3804"
            sodipodi:role="line"
            y="-755.93243"
-           x="282.14749">226 million €</tspan></text>
+           x="286.94751">226 miljoner €</tspan></text>
 <text
          sodipodi:linespacing="100%"
          y="-743.44495"
-         x="282.14749"
+         x="286.94751"
          id="text3814"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;line-height:100%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          transform="scale(1,-1)"><tspan
            id="tspan3816"
            sodipodi:role="line"
            y="-743.44495"
-           x="282.14749">Gear for European border guards</tspan></text>
+           x="286.94751">Utrustning till gränsvakter</tspan></text>
 <text
          y="-755.93243"
          x="36.447502"
@@ -488,7 +488,7 @@
            id="tspan3828"
            sodipodi:role="line"
            y="-755.93243"
-           x="36.447502">46 million €</tspan></text>
+           x="36.447502">46 miljoner €</tspan></text>
 <text
          sodipodi:linespacing="100%"
          y="-743.44495"
@@ -510,7 +510,7 @@
            id="tspan3596"
            sodipodi:role="line"
            y="-697.88245"
-           x="36.447502">230 million €</tspan></text>
+           x="36.447502">230 miljoner €</tspan></text>
 <text
          sodipodi:linespacing="100%"
          y="-685.39496"
@@ -518,14 +518,10 @@
          id="text3606"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;line-height:100%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
          transform="scale(1,-1)"><tspan
-           id="tspan3608"
-           sodipodi:role="line"
-           y="-685.39496"
-           x="36.447502">Research and</tspan><tspan
            id="tspan3610"
            sodipodi:role="line"
-           y="-676.39496"
-           x="36.447502">development programs</tspan></text>
+           y="-685.39496"
+           x="36.447502" /></text>
 <text
          sodipodi:linespacing="125%"
          y="-569.86884"
@@ -537,22 +533,7 @@
            id="tspan3638"
            sodipodi:role="line"
            y="-569.86884"
-           x="38.55986">16 million €</tspan></text>
-<text
-         sodipodi:linespacing="89.999998%"
-         y="-562.98969"
-         x="38.55986"
-         id="text3660"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7px;line-height:89.99999762%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"
-         transform="scale(1,-1)"><tspan
-           id="tspan3662"
-           sodipodi:role="line"
-           y="-562.98969"
-           x="38.55986">Research on artiﬁcial noses </tspan><tspan
-           id="tspan4639"
-           sodipodi:role="line"
-           y="-556.6897"
-           x="38.55986">that sniff refugees and migrants</tspan></text>
+           x="38.55986">16 miljoner €</tspan></text>
 <flowRoot
          xml:space="preserve"
          id="flowRoot4733"
@@ -563,11 +544,11 @@
              height="11.405798"
              x="86.684067"
              y="-52.803188" /></flowRegion><flowPara
-           id="flowPara4739"></flowPara></flowRoot><flowRoot
+           id="flowPara4739" /></flowRoot><flowRoot
          xml:space="preserve"
          id="flowRoot4741"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:94.99999881%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         transform="matrix(0.8,0,0,-0.8,13.134302,785.00671)"><flowRegion
+         transform="matrix(0.8,0,0,-0.8,17.934302,785.00671)"><flowRegion
            id="flowRegion4743"><rect
              id="rect4745"
              width="106.45955"
@@ -575,7 +556,7 @@
              x="100.54513"
              y="42.823845"
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:94.99999881%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
-           id="flowPara4747">Technical assistance to neighboring dictatorships</flowPara></flowRoot><flowRoot
+           id="flowPara4747">Stöd till angränsande länder</flowPara></flowRoot><flowRoot
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:94.99999881%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          id="flowRoot4758"
          xml:space="preserve"
@@ -587,7 +568,31 @@
              height="44.895817"
              width="63.176746"
              id="rect4762" /></flowRegion><flowPara
-           id="flowPara4764">Detention</flowPara><flowPara
-           id="flowPara4766">centers in</flowPara><flowPara
-           id="flowPara4768">third</flowPara><flowPara
-           id="flowPara4770">countries</flowPara></flowRoot></g></g></svg>
+           id="flowPara4770">Läger och förvar i tredje land</flowPara></flowRoot><flowRoot
+         transform="matrix(0.8,0,0,-0.8,-44.289334,726.60902)"
+         xml:space="preserve"
+         id="flowRoot3518"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:94.99999881%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"><flowRegion
+           id="flowRegion3520"><rect
+             id="rect3522"
+             width="116.02361"
+             height="44.895821"
+             x="100.54513"
+             y="42.823845"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:94.99999881%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
+           id="flowPara3549">Forskningsprogram</flowPara></flowRoot><flowRoot
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:87.00000048%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;letter-spacing:-0.2px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="flowRoot3553"
+         xml:space="preserve"
+         transform="matrix(0.8,0,0,-0.8,-41.750914,601.77402)"><flowRegion
+           id="flowRegion3555"><rect
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.25px;line-height:87.00000048%;font-family:'Roboto Condensed';-inkscape-font-specification:'Roboto Condensed, Normal';text-align:start;letter-spacing:-0.2px;writing-mode:lr-tb;text-anchor:start"
+             y="42.823845"
+             x="100.54513"
+             height="16.399073"
+             width="111.45338"
+             id="rect3557" /></flowRegion><flowPara
+           id="flowPara3561"
+           style="font-size:8.75px;line-height:87.00000048%;letter-spacing:-0.2px;fill:#ffffff">Forskning på konstgjorda näsor för att upptäcka migranter</flowPara><flowPara
+           id="flowPara3565"
+           style="font-size:8.75px;line-height:87.00000048%;letter-spacing:-0.2px;fill:#ffffff" /></flowRoot></g></g></svg>

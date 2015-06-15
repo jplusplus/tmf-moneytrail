@@ -8,6 +8,7 @@ our viz.
 import csv
 import json
 import urllib2
+import codecs
 
 VIZ_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1wC72sDmuN-mvwgMcSWhO-R3E-1wmSE19B_KiW7RBRSc/export?format=csv&gid=397042903"
 TRANSLATION_SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/1wC72sDmuN-mvwgMcSWhO-R3E-1wmSE19B_KiW7RBRSc/export?format=csv&gid=1180374955"
@@ -87,7 +88,11 @@ def generate_json_files(langs=("en-US",)):
 
         # add the i18n details (decimal separators, etc)
         trans_data = fetch_translation_data()
-        relevant_row = [r for r in trans_data if r['lang'] == lang][0]
+        row = [r for r in trans_data if r['lang'] == lang]
+        if len(row) == 0:
+            print "Warning: No translation found for '%s'." % lang
+            continue
+        relevant_row = row[0]
         i18n_info = {}
         i18n_info['title'] = relevant_row['title']
         i18n_info['subtitle'] = relevant_row['subtitle']
@@ -100,7 +105,6 @@ def generate_json_files(langs=("en-US",)):
         i18n_info['millions_abbrev'] = relevant_row['millions_abbrev']
         outdata['i18n'] = i18n_info
 
-        import codecs
         if lang == "en-US":
             f = codecs.open("data.json", "w", "utf-8")
         else:
@@ -127,8 +131,8 @@ def detect_langs(viz_data, trans_data):
     trans_langs.remove("en-US")
     trans_langs.sort()
     if not viz_langs == trans_langs:
-        orphan_langs = [l for l in viz_langs if l not in trans_langs]
-        raise ValueError("Please double-check that all languages are specified in the Translation Extra sheet! (offending languages: %s)" % " ".join(orphan_langs))
+        orphan_langs = [l for l in trans_langs if l not in viz_langs]
+        print "Warning: No entries for %s in the Items sheet, ignoring!" % (", ".join(orphan_langs))
     langs.extend(viz_langs)
     return langs
 
