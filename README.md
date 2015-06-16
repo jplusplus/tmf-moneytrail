@@ -7,6 +7,7 @@ In this document, you'll find how to locally install the visualization, as well 
   - [Pushing the site to the live server](#pushing-the-site-to-the-live-server)
   - [Showing the site in different languages](#showing-the-site-in-different-languages)
   - [Adding a new translation](#adding-a-new-translation)
+  - [Iframe embed](#iframe-embed)
 
 
 ## Installation
@@ -52,3 +53,25 @@ For example, the Swedish version is accessible through http://jplusplus.github.i
 ## Adding a new translation
 
 See the [TRANSLATING.md](https://github.com/jplusplus/tmf-moneytrail/blob/master/TRANSLATING.md) file for the steps needed for adding another language.
+
+##Iframe embed
+
+To embed the app in an iframe add the following code in the parent page.
+
+In the body of the HTML, where you want the iframe to appear, add this div
+
+    <div id="mf-moneytrail"></div>
+
+
+At the bottom of the HTML, just before closing the `</body>` add a link to [pym.js](http://blog.apps.npr.org/pym.js/dist/pym.min.js)
+
+    <script src="js/pym.min.js"></script>
+
+Below pym.js add the following
+
+        <script>
+            var pymParent = new pym.Parent('mf-moneytrail', 'http://jplusplus.github.io/tmf-moneytrail/index.html', {});
+        </script>
+        
+Pym.js will generate the `<iframe>` code inside the `<div id="mf-moneytrail"></div>` div.
+

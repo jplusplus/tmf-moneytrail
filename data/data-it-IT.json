@@ -1,0 +1,118 @@
+{
+  "i18n": {
+    "decimal_separator": ",", 
+    "title": "The Migrants Files", 
+    "thousands_separator": ".", 
+    "millions_abbrev": "M", 
+    "subtitle": "Il costo finanziario", 
+    "millions": "milioni"
+  }, 
+  "children": [
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#e28956", 
+      "text": "Dopo il 1999 il controllo delle frontiere e l'immigrazione sono considerate problematiche europee. Gli stati membri ha destinato circa un miliardo di euro per coordinare le proprie politiche grazie a progetti specifici come la rete Seahorse, il Frontex, Eurodac, eu-LISA e altri", 
+      "title": "Coodinamento europeo", 
+      "amount": 954717510, 
+      "subnodes": [
+        {
+          "parent": "1", 
+          "tags": "", 
+          "color": "", 
+          "text": "EURODAC \u00e8 il sistema che archivia le impronte digitali di tutti i richiedenti asilo in Europa. Il numero non include gli scanner per impronte acquistati dagli stati membri.", 
+          "title": "EURODAC", 
+          "amount": 8117510, 
+          "id": "9"
+        }, 
+        {
+          "parent": "1", 
+          "tags": "", 
+          "color": "", 
+          "text": "Frontex \u00e8 l'agenzia europea che coordina le attivit\u00e0 di controllo dei confini e i trasferimenti dei migranti tra gli stati membri.", 
+          "title": "FRONTEX", 
+          "amount": 669600000, 
+          "id": "2"
+        }
+      ], 
+      "id": "1"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#c19a64", 
+      "text": "Oltre 60 miliardi di euro sono stati spesi in programmi europei di ricerca e sviluppo dal 2000. Almeno 39 progetti di questi programmi sono stati dedicati a ricerche su come tenere migranti e rifugiati fuori dall'Europa.", 
+      "title": "Programmi di ricerca e sviluppo", 
+      "amount": 230000000, 
+      "subnodes": [
+        {
+          "parent": "3", 
+          "tags": "", 
+          "color": "", 
+          "text": "Cinque programmi di Ricerca e Sviluppo sono stati appositamenti dedicati per creare nasi artificiali per \"annusare\" e individuare migranti e rifugiati che tentanto di nascondersi in corrispondenza con i posti di blocco di frontiera nel tentativo di attraversare i confini.", 
+          "title": "Ricerche sui nasi artificiali che individiano i migranti", 
+          "amount": 16000000, 
+          "id": "11"
+        }
+      ], 
+      "id": "3"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#edd084", 
+      "text": "L'Europa e gli stati membri hanno aiutato la Tunisia (durante la reggenza di Ben Al\u00ec), l'Egitto, la Libya, l'Algeria e la Mauritania per impedire il transito verso l'Europa a migranti e rifugiati, molto spesso non tenendo conto le implicazioni sui diritti umani.", 
+      "title": "Assistenza tecnica a dittature di vicinato", 
+      "amount": 74658000, 
+      "id": "4"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#e1e3a7", 
+      "text": "Gli stati membri allocano enormi fondi per deportare gli stranieri in voli charter o autobus, ma anche incentivandoli perch\u00e9 rientrino nei Paesi d'origine volontariamente. La cifra non include le deportazioni all'interno dell'Europa (regolati dal trattato di Dublino).", 
+      "title": "Rimpatri", 
+      "amount": 11300000000, 
+      "id": "5"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#a2dcd5", 
+      "text": "Muri e barriere sono stati eretti dagli stati membri alle frontiere di Spagna, Grecia e Bulgaria.", 
+      "title": "Muri e fortificazioni", 
+      "amount": 76600000, 
+      "subnodes": [
+        {
+          "parent": "6", 
+          "tags": "", 
+          "color": "", 
+          "text": "Il muro di Melilla \u00e8 stato costruito con una spesa di 40 milioni di euro e adesso costa 10 milioni di euro per la manutenzione ai contribuenti spagnoli.", 
+          "title": "Muro di Melilla", 
+          "amount": 47000000, 
+          "id": "10"
+        }
+      ], 
+      "id": "6"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#74c8b7", 
+      "text": "Droni, motoscafi, speedboats, binocoli a infrarossi: le polizie di frontiere hanno acquistato numerosi prodotti dai principali produttori di armi (Airbus, Indra, Finmeccanica)", 
+      "title": "Strumenti per le guardie di frontiere europee", 
+      "amount": 225710000, 
+      "id": "7"
+    }, 
+    {
+      "parent": "", 
+      "tags": "", 
+      "color": "#87beb9", 
+      "text": "L'Unione Europea e gli stati membri hanno costruito centri di detenzione pronti per l'uso e destinati a migranti e rifugiati in Libia e Ukraina.", 
+      "title": "Centri di detenzione in paesi terzi", 
+      "amount": 45800000, 
+      "id": "8"
+    }
+  ], 
+  "title": "root"
+}

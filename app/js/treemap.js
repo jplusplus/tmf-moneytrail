@@ -20,8 +20,8 @@ var pymChild = null;
 var queryDict = {}
 location.search.substr(1).split("&").forEach(function(item) {queryDict[item.split("=")[0]] = item.split("=")[1]})
 var lang = ""
-if (queryDict.lang) { 
-  lang = queryDict.lang; 
+if (queryDict.lang) {
+  lang = queryDict.lang;
 }
 
 // Set location of data file based on language
@@ -116,7 +116,7 @@ var treemap = d3.layout.treemap()
     .sticky(true)
     .sort(function comparator(a, b) { return b.amount - a.amount; })
     .value(function(d) { return scale(d.amount); });
-    
+
 
 function drawTreemap() {
     // Main draw function. Gets called on each redraw.
@@ -126,7 +126,7 @@ function drawTreemap() {
 
     width = container.offsetWidth < 800 ? container.offsetWidth : 800;
     height = container.offsetHeight;
-    console.log(width, height);
+
     treemap.size([width, height]);
 
     // Remove existing containers
@@ -238,7 +238,7 @@ function drawTreemap() {
             .attr("role", "dialog")
             .attr("aria-labelledby", function(x) { return "modal-" + s.id + "-label" })
             .attr("aria-hidden", "true");
-            
+
             modal = subdialog.append("div").attr("class", "modal-dialog modal-sm")
                           .append("div").attr("class", "modal-content");
             modalheader = modal.append("div").attr("class", "modal-header");
@@ -273,14 +273,14 @@ function drawTreemap() {
             .call(position);
       });
     });
-    
+
 
 
 
     if (pymChild) {
         pymChild.sendHeight();
     }
- 
+
 }
 
 drawTreemap();
@@ -298,7 +298,7 @@ function resize() {
 $(window).load(function() {
     // This is instantiating the child message with a callback but AFTER the D3 charts are drawn.
     pymChild = new pym.Child({ renderCallback: drawTreemap });
-    
+
 });
 
 
