@@ -382,10 +382,6 @@ a:focus {
     padding: 1px;
     text-align: right;
     line-height: 1;
-/*	zoom:expression(
-	    runtimeStyle.zoom=1,
-	    insertAdjacentHTML('beforeEnd','<span class="after"></span>')
-    );	*/
 }
 
 .node-contents:before {
@@ -479,10 +475,13 @@ a:focus {
 */
 
 .modal-content { border: 0; }
-.modal-header { padding: 20px; border-bottom: 0; }
-.modal-header .modal-title { margin-top: 15px; line-height: 1.2; }
-.modal-body { padding: 0 20px 20px 20px; }
-.modal-body h3 { margin-top: 0; }
+.modal-header { padding: 20px 20px 0px 20px; border-bottom: 0; }
+.modal-header .modal-title { margin-top: 15px; line-height: 1.1; }
+.modal-body { padding: 0 20px 25px 20px; }
+.modal-body h3 { margin-top: 5px; margin-bottom: 0; line-height: 1; }
+.modal-body p { margin-top: 20px; margin-bottom: 0; line-height: 1.4; }
+.modal-body p img { padding-right: 10px; }
+#credits-modal .modal-body p { margin-top: 20px; margin-bottom: 10px }
 
 #modal-1 .modal-content, #modal-2 .modal-content, #modal-9 .modal-content { border-left: 1em solid #e28956; }
 #modal-1 h3.amount, #modal-2 h3.amount, #modal-9 h3.amount { color: #e28956; }
