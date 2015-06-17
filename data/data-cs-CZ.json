@@ -1,0 +1,129 @@
+{
+  "i18n": {
+    "decimal_separator": ",", 
+    "title": "The Migrants' Files", 
+    "thousands_separator": " ", 
+    "millions_abbrev": "mil.", 
+    "subtitle": "Po stop\u00e1ch pen\u011bz", 
+    "millions": "milion\u016f"
+  }, 
+  "children": [
+    {
+      "color": "#e28956", 
+      "text": "Od roku 1999 se ostraha hranic a p\u0159\u00edjem uprchl\u00edk\u016f \u0159e\u0161\u00ed na celoevrospk\u00e9 \u00farovni. \u010clensk\u00e9 st\u00e1ty u\u017e od t\u00e9 doby utratily t\u00e9m\u011b\u0159 miliardu eur na koordinaci t\u011bchto snah v programech Seahorse, Frontex, Eurodac, eu-LISA a dal\u0161\u00edch.  ", 
+      "id": "1", 
+      "NOTE": "Since 1999, border control and migration are European issues. Member states have spent close to 1 billion euro to coordinate their response, through programs such as Seahorse network, Frontex, Eurodac, eu-LISA and more.", 
+      "title": "Koordinace na evropsk\u00e9 \u00farovni", 
+      "tags": "", 
+      "amount": 954717510, 
+      "subnodes": [
+        {
+          "color": "", 
+          "text": "EURODAC je po\u010d\u00edta\u010dov\u00fd syst\u00e9m, kter\u00fd shroma\u017e\u010fuje otisky prst\u016f ka\u017ed\u00e9ho, kdo v Evrop\u011b po\u017e\u00e1d\u00e1 o azyl. Uveden\u00e1 suma nezahrnuje n\u00e1kup sn\u00edma\u010d\u016f jednotliv\u00fdmi \u010dlensk\u00fdmi st\u00e1ty.", 
+          "id": "9", 
+          "NOTE": "EURODAC is the system that stores the fingerprints of all asylum seekers in Europe. The figure does not include the fingerprint scanners bought by member states.", 
+          "title": "EURODAC", 
+          "tags": "", 
+          "amount": 8117510, 
+          "parent": "1"
+        }, 
+        {
+          "color": "", 
+          "text": "Frontex je agentura koordinuj\u00edc\u00ed ostrahu hranic a syst\u00e9m deportac\u00ed mezi \u010dlensk\u00fdmi st\u00e1ty Evropsk\u00e9 unie.", 
+          "id": "2", 
+          "NOTE": "Frontex is the European agency that coordinates efforts in border control and deportations between member states.", 
+          "title": "FRONTEX", 
+          "tags": "", 
+          "amount": 669600000, 
+          "parent": "1"
+        }
+      ], 
+      "parent": ""
+    }, 
+    {
+      "color": "#c19a64", 
+      "text": "Od roku 2000 utratila unie v\u00edc ne\u017e 60 miliard eur za v\u011bdeck\u00fd v\u00fdzkum a v\u00fdvoj. Nejm\u00e9n\u011b 39 z jej\u00edch v\u00fdzkumn\u00fdch program\u016f s rozpo\u010dtem p\u0159es 200 milion\u016f eur bylo zam\u011b\u0159eno na zv\u00fd\u0161en\u00ed nepropustnosti hranic. ", 
+      "id": "3", 
+      "NOTE": "Over 60 billions were spent in European R&D programs since 2000. At least 39 programs were dedicated to research on how to keep migrants and refugees out.", 
+      "title": "V\u00fdzkum a v\u00fdvoj", 
+      "tags": "", 
+      "amount": 230000000, 
+      "subnodes": [
+        {
+          "color": "", 
+          "text": "P\u011bt v\u00fdzkumn\u00fdch projekt\u016f se p\u0159\u00edmo zam\u011b\u0159ilo na vytvo\u0159en\u00ed pachov\u00fdch detektor\u016f schopn\u00fdch \"vy\u010denichat\" uprchl\u00edky l\u00e9pe ne\u017e cvi\u010den\u00ed policejn\u00ed psi.", 
+          "id": "11", 
+          "NOTE": "Five R&D projects were specifically focused on creating artificial sniffers that can smell refugees and migrants trying to hide at border crossing points.", 
+          "title": "V\u00fdvoj \"um\u011bl\u00fdch \u010denich\u016f\"", 
+          "tags": "", 
+          "amount": 16000000, 
+          "parent": "3"
+        }
+      ], 
+      "parent": ""
+    }, 
+    {
+      "color": "#edd084", 
+      "text": "EU a jej\u00ed \u010dlensk\u00e9 st\u00e1ty podpo\u0159ily Tunisko (za vl\u00e1dy dikt\u00e1tora bin Al\u00edho), Egypt, Libyi, Al\u017e\u00edrsko a Mauret\u00e1nii, aby br\u00e1nily uprchl\u00edk\u016fm v cest\u011b do Evropy \u2013 obvykle bez ohledu na jejich lidsk\u00e1 pr\u00e1va.", 
+      "id": "4", 
+      "NOTE": "The EU and member states have helped Tunisia (under Ben Ali's rule), Egypt, Libya, Algeria and Mauritania to prevent refugees and migrants from crossing into Europe, most often disregarding concerns for human rights.", 
+      "title": "Technick\u00e1 pomoc okoln\u00edm st\u00e1t\u016fm", 
+      "tags": "", 
+      "amount": 74658000, 
+      "parent": ""
+    }, 
+    {
+      "color": "#e1e3a7", 
+      "text": "\u010clensk\u00e9 st\u00e1ty ochotn\u011b utr\u00e1cej\u00ed za deportace cizinc\u016f letadly i autobusy. Nab\u00edzej\u00ed jim tak\u00e9 finan\u010dn\u00ed pr\u00e9mie za to, aby Evropu \"dobrovoln\u011b\" opustili. \u010c\u00e1stka nezahrnuje deportace uvnit\u0159 EU dle Dublinsk\u00e9ho syst\u00e9mu. ", 
+      "id": "5", 
+      "NOTE": "Member states spend lavishly to deport foreigners in charter planes or buses or to offer them incentives for voluntary returns. This figure does not include deportations within Europe under the Dublin Regulation.", 
+      "title": "Deportace", 
+      "tags": "", 
+      "amount": 11300000000, 
+      "parent": ""
+    }, 
+    {
+      "color": "#a2dcd5", 
+      "text": "Ochrann\u00e9 zdi br\u00e1n\u00edc\u00ed uprchl\u00edk\u016fm v p\u0159echodu hranic nechaly vzty\u010dit vl\u00e1dy \u0160pan\u011blska, \u0158ecka a Bulharska.", 
+      "id": "6", 
+      "NOTE": "Walls have been erected by member states at the borders to Spain, Greece and Bulgaria.", 
+      "title": "Opevn\u011bn\u00ed (zdi)", 
+      "tags": "", 
+      "amount": 76600000, 
+      "subnodes": [
+        {
+          "color": "", 
+          "text": "Ochrann\u00fd val okolo \u0161pan\u011blsk\u00e9ho m\u011bsta na severoafrick\u00e9m pob\u0159e\u017e\u00ed st\u00e1l \u0161pan\u011blsk\u00e9 da\u0148ov\u00e9 poplatn\u00edky 40 milion\u016f eur, jeho \u00fadr\u017eba stoj\u00ed ro\u010dn\u011b dal\u0161\u00edch 10 milion\u016f.", 
+          "id": "10", 
+          "NOTE": "The 11-kilometer wall cost close to \u20ac40 million to build and now costs the Spanish taxpayers over \u20ac10m in maintenance.", 
+          "title": "Melillsk\u00e1 ze\u010f", 
+          "tags": "", 
+          "amount": 47000000, 
+          "parent": "6"
+        }
+      ], 
+      "parent": ""
+    }, 
+    {
+      "color": "#74c8b7", 
+      "text": "Drony, motorov\u00e9 \u010dluny, sady pro no\u010dn\u00ed vid\u011bn\u00ed, ter\u00e9nn\u00ed auta... Pohrani\u010dn\u00edci utr\u00e1cej\u00ed nejv\u00edc u zbrojn\u00edch firem jako je Indra nebo Airbus. ", 
+      "id": "7", 
+      "NOTE": "Drones, speedboats, night vision goggles, jeeps... Border guards went on a shopping spree that hugely benefited Airbus, Indra and other arms manufacturers.", 
+      "title": "V\u00fdstroj pro pohrani\u010dn\u00edky", 
+      "tags": "", 
+      "amount": 225710000, 
+      "parent": ""
+    }, 
+    {
+      "color": "#87beb9", 
+      "text": "Evropsk\u00e1 unie a n\u011bkter\u00e9 \u010dlensk\u00e9 st\u00e1ty financovaly stavbu zadr\u017eovac\u00edch t\u00e1bor\u016f nap\u0159\u00edklad v Libyi \u010di na Ukrajin\u011b. ", 
+      "id": "8", 
+      "NOTE": "The EU and member states have built ready-to-use detention centers for migrants and refugees in Libya and Ukraine.", 
+      "title": "Zadr\u017eovac\u00ed st\u0159ediska ve t\u0159et\u00edch zem\u00edch", 
+      "tags": "", 
+      "amount": 45800000, 
+      "parent": ""
+    }
+  ], 
+  "title": "root"
+}
