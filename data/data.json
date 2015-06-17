@@ -12,7 +12,6 @@
       "color": "#e28956", 
       "text": "Since 1999, border control and migration are European issues. Member states have spent close to 1 billion euro to coordinate their response, through programs such as Seahorse network, Frontex, Eurodac, eu-LISA and more.", 
       "id": "1", 
-      "NOTE": "Since 1999, border control and migration are European issues. Member states have spent close to 1 billion euro to coordinate their response, through programs such as Seahorse network, Frontex, Eurodac, eu-LISA and more.", 
       "title": "European coordination efforts", 
       "tags": "", 
       "amount": 954717510, 
@@ -21,30 +20,30 @@
           "color": "", 
           "text": "EURODAC is the system that stores the fingerprints of all asylum seekers in Europe. The figure does not include the fingerprint scanners bought by member states.", 
           "id": "9", 
-          "NOTE": "EURODAC is the system that stores the fingerprints of all asylum seekers in Europe. The figure does not include the fingerprint scanners bought by member states.", 
           "title": "EURODAC", 
           "tags": "", 
           "amount": 8117510, 
-          "parent": "1"
+          "parent": "1", 
+          "NOTE": "EURODAC is the system that stores the fingerprints of all asylum seekers in Europe. The figure does not include the fingerprint scanners bought by member states."
         }, 
         {
           "color": "", 
           "text": "Frontex is the European agency that coordinates efforts in border control and deportations between member states.", 
           "id": "2", 
-          "NOTE": "Frontex is the European agency that coordinates efforts in border control and deportations between member states.", 
           "title": "FRONTEX", 
           "tags": "", 
           "amount": 669600000, 
-          "parent": "1"
+          "parent": "1", 
+          "NOTE": "Frontex is the European agency that coordinates efforts in border control and deportations between member states."
         }
       ], 
-      "parent": ""
+      "parent": "", 
+      "NOTE": "Since 1999, border control and migration are European issues. Member states have spent close to 1 billion euro to coordinate their response, through programs such as Seahorse network, Frontex, Eurodac, eu-LISA and more."
     }, 
     {
       "color": "#c19a64", 
       "text": "Over 60 billions were spent in European R&D programs since 2000. At least 39 programs were dedicated to research on how to keep migrants and refugees out.", 
       "id": "3", 
-      "NOTE": "Over 60 billions were spent in European R&D programs since 2000. At least 39 programs were dedicated to research on how to keep migrants and refugees out.", 
       "title": "Research and development programs", 
       "tags": "", 
       "amount": 230000000, 
@@ -53,40 +52,40 @@
           "color": "", 
           "text": "Five R&D projects were specifically focused on creating artificial sniffers that can smell refugees and migrants trying to hide at border crossing points.", 
           "id": "11", 
-          "NOTE": "Five R&D projects were specifically focused on creating artificial sniffers that can smell refugees and migrants trying to hide at border crossing points.", 
           "title": "Research on artificial noses that sniff refugees and migrants", 
           "tags": "", 
           "amount": 16000000, 
-          "parent": "3"
+          "parent": "3", 
+          "NOTE": "Five R&D projects were specifically focused on creating artificial sniffers that can smell refugees and migrants trying to hide at border crossing points."
         }
       ], 
-      "parent": ""
+      "parent": "", 
+      "NOTE": "Over 60 billions were spent in European R&D programs since 2000. At least 39 programs were dedicated to research on how to keep migrants and refugees out."
     }, 
     {
       "color": "#edd084", 
       "text": "The EU and member states have helped Tunisia (under Ben Ali's rule), Egypt, Libya, Algeria and Mauritania to prevent refugees and migrants from crossing into Europe, most often disregarding concerns for human rights.", 
       "id": "4", 
-      "NOTE": "The EU and member states have helped Tunisia (under Ben Ali's rule), Egypt, Libya, Algeria and Mauritania to prevent refugees and migrants from crossing into Europe, most often disregarding concerns for human rights.", 
       "title": "Technical assistance to neighboring dictatorships", 
       "tags": "", 
       "amount": 74658000, 
-      "parent": ""
+      "parent": "", 
+      "NOTE": "The EU and member states have helped Tunisia (under Ben Ali's rule), Egypt, Libya, Algeria and Mauritania to prevent refugees and migrants from crossing into Europe, most often disregarding concerns for human rights."
     }, 
     {
       "color": "#e1e3a7", 
       "text": "Member states spend lavishly to deport foreigners in charter planes or buses or to offer them incentives for voluntary returns. This figure does not include deportations within Europe under the Dublin Regulation.", 
       "id": "5", 
-      "NOTE": "Member states spend lavishly to deport foreigners in charter planes or buses or to offer them incentives for voluntary returns. This figure does not include deportations within Europe under the Dublin Regulation.", 
       "title": "Deportations", 
       "tags": "", 
       "amount": 11300000000, 
-      "parent": ""
+      "parent": "", 
+      "NOTE": "Member states spend lavishly to deport foreigners in charter planes or buses or to offer them incentives for voluntary returns. This figure does not include deportations within Europe under the Dublin Regulation."
     }, 
     {
       "color": "#a2dcd5", 
       "text": "Walls have been erected by member states at the borders to Spain, Greece and Bulgaria.", 
       "id": "6", 
-      "NOTE": "Walls have been erected by member states at the borders to Spain, Greece and Bulgaria.", 
       "title": "Fortifications (walls)", 
       "tags": "", 
       "amount": 76600000, 
@@ -95,34 +94,35 @@
           "color": "", 
           "text": "The 11-kilometer wall cost, with the Ceuta wall, now costs the Spanish taxpayers over \u20ac10m in maintenance.", 
           "id": "10", 
-          "NOTE": "The 11-kilometer wall cost close to \u20ac40 million to build and now costs the Spanish taxpayers over \u20ac10m in maintenance.", 
           "title": "Melilla wall", 
           "tags": "", 
           "amount": 47000000, 
-          "parent": "6"
+          "parent": "6", 
+          "NOTE": "The 11-kilometer wall cost close to \u20ac40 million to build and now costs the Spanish taxpayers over \u20ac10m in maintenance."
         }
       ], 
-      "parent": ""
+      "parent": "", 
+      "NOTE": "Walls have been erected by member states at the borders to Spain, Greece and Bulgaria."
     }, 
     {
       "color": "#74c8b7", 
       "text": "Drones, speedboats, night vision goggles, jeeps... Border guards went on a shopping spree that hugely benefited Airbus, Indra and other arms manufacturers.", 
       "id": "7", 
-      "NOTE": "Drones, speedboats, night vision goggles, jeeps... Border guards went on a shopping spree that hugely benefited Airbus, Indra and other arms manufacturers.", 
       "title": "Gear for European border guards", 
       "tags": "", 
       "amount": 225710000, 
-      "parent": ""
+      "parent": "", 
+      "NOTE": "Drones, speedboats, night vision goggles, jeeps... Border guards went on a shopping spree that hugely benefited Airbus, Indra and other arms manufacturers."
     }, 
     {
       "color": "#87beb9", 
       "text": "The EU and member states have built ready-to-use detention centers for migrants and refugees in Libya and Ukraine.", 
       "id": "8", 
-      "NOTE": "The EU and member states have built ready-to-use detention centers for migrants and refugees in Libya and Ukraine.", 
       "title": "Detention centers in third countries", 
       "tags": "", 
       "amount": 45800000, 
-      "parent": ""
+      "parent": "", 
+      "NOTE": "The EU and member states have built ready-to-use detention centers for migrants and refugees in Libya and Ukraine."
     }
   ], 
   "title": "root"

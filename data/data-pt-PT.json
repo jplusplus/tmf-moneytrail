@@ -9,109 +9,120 @@
   }, 
   "children": [
     {
-      "parent": "", 
-      "tags": "", 
       "color": "#e28956", 
-      "text": "Dummy", 
-      "title": "Dummy", 
+      "text": "Desde 1999, o controlo de fronteiras e a migra\u00e7\u00e3o s\u00e3o assuntos europeus. Os estados-membros gastaram cerca de mil milh\u00f5es de euros para coordenar a sua resposta atrav\u00e9s de programas como a rede Seahorse, Frontex, Eurodac, eu-LISA e mais.", 
+      "id": "1", 
+      "title": "Esfor\u00e7os de coordena\u00e7\u00e3o europeia", 
+      "tags": "", 
       "amount": 954717510, 
       "subnodes": [
         {
-          "parent": "1", 
-          "tags": "", 
           "color": "", 
-          "text": "Dummy", 
-          "title": "Dummy", 
+          "text": "O Eurodac \u00e9 o sistema que armazena as impress\u00f5es digitais de todos os candidatos a asilo na Europa. O n\u00famero n\u00e3o inclui os leitores de impress\u00f5es digitais adquiridos pelos estados-membros.", 
+          "id": "9", 
+          "title": "EURODAC", 
+          "tags": "", 
           "amount": 8117510, 
-          "id": "9"
+          "parent": "1", 
+          "NOTE": "EURODAC is the system that stores the fingerprints of all asylum seekers in Europe. The figure does not include the fingerprint scanners bought by member states."
         }, 
         {
-          "parent": "1", 
-          "tags": "", 
           "color": "", 
-          "text": "Dummy", 
-          "title": "Dummy", 
+          "text": "A Frontex \u00e9 a ag\u00eancia europeia que coordena os esfor\u00e7os no controlo de fronteiras e deporta\u00e7\u00f5es entre estados-membros.", 
+          "id": "2", 
+          "title": "FRONTEX", 
+          "tags": "", 
           "amount": 669600000, 
-          "id": "2"
+          "parent": "1", 
+          "NOTE": "Frontex is the European agency that coordinates efforts in border control and deportations between member states."
         }
       ], 
-      "id": "1"
+      "parent": "", 
+      "NOTE": "Since 1999, border control and migration are European issues. Member states have spent close to 1 billion euro to coordinate their response, through programs such as Seahorse network, Frontex, Eurodac, eu-LISA and more."
     }, 
     {
-      "parent": "", 
-      "tags": "", 
       "color": "#c19a64", 
-      "text": "Dummy", 
-      "title": "Dummy", 
+      "text": "Mais de 60 mil milh\u00f5es de euros foram gastos em programas de I&D europeus desde 2000. Pelo menos 39 programas foram dedicados \u00e0 investiga\u00e7\u00e3o sobre como manter fora imigrantes e refugiados.", 
+      "id": "3", 
+      "title": "Programas de investiga\u00e7\u00e3o e desenvolvimento", 
+      "tags": "", 
       "amount": 230000000, 
       "subnodes": [
         {
-          "parent": "3", 
-          "tags": "", 
           "color": "", 
-          "text": "Dummy", 
-          "title": "Dummy", 
+          "text": "Cinco projetos de I&D foram especialmente dedicados a criar aparelhos que conseguem farejar refugiados e imigrantes escondidos nos pontos de cruzamento de fronteiras.", 
+          "id": "11", 
+          "title": "Investiga\u00e7\u00e3o em narizes artificiais", 
+          "tags": "", 
           "amount": 16000000, 
-          "id": "11"
+          "parent": "3", 
+          "NOTE": "Five R&D projects were specifically focused on creating artificial sniffers that can smell refugees and migrants trying to hide at border crossing points."
         }
       ], 
-      "id": "3"
+      "parent": "", 
+      "NOTE": "Over 60 billions were spent in European R&D programs since 2000. At least 39 programs were dedicated to research on how to keep migrants and refugees out."
     }, 
     {
-      "parent": "", 
-      "tags": "", 
       "color": "#edd084", 
-      "text": "Dummy", 
-      "title": "Dummy", 
+      "text": "A UE e os estados membros apoiaram a Tun\u00edsia (sob o mandato de Ben Ali), Egito, L\u00edbia, Arg\u00e9lia e Maurit\u00e2nia para impedir refugiados e imigrantes de atravessarem a fronteira para a Europa, ignorando frequentemente as quest\u00f5es dos direitos humanos.", 
+      "id": "4", 
+      "title": "Assist\u00eancia t\u00e9cnica a regimes ditatoriais pr\u00f3ximos", 
+      "tags": "", 
       "amount": 74658000, 
-      "id": "4"
+      "parent": "", 
+      "NOTE": "The EU and member states have helped Tunisia (under Ben Ali's rule), Egypt, Libya, Algeria and Mauritania to prevent refugees and migrants from crossing into Europe, most often disregarding concerns for human rights."
     }, 
     {
-      "parent": "", 
-      "tags": "", 
       "color": "#e1e3a7", 
-      "text": "Dummy", 
-      "title": "Dummy", 
+      "text": "Os estados-membros gastam sumptuosamente para deportar estrangeiros em v\u00f4os charter, autocarros, ou oferecendo incentivos para retornos volunt\u00e1rios. Este n\u00famero n\u00e3o inclui as deporta\u00e7\u00f5es dentro da Europa sob a Conven\u00e7\u00e3o de Dublin.", 
+      "id": "5", 
+      "title": "Deporta\u00e7\u00f5es", 
+      "tags": "", 
       "amount": 11300000000, 
-      "id": "5"
+      "parent": "", 
+      "NOTE": "Member states spend lavishly to deport foreigners in charter planes or buses or to offer them incentives for voluntary returns. This figure does not include deportations within Europe under the Dublin Regulation."
     }, 
     {
-      "parent": "", 
-      "tags": "", 
       "color": "#a2dcd5", 
-      "text": "Dummy", 
-      "title": "Dummy", 
+      "text": "V\u00e1rios muros foram erigidos por estados-membros nas fronteiras para Espanha, Gr\u00e9cia e Bulg\u00e1ria.", 
+      "id": "6", 
+      "title": "Fortifica\u00e7\u00f5es (muros)", 
+      "tags": "", 
       "amount": 76600000, 
       "subnodes": [
         {
-          "parent": "6", 
-          "tags": "", 
           "color": "", 
-          "text": "Dummy", 
-          "title": "Dummy", 
+          "text": "Este muro de 11 quil\u00f3metros, junto com o muro de Ceuta, custa agora 10 milh\u00f5es de euros em manuten\u00e7\u00e3o aos contribuintes espanh\u00f3is.", 
+          "id": "10", 
+          "title": "Muro de Melilla", 
+          "tags": "", 
           "amount": 47000000, 
-          "id": "10"
+          "parent": "6", 
+          "NOTE": "The 11-kilometer wall cost close to \u20ac40 million to build and now costs the Spanish taxpayers over \u20ac10m in maintenance."
         }
       ], 
-      "id": "6"
+      "parent": "", 
+      "NOTE": "Walls have been erected by member states at the borders to Spain, Greece and Bulgaria."
     }, 
     {
-      "parent": "", 
-      "tags": "", 
       "color": "#74c8b7", 
-      "text": "Dummy", 
-      "title": "Dummy", 
+      "text": "Drones, lanchas, \u00f3culos de vis\u00e3o noturna, jipes... As guardas fronteiri\u00e7as gastaram significativamente em compras que beneficiaram enormemente a Airbus, a Indra e outros fabricantes de armas.", 
+      "id": "7", 
+      "title": "Equipamento para policiamento de fronteiras", 
+      "tags": "", 
       "amount": 225710000, 
-      "id": "7"
+      "parent": "", 
+      "NOTE": "Drones, speedboats, night vision goggles, jeeps... Border guards went on a shopping spree that hugely benefited Airbus, Indra and other arms manufacturers."
     }, 
     {
-      "parent": "", 
-      "tags": "", 
       "color": "#87beb9", 
-      "text": "Dummy", 
-      "title": "Dummy", 
+      "text": "A UE e os estados-membros constru\u00edram centros de deten\u00e7\u00e3o prontos a usar para imigrantes e refugiados na L\u00edbia e na Ucr\u00e2nia.", 
+      "id": "8", 
+      "title": "Centros de deten\u00e7\u00e3o em pa\u00edses terceiros", 
+      "tags": "", 
       "amount": 45800000, 
-      "id": "8"
+      "parent": "", 
+      "NOTE": "The EU and member states have built ready-to-use detention centers for migrants and refugees in Libya and Ukraine."
     }
   ], 
   "title": "root"
