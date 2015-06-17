@@ -2,8 +2,9 @@
   "i18n": {
     "decimal_separator": ",", 
     "title": "The Migrants Files", 
-    "thousands_separator": " ", 
+    "billions": "billion", 
     "millions_abbrev": "M", 
+    "thousands_separator": " ", 
     "subtitle": "Le co\u00fbt financier", 
     "millions": "millions"
   }, 
@@ -12,7 +13,6 @@
       "color": "#e28956", 
       "text": "Depuis 1999, le contr\u00f4le des fronti\u00e8res et l'immigration sont des probl\u00e8matiques europ\u00e9ennes. Les \u00e9tats-membres ont d\u00e9pens\u00e9 pr\u00e8s d'un milliard d'euros pour coordonner leurs politiques, \u00e0 travers des programmes comme le r\u00e9seau Seahorse, Frontex, Eurodac, eu-LISA et d'autres.", 
       "id": "1", 
-      "NOTE": "Since 1999, border control and migration are European issues. Member states have spent close to 1 billion euro to coordinate their response, through programs such as Seahorse network, Frontex, Eurodac, eu-LISA and more.", 
       "title": "Coordination europ\u00e9enne", 
       "tags": "", 
       "amount": 954717510, 
@@ -21,30 +21,30 @@
           "color": "", 
           "text": "EURODAC est le syst\u00e8me qui stocke toutes les empreintes digitales des demandeurs d'asile. Le chiffre n'inclus pas les appareils achet\u00e9 par les \u00e9tats-membres ou les co\u00fbts de fonctionnement.", 
           "id": "9", 
-          "NOTE": "EURODAC is the system that stores the fingerprints of all asylum seekers in Europe. The figure does not include the fingerprint scanners bought by member states.", 
           "title": "EURODAC", 
           "tags": "", 
           "amount": 8117510, 
-          "parent": "1"
+          "parent": "1", 
+          "NOTE": "EURODAC is the system that stores the fingerprints of all asylum seekers in Europe. The figure does not include the fingerprint scanners bought by member states."
         }, 
         {
           "color": "", 
           "text": "Frontex est l'agence europ\u00e9enne qui coordonne le contr\u00f4le des fronti\u00e8res et les d\u00e9portations entre les \u00e9tats-membres.", 
           "id": "2", 
-          "NOTE": "Frontex is the European agency that coordinates efforts in border control and deportations between member states.", 
           "title": "FRONTEX", 
           "tags": "", 
           "amount": 669600000, 
-          "parent": "1"
+          "parent": "1", 
+          "NOTE": "Frontex is the European agency that coordinates efforts in border control and deportations between member states."
         }
       ], 
-      "parent": ""
+      "parent": "", 
+      "NOTE": "Since 1999, border control and migration are European issues. Member states have spent close to 1 billion euro to coordinate their response, through programs such as Seahorse network, Frontex, Eurodac, eu-LISA and more."
     }, 
     {
       "color": "#c19a64", 
       "text": "Plus de 60 milliards ont \u00e9t\u00e9 d\u00e9pens\u00e9s dans des programmes de recherche europ\u00e9ens depuis 2000. Au moins 39 projets ont \u00e9t\u00e9 consacr\u00e9s \u00e0 des recherches visant \u00e0 maintenir les migrants et r\u00e9fugi\u00e9s hors d'Europe.", 
       "id": "3", 
-      "NOTE": "Over 60 billions were spent in European R&D programs since 2000. At least 39 programs were dedicated to research on how to keep migrants and refugees out.", 
       "title": "Programmes de recherche et d\u00e9veloppement", 
       "tags": "", 
       "amount": 230000000, 
@@ -53,76 +53,77 @@
           "color": "", 
           "text": "Cinq projets de R&D ont \u00e9t\u00e9 men\u00e9 dans le but express de construire des nez artificiels capables de \"sentir\" des migrants cach\u00e9s dans des v\u00e9hicules.", 
           "id": "11", 
-          "NOTE": "Five R&D projects were specifically focused on creating artificial sniffers that can smell refugees and migrants trying to hide at border crossing points.", 
           "title": "Recherches sur des nez artificiels qui reniflent les migrants", 
           "tags": "", 
           "amount": 16000000, 
-          "parent": "3"
+          "parent": "3", 
+          "NOTE": "Five R&D projects were specifically focused on creating artificial sniffers that can smell refugees and migrants trying to hide at border crossing points."
         }
       ], 
-      "parent": ""
+      "parent": "", 
+      "NOTE": "Over 60 billions were spent in European R&D programs since 2000. At least 39 programs were dedicated to research on how to keep migrants and refugees out."
     }, 
     {
       "color": "#edd084", 
       "text": "L'UE et les \u00e9tats-membres ont aid\u00e9 la Tunisie de Ben Ali, l'Egypte, la Libye, l'Alg\u00e9rie et la Mauritanie \u00e0 barrer le passage aux r\u00e9fugi\u00e9s et aux migrants souhaitant venir en Europe, le plus souvent en fermant les yeux sur les atteintes aux droits humains.", 
       "id": "4", 
-      "NOTE": "The EU and member states have helped Tunisia (under Ben Ali's rule), Egypt, Libya, Algeria and Mauritania to prevent refugees and migrants from crossing into Europe, most often disregarding concerns for human rights.", 
       "title": "Assistance techniques aux dictatures du voisinage", 
       "tags": "", 
       "amount": 74658000, 
-      "parent": ""
+      "parent": "", 
+      "NOTE": "The EU and member states have helped Tunisia (under Ben Ali's rule), Egypt, Libya, Algeria and Mauritania to prevent refugees and migrants from crossing into Europe, most often disregarding concerns for human rights."
     }, 
     {
       "color": "#e1e3a7", 
       "text": "Les \u00e9tats-membres d\u00e9pensent \u00e9norm\u00e9ment pour d\u00e9porter des \u00e9trangers en avion ou en bus, ou en leur offrant de l'argent dans le cas de retours volontaires. Ce chiffre n'inclus pas les d\u00e9portations au sein de l'UE dans le cadre de la R\u00e9gulation de Dublin.", 
       "id": "5", 
-      "NOTE": "Member states spend lavishly to deport foreigners in charter planes or buses or to offer them incentives for voluntary returns. This figure does not include deportations within Europe under the Dublin Regulation.", 
       "title": "D\u00e9portations", 
       "tags": "", 
       "amount": 11300000000, 
-      "parent": ""
+      "parent": "", 
+      "NOTE": "Member states spend lavishly to deport foreigners in charter planes or buses or to offer them incentives for voluntary returns. This figure does not include deportations within Europe under the Dublin Regulation."
     }, 
     {
       "color": "#a2dcd5", 
       "text": "Des murs ont \u00e9t\u00e9 \u00e9rig\u00e9s aux fronti\u00e8res de l'Europe par les gouvernements espagnols, grecs et bulgares.", 
       "id": "6", 
-      "NOTE": "Walls have been erected by member states at the borders to Spain, Greece and Bulgaria.", 
       "title": "Fortifications (murs)", 
       "tags": "", 
       "amount": 76600000, 
       "subnodes": [
         {
           "color": "", 
-          "text": "Ce mur de 11 kilom\u00e8tres de long a co\u00fbt\u00e9 pr\u00e8s de  \u20ac40m \u00e0 construire et co\u00fbte aux citoyens espagnols plus de \u20ac10m en entretien annuel.", 
+          "text": "Ce mur de 11 kilom\u00e8tres de long co\u00fbte, avec le mur de Ceuta, plus de \u20ac10m en entretien annuel aux citoyens espagnols.", 
           "id": "10", 
-          "NOTE": "The 11-kilometer wall cost close to \u20ac40 million to build and now costs the Spanish taxpayers over \u20ac10m in maintenance.", 
           "title": "Mur de Mellila", 
           "tags": "", 
           "amount": 47000000, 
-          "parent": "6"
+          "parent": "6", 
+          "NOTE": "The 11-kilometer wall cost close to \u20ac40 million to build and now costs the Spanish taxpayers over \u20ac10m in maintenance."
         }
       ], 
-      "parent": ""
+      "parent": "", 
+      "NOTE": "Walls have been erected by member states at the borders to Spain, Greece and Bulgaria."
     }, 
     {
       "color": "#74c8b7", 
       "text": "Des drones, zodiacs, lunettes de vision nocturne, jeeps... Les gardes fronti\u00e8res ont d\u00e9pens\u00e9s largement pour s'offrir du mat\u00e9riel en provenance notamment d'Airbus, Indra et d'autres fabricants d'armes.", 
       "id": "7", 
-      "NOTE": "Drones, speedboats, night vision goggles, jeeps... Border guards went on a shopping spree that hugely benefited Airbus, Indra and other arms manufacturers.", 
       "title": "Mat\u00e9riel pour les gardes-fronti\u00e8res europ\u00e9ens", 
       "tags": "", 
       "amount": 225710000, 
-      "parent": ""
+      "parent": "", 
+      "NOTE": "Drones, speedboats, night vision goggles, jeeps... Border guards went on a shopping spree that hugely benefited Airbus, Indra and other arms manufacturers."
     }, 
     {
       "color": "#87beb9", 
       "text": "L'UE et les \u00e9tats-membres ont construit des centres de d\u00e9tention pour r\u00e9fugi\u00e9s et migrants cl\u00e9-en-main en Libye et en Ukraine.", 
       "id": "8", 
-      "NOTE": "The EU and member states have built ready-to-use detention centers for migrants and refugees in Libya and Ukraine.", 
       "title": "Centre de d\u00e9tention dans des pays tiers", 
       "tags": "", 
       "amount": 45800000, 
-      "parent": ""
+      "parent": "", 
+      "NOTE": "The EU and member states have built ready-to-use detention centers for migrants and refugees in Libya and Ukraine."
     }
   ], 
   "title": "root"

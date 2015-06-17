@@ -22,8 +22,10 @@ svg = open("../static/moneytrail.svg").read()
 trans_data = fetch_translation_data()
 t_items = list(trans_data)
 millions_trans = {}
+billions_trans = {}
 for item in t_items:
     millions_trans[item['lang']] = item['millions']
+    billions_trans[item['lang']] = item['billions']
 
 # Create SVG files for each language
 for lang in langs:
@@ -31,6 +33,7 @@ for lang in langs:
         continue
     new_svg = svg
     new_svg = new_svg.replace("million", millions_trans[lang])
+    new_svg = new_svg.replace("billion", billions_trans[lang])
     for item in items:
         new_svg = new_svg.replace(item['title'], item['title-' + lang])
     new_svg_filename = "../static/moneytrail-%s.svg" % lang

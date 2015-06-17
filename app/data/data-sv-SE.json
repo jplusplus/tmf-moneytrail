@@ -2,8 +2,9 @@
   "i18n": {
     "decimal_separator": ",", 
     "title": "The Migrants Files", 
-    "thousands_separator": " ", 
+    "billions": "billion", 
     "millions_abbrev": "milj", 
+    "thousands_separator": " ", 
     "subtitle": "Hit g\u00e5r pengarna", 
     "millions": "miljoner"
   }, 
@@ -12,7 +13,6 @@
       "color": "#e28956", 
       "text": "Sedan 1999 \u00e4r gr\u00e4nskontroll och migration europeiska fr\u00e5gor. Medlemsl\u00e4nder har lagt n\u00e4ra en miljard euro p\u00e5 att koordinera insatserna, via Seahorse, Frontex, Eurodac, eu-LISA med flera.", 
       "id": "1", 
-      "NOTE": "Since 1999, border control and migration are European issues. Member states have spent close to 1 billion euro to coordinate their response, through programs such as Seahorse network, Frontex, Eurodac, eu-LISA and more.", 
       "title": "Koordinering mellan l\u00e4nderna", 
       "tags": "", 
       "amount": 954717510, 
@@ -21,30 +21,30 @@
           "color": "", 
           "text": "Eurodac \u00e4r registret f\u00f6r alla asyls\u00f6kandes fingeravtryck. I summan ing\u00e5r inte kostnaden f\u00f6r l\u00e4ndernas ink\u00f6p av scannrar.", 
           "id": "9", 
-          "NOTE": "EURODAC is the system that stores the fingerprints of all asylum seekers in Europe. The figure does not include the fingerprint scanners bought by member states.", 
           "title": "Eurodac", 
           "tags": "", 
           "amount": 8117510, 
-          "parent": "1"
+          "parent": "1", 
+          "NOTE": "EURODAC is the system that stores the fingerprints of all asylum seekers in Europe. The figure does not include the fingerprint scanners bought by member states."
         }, 
         {
           "color": "", 
           "text": "Frontex \u00e4r EU:s gr\u00e4nskontrollbyr\u00e5 som koordinerar gr\u00e4nskontrollinsatser och deportationer.", 
           "id": "2", 
-          "NOTE": "Frontex is the European agency that coordinates efforts in border control and deportations between member states.", 
           "title": "Frontex", 
           "tags": "", 
           "amount": 669600000, 
-          "parent": "1"
+          "parent": "1", 
+          "NOTE": "Frontex is the European agency that coordinates efforts in border control and deportations between member states."
         }
       ], 
-      "parent": ""
+      "parent": "", 
+      "NOTE": "Since 1999, border control and migration are European issues. Member states have spent close to 1 billion euro to coordinate their response, through programs such as Seahorse network, Frontex, Eurodac, eu-LISA and more."
     }, 
     {
       "color": "#c19a64", 
       "text": "\u00d6ver 60 miljarder euro har lagts p\u00e5 europeiska forsknings- och utvecklingsprogram sedan 2000. Minst 39 s\u00e4kerhetsprojekt var inriktade p\u00e5 att h\u00e5lla migranter och flyktingar borta.", 
       "id": "3", 
-      "NOTE": "Over 60 billions were spent in European R&D programs since 2000. At least 39 programs were dedicated to research on how to keep migrants and refugees out.", 
       "title": "Forskningsprogram", 
       "tags": "", 
       "amount": 230000000, 
@@ -53,40 +53,40 @@
           "color": "", 
           "text": "Fem s\u00e4kerhetsprojekt var specifikt inriktade p\u00e5 att f\u00f6rfina och komplettera hunds\u00f6k p\u00e5 artificiell v\u00e4g.", 
           "id": "11", 
-          "NOTE": "Five R&D projects were specifically focused on creating artificial sniffers that can smell refugees and migrants trying to hide at border crossing points.", 
           "title": "Forskning p\u00e5 konstgjorda n\u00e4sor f\u00f6r att uppt\u00e4cka migranter", 
           "tags": "", 
           "amount": 16000000, 
-          "parent": "3"
+          "parent": "3", 
+          "NOTE": "Five R&D projects were specifically focused on creating artificial sniffers that can smell refugees and migrants trying to hide at border crossing points."
         }
       ], 
-      "parent": ""
+      "parent": "", 
+      "NOTE": "Over 60 billions were spent in European R&D programs since 2000. At least 39 programs were dedicated to research on how to keep migrants and refugees out."
     }, 
     {
       "color": "#edd084", 
       "text": "Trots kritik fr\u00e5n MR-organisationer har Europas l\u00e4nder st\u00f6tt Tunisien, Egypten, Libyen, Algeriet och Mauretanien i utbyte mot att hindra migranter och flyktingar att ta sig till Europa.", 
       "id": "4", 
-      "NOTE": "The EU and member states have helped Tunisia (under Ben Ali's rule), Egypt, Libya, Algeria and Mauritania to prevent refugees and migrants from crossing into Europe, most often disregarding concerns for human rights.", 
       "title": "St\u00f6d till angr\u00e4nsande l\u00e4nder", 
       "tags": "", 
       "amount": 74658000, 
-      "parent": ""
+      "parent": "", 
+      "NOTE": "The EU and member states have helped Tunisia (under Ben Ali's rule), Egypt, Libya, Algeria and Mauritania to prevent refugees and migrants from crossing into Europe, most often disregarding concerns for human rights."
     }, 
     {
       "color": "#e1e3a7", 
       "text": "Kostnaderna f\u00f6r att deportera utl\u00e4nningar med flyg eller buss \u00e4r enorma. Ofta utbetalas \u00e5terv\u00e4ndandest\u00f6d, ocks\u00e5 till de som tv\u00e5ngsdeporteras. I siffrorna ing\u00e5r inte kostnader f\u00f6r s\u00e5 kallade Dublin-deportationer inom Europa.", 
       "id": "5", 
-      "NOTE": "Member states spend lavishly to deport foreigners in charter planes or buses or to offer them incentives for voluntary returns. This figure does not include deportations within Europe under the Dublin Regulation.", 
       "title": "Deporteringar", 
       "tags": "", 
       "amount": 11300000000, 
-      "parent": ""
+      "parent": "", 
+      "NOTE": "Member states spend lavishly to deport foreigners in charter planes or buses or to offer them incentives for voluntary returns. This figure does not include deportations within Europe under the Dublin Regulation."
     }, 
     {
       "color": "#a2dcd5", 
       "text": "Barri\u00e4rer och st\u00e4ngsel har rests vid gr\u00e4nserna av Spanien, Grekland och Bulgarien.", 
       "id": "6", 
-      "NOTE": "Walls have been erected by member states at the borders to Spain, Greece and Bulgaria.", 
       "title": "Bef\u00e4stningar", 
       "tags": "", 
       "amount": 76600000, 
@@ -95,34 +95,35 @@
           "color": "", 
           "text": "Det 11 kilometer l\u00e5nga st\u00e4ngslet kostade n\u00e4ra 40 miljoner euro att bygga. Nu betalar Spaniens skattebetalare 10 miljoner euro i \u00e5rlig drift.", 
           "id": "10", 
-          "NOTE": "The 11-kilometer wall cost close to \u20ac40 million to build and now costs the Spanish taxpayers over \u20ac10m in maintenance.", 
           "title": "Melilla-st\u00e4ngslet", 
           "tags": "", 
           "amount": 47000000, 
-          "parent": "6"
+          "parent": "6", 
+          "NOTE": "The 11-kilometer wall cost close to \u20ac40 million to build and now costs the Spanish taxpayers over \u20ac10m in maintenance."
         }
       ], 
-      "parent": ""
+      "parent": "", 
+      "NOTE": "Walls have been erected by member states at the borders to Spain, Greece and Bulgaria."
     }, 
     {
       "color": "#74c8b7", 
       "text": "Dr\u00f6nare, motorb\u00e5tar, nattkikare, jeepar etc. Gr\u00e4nspolisens shoppingslista har gynnat Airbus, Indra och andra f\u00f6rsvarstillverkare.", 
       "id": "7", 
-      "NOTE": "Drones, speedboats, night vision goggles, jeeps... Border guards went on a shopping spree that hugely benefited Airbus, Indra and other arms manufacturers.", 
       "title": "Utrustning till gr\u00e4nsvakter", 
       "tags": "", 
       "amount": 225710000, 
-      "parent": ""
+      "parent": "", 
+      "NOTE": "Drones, speedboats, night vision goggles, jeeps... Border guards went on a shopping spree that hugely benefited Airbus, Indra and other arms manufacturers."
     }, 
     {
       "color": "#87beb9", 
       "text": "L\u00e4ger f\u00f6r migranter och flyktingar har byggts i Libyen och Ukraina.", 
       "id": "8", 
-      "NOTE": "The EU and member states have built ready-to-use detention centers for migrants and refugees in Libya and Ukraine.", 
       "title": "L\u00e4ger och f\u00f6rvar i tredje land", 
       "tags": "", 
       "amount": 45800000, 
-      "parent": ""
+      "parent": "", 
+      "NOTE": "The EU and member states have built ready-to-use detention centers for migrants and refugees in Libya and Ukraine."
     }
   ], 
   "title": "root"

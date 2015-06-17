@@ -81,7 +81,6 @@ def generate_json_files(langs=("en-US",)):
         outdata['title'] = 'root'
         outdata['children'] = []
 
-
         # populate JSON with objects
         viz_data = fetch_viz_data()
         for row in viz_data:
@@ -104,6 +103,7 @@ def generate_json_files(langs=("en-US",)):
 
         i18n_info['decimal_separator'] = relevant_row['decimal_separator']
         i18n_info['millions'] = relevant_row['millions']
+        i18n_info['billions'] = relevant_row['billions']
         i18n_info['millions_abbrev'] = relevant_row['millions_abbrev']
         outdata['i18n'] = i18n_info
 
