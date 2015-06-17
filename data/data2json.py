@@ -81,10 +81,12 @@ def generate_json_files(langs=("en-US",)):
         outdata['title'] = 'root'
         outdata['children'] = []
 
+
         # populate JSON with objects
         viz_data = fetch_viz_data()
         for row in viz_data:
-            parse_row(row, outdata, lang)
+            if row['amount'] != '':
+                parse_row(row, outdata, lang)
 
         # add the i18n details (decimal separators, etc)
         trans_data = fetch_translation_data()
