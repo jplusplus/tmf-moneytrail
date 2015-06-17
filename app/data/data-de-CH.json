@@ -10,7 +10,7 @@
   "children": [
     {
       "color": "#e28956", 
-      "text": "Seit 1999 sind die Kontrolle der EU-Aussengrenzen und die Fl\u00fcchtlingsangelegenheiten gesamteurop\u00e4ische Aufgaben. Die EU-Mitgliedsstaaten haben seitdem fast eine Milliarde Euro in Programme und Agenturen gesteckt, die diese Aufgaben erledigen sollen, etwa Frontex, das \u201eSeahorse\u201c-Netzwerk, Eurodac, eu-LISA und andere.", 
+      "text": "Seit 1999 sind die Kontrolle der EU-Aussengrenzen und die Fl\u00fcchtlingsangelegenheiten gesamteurop\u00e4ische Aufgaben. Die EU-Mitgliedsstaaten haben seitdem fast eine Milliarde Euro in Programme und Agenturen gesteckt, die diese Aufgaben erledigen sollen, etwa Frontex, das \u201eSeahorse\u201c-Netzwerk, EURODAC, eu-LISA und andere.", 
       "id": "1", 
       "NOTE": "Since 1999, border control and migration are European issues. Member states have spent close to 1 billion euro to coordinate their response, through programs such as Seahorse network, Frontex, Eurodac, eu-LISA and more.", 
       "title": "Koordinationsaufwand", 
@@ -32,7 +32,7 @@
           "text": "Die Aufgabe von Frontex ist es, die Grenzkontrollen und die Ausschaffungen in ganz Europa zu koordinieren.", 
           "id": "2", 
           "NOTE": "Frontex is the European agency that coordinates efforts in border control and deportations between member states.", 
-          "title": "FRONTEX", 
+          "title": "Frontex", 
           "tags": "", 
           "amount": 669600000, 
           "parent": "1"
@@ -42,7 +42,7 @@
     }, 
     {
       "color": "#c19a64", 
-      "text": "Insgesamt \u00fcber 60 Milliarden Euro wurden seit 2000 f\u00fcr europ\u00e4ische Forschungs- und Entwicklungsprogramme gesteckt. Mindestens 39 von ihnen drehten sich um die Frage, wie man Migranten aus Europa heraush\u00e4lt.", 
+      "text": "Insgesamt \u00fcber 60 Milliarden Euro wurden seit 2000 in europ\u00e4ische Forschungs- und Entwicklungsprogramme gesteckt. Mindestens 39 Projekte drehten sich um die Frage, wie man Migranten aus Europa heraush\u00e4lt.", 
       "id": "3", 
       "NOTE": "Over 60 billions were spent in European R&D programs since 2000. At least 39 programs were dedicated to research on how to keep migrants and refugees out.", 
       "title": "Forschungsprogramme", 
@@ -74,7 +74,7 @@
     }, 
     {
       "color": "#e1e3a7", 
-      "text": "Mitgliedsstaaten geben verschwenderisch viel Geld daf\u00fcr aus, Migranten mit Fl\u00fcgen oder Bussen aus dem Land zu schaffen oder ihnen finanzielle Anreize f\u00fcr ihre Ausreise zu geben. Ausschaffungen nach dem Dublin-System (an andere Schengen-L\u00e4nder, in denen schon Asylverfahren gestartet wurden) sind hier nicht eingerechnet.", 
+      "text": "Mitgliedsstaaten geben viel Geld daf\u00fcr aus, Migranten mit Fl\u00fcgen oder Bussen aus dem Land zu schaffen oder ihnen finanzielle Anreize f\u00fcr ihre Ausreise zu geben. Ausschaffungen nach dem Dublin-System (an andere Schengen-L\u00e4nder, in denen schon Asylverfahren gestartet wurden) sind hier nicht eingerechnet.", 
       "id": "5", 
       "NOTE": "Member states spend lavishly to deport foreigners in charter planes or buses or to offer them incentives for voluntary returns. This figure does not include deportations within Europe under the Dublin Regulation.", 
       "title": "Ausschaffungen", 
@@ -84,7 +84,7 @@
     }, 
     {
       "color": "#a2dcd5", 
-      "text": "An den spanischen, griechischen und bulgarischen Au\u00dfengrenzen wurden Mauern errichtet.", 
+      "text": "An den spanischen, griechischen und bulgarischen Aussengrenzen wurden Mauern errichtet.", 
       "id": "6", 
       "NOTE": "Walls have been erected by member states at the borders to Spain, Greece and Bulgaria.", 
       "title": "Grenzbefestigungen", 
@@ -93,7 +93,7 @@
       "subnodes": [
         {
           "color": "", 
-          "text": "Der Bau der 11 Kilometer langen Mauer kostete fast 40 Millionen Euro. Nun muss der spanische Steuerzahler jedes Jahr 10 Millionen Euro in die Instandhaltung stecken.", 
+          "text": "Der Bau der 11 Kilometer langen Mauer kostete fast 40 Millionen Euro. Nun m\u00fcssen spanische Steuerzahler jedes Jahr 10 Millionen Euro in die Instandhaltung stecken.", 
           "id": "10", 
           "NOTE": "The 11-kilometer wall cost close to \u20ac40 million to build and now costs the Spanish taxpayers over \u20ac10m in maintenance.", 
           "title": "Die Mauer von Melilla", 
@@ -106,7 +106,7 @@
     }, 
     {
       "color": "#74c8b7", 
-      "text": "Drohnen, Schnellboote, Nachtsichtbrillen, Gel\u00e4ndewagen\u2026 die europ\u00e4ischen Grenzw\u00e4chter sind auf eine wahre Shoppingtour gegangen, von der vor allem Airbus, Indra und andere Waffenhersteller profitierten.", 
+      "text": "Die Ausr\u00fcstung von Grenzw\u00e4chtern wurde verbessert. Gekauft wurden unter anderen Drohnen, Schnellboote, Nachtsichtger\u00e4te und Jeeps.", 
       "id": "7", 
       "NOTE": "Drones, speedboats, night vision goggles, jeeps... Border guards went on a shopping spree that hugely benefited Airbus, Indra and other arms manufacturers.", 
       "title": "Ausr\u00fcstung f\u00fcr Grenzw\u00e4chter", 
