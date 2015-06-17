@@ -2,24 +2,24 @@
   "i18n": {
     "decimal_separator": ",", 
     "title": "The Migrants Files", 
-    "thousands_separator": " ", 
+    "thousands_separator": ".", 
     "millions_abbrev": "M", 
-    "subtitle": "Le co\u00fbt financier", 
-    "millions": "millions"
+    "subtitle": "El rastro econ\u00f3mico", 
+    "millions": "millones"
   }, 
   "children": [
     {
       "color": "#e28956", 
-      "text": "Depuis 1999, le contr\u00f4le des fronti\u00e8res et l'immigration sont des probl\u00e8matiques europ\u00e9ennes. Les \u00e9tats-membres ont d\u00e9pens\u00e9 pr\u00e8s d'un milliard d'euros pour coordonner leurs politiques, \u00e0 travers des programmes comme le r\u00e9seau Seahorse, Frontex, Eurodac, eu-LISA et d'autres.", 
+      "text": "Desde 1999, el control fronterizo y la inmigraci\u00f3n son cuestiones europeas. Los estados miembros han destinado alrededor de mil millones de euros para coordinar sus pol\u00edticas a trav\u00e9s de proyectos como Seashore, Frontex, Eurodac, eu-LISA y otros.", 
       "id": "1", 
       "NOTE": "Since 1999, border control and migration are European issues. Member states have spent close to 1 billion euro to coordinate their response, through programs such as Seahorse network, Frontex, Eurodac, eu-LISA and more.", 
-      "title": "Coordination europ\u00e9enne", 
+      "title": "Coordinaci\u00f3n europea", 
       "tags": "", 
       "amount": 954717510, 
       "subnodes": [
         {
           "color": "", 
-          "text": "EURODAC est le syst\u00e8me qui stocke toutes les empreintes digitales des demandeurs d'asile. Le chiffre n'inclus pas les appareils achet\u00e9 par les \u00e9tats-membres ou les co\u00fbts de fonctionnement.", 
+          "text": "EURODAC es el sistema que archiva las huellas dactilares de todas las personas que piden asilo en Europa. La cifra no incluye el coste del los esc\u00e1neres para huellas adquiridos por los estados miembros.", 
           "id": "9", 
           "NOTE": "EURODAC is the system that stores the fingerprints of all asylum seekers in Europe. The figure does not include the fingerprint scanners bought by member states.", 
           "title": "EURODAC", 
@@ -29,7 +29,7 @@
         }, 
         {
           "color": "", 
-          "text": "Frontex est l'agence europ\u00e9enne qui coordonne le contr\u00f4le des fronti\u00e8res et les d\u00e9portations entre les \u00e9tats-membres.", 
+          "text": "Frontex es la agencia europea que coordina las actividades de control fronerizo y las deportaciones de migrantes entre los estados miembros", 
           "id": "2", 
           "NOTE": "Frontex is the European agency that coordinates efforts in border control and deportations between member states.", 
           "title": "FRONTEX", 
@@ -42,19 +42,19 @@
     }, 
     {
       "color": "#c19a64", 
-      "text": "Plus de 60 milliards ont \u00e9t\u00e9 d\u00e9pens\u00e9s dans des programmes de recherche europ\u00e9ens depuis 2000. Au moins 39 projets ont \u00e9t\u00e9 consacr\u00e9s \u00e0 des recherches visant \u00e0 maintenir les migrants et r\u00e9fugi\u00e9s hors d'Europe.", 
+      "text": "Desde el a\u00f1o 2000, se han dedicado m\u00e1s de 60.000 millones de euros a programas europeos de investigaci\u00f3n y desarrollo. Al menos 39 de estos programas se han centrado en c\u00f3mo mantener a migrantes y refugiados fuera de Europa.", 
       "id": "3", 
       "NOTE": "Over 60 billions were spent in European R&D programs since 2000. At least 39 programs were dedicated to research on how to keep migrants and refugees out.", 
-      "title": "Programmes de recherche et d\u00e9veloppement", 
+      "title": "Programas de Investigaci\u00f3n y Desarrollo", 
       "tags": "", 
       "amount": 230000000, 
       "subnodes": [
         {
           "color": "", 
-          "text": "Cinq projets de R&D ont \u00e9t\u00e9 men\u00e9 dans le but express de construire des nez artificiels capables de \"sentir\" des migrants cach\u00e9s dans des v\u00e9hicules.", 
+          "text": "Cinco programas de Investigaci\u00f3n y Desarrollo han sido dedicados a crear narices artificiales que reconocen el olor corporal de migrantes y refugiados que intenten esconderse al cruzar un puesto de control fronterizo.", 
           "id": "11", 
           "NOTE": "Five R&D projects were specifically focused on creating artificial sniffers that can smell refugees and migrants trying to hide at border crossing points.", 
-          "title": "Recherches sur des nez artificiels qui reniflent les migrants", 
+          "title": "Narices artificiales", 
           "tags": "", 
           "amount": 16000000, 
           "parent": "3"
@@ -64,39 +64,39 @@
     }, 
     {
       "color": "#edd084", 
-      "text": "L'UE et les \u00e9tats-membres ont aid\u00e9 la Tunisie de Ben Ali, l'Egypte, la Libye, l'Alg\u00e9rie et la Mauritanie \u00e0 barrer le passage aux r\u00e9fugi\u00e9s et aux migrants souhaitant venir en Europe, le plus souvent en fermant les yeux sur les atteintes aux droits humains.", 
+      "text": "La Uni\u00f3n Europea y los estados miembros han ayudado a T\u00fanez (durante el reinado de Ben Al\u00ed), Egipto, Libia, Argelia y Mauritania a impedir el tr\u00e1nsito de migrantes y refugiados hacia Europa, sin tener en cuenta las consecuencias a nivel de derechos humanos. ", 
       "id": "4", 
       "NOTE": "The EU and member states have helped Tunisia (under Ben Ali's rule), Egypt, Libya, Algeria and Mauritania to prevent refugees and migrants from crossing into Europe, most often disregarding concerns for human rights.", 
-      "title": "Assistance techniques aux dictatures du voisinage", 
+      "title": "Asistencia t\u00e9cnica a dictaduras cercanas", 
       "tags": "", 
       "amount": 74658000, 
       "parent": ""
     }, 
     {
       "color": "#e1e3a7", 
-      "text": "Les \u00e9tats-membres d\u00e9pensent \u00e9norm\u00e9ment pour d\u00e9porter des \u00e9trangers en avion ou en bus, ou en leur offrant de l'argent dans le cas de retours volontaires. Ce chiffre n'inclus pas les d\u00e9portations au sein de l'UE dans le cadre de la R\u00e9gulation de Dublin.", 
+      "text": "Los estados miembros dedican ingentes fondos a deportar a los extranjeros en vuelos ch\u00e1rter o autobuses, pero tambi\u00e9n a crear incentivos para que vuelvan a sus pa\u00edses de forma voluntaria. La cifra no incluye deportaciones dentro de las fronteras europeas, reguladas por el tratado de Dubl\u00edn. ", 
       "id": "5", 
       "NOTE": "Member states spend lavishly to deport foreigners in charter planes or buses or to offer them incentives for voluntary returns. This figure does not include deportations within Europe under the Dublin Regulation.", 
-      "title": "D\u00e9portations", 
+      "title": "Repatriaciones", 
       "tags": "", 
       "amount": 11300000000, 
       "parent": ""
     }, 
     {
       "color": "#a2dcd5", 
-      "text": "Des murs ont \u00e9t\u00e9 \u00e9rig\u00e9s aux fronti\u00e8res de l'Europe par les gouvernements espagnols, grecs et bulgares.", 
+      "text": "Muros y vallas han sido construidos por los estados miembros en las fronteras de Espa\u00f1a, Grecia y Bulgaria.", 
       "id": "6", 
       "NOTE": "Walls have been erected by member states at the borders to Spain, Greece and Bulgaria.", 
-      "title": "Fortifications (murs)", 
+      "title": "Muros y fortificaciones", 
       "tags": "", 
       "amount": 76600000, 
       "subnodes": [
         {
           "color": "", 
-          "text": "Ce mur de 11 kilom\u00e8tres de long a co\u00fbt\u00e9 pr\u00e8s de  \u20ac40m \u00e0 construire et co\u00fbte aux citoyens espagnols plus de \u20ac10m en entretien annuel.", 
+          "text": "La contrucci\u00f3n de la valla de Melilla cost\u00f3 alrededor de 40 millones de euros y ahora cuesta 10 millones al a\u00f1o a los contribuyentes espa\u00f1oles", 
           "id": "10", 
           "NOTE": "The 11-kilometer wall cost close to \u20ac40 million to build and now costs the Spanish taxpayers over \u20ac10m in maintenance.", 
-          "title": "Mur de Mellila", 
+          "title": "Valla de Melilla", 
           "tags": "", 
           "amount": 47000000, 
           "parent": "6"
@@ -106,20 +106,20 @@
     }, 
     {
       "color": "#74c8b7", 
-      "text": "Des drones, zodiacs, lunettes de vision nocturne, jeeps... Les gardes fronti\u00e8res ont d\u00e9pens\u00e9s largement pour s'offrir du mat\u00e9riel en provenance notamment d'Airbus, Indra et d'autres fabricants d'armes.", 
+      "text": "Drones, lanchas, prism\u00e1ticos infrarrojos: la polic\u00eda de frontera ha adquirido una gran cantidad de equipamiento de los principales productores de material de defensa (Airbus, Indra, Finmeccanica)", 
       "id": "7", 
       "NOTE": "Drones, speedboats, night vision goggles, jeeps... Border guards went on a shopping spree that hugely benefited Airbus, Indra and other arms manufacturers.", 
-      "title": "Mat\u00e9riel pour les gardes-fronti\u00e8res europ\u00e9ens", 
+      "title": "Equipamiento para el control fronterizo", 
       "tags": "", 
       "amount": 225710000, 
       "parent": ""
     }, 
     {
       "color": "#87beb9", 
-      "text": "L'UE et les \u00e9tats-membres ont construit des centres de d\u00e9tention pour r\u00e9fugi\u00e9s et migrants cl\u00e9-en-main en Libye et en Ukraine.", 
+      "text": "La UE y los estados miembros han construido centros de detenci\u00f3n al uso para detener a migrantes y refugiados en Libia y Ucrania.", 
       "id": "8", 
       "NOTE": "The EU and member states have built ready-to-use detention centers for migrants and refugees in Libya and Ukraine.", 
-      "title": "Centre de d\u00e9tention dans des pays tiers", 
+      "title": "Centros de detenci\u00f3n en pa\u00edses de origen", 
       "tags": "", 
       "amount": 45800000, 
       "parent": ""
