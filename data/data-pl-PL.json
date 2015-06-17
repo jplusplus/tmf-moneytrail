@@ -2,8 +2,9 @@
   "i18n": {
     "decimal_separator": ",", 
     "title": "The Migrants Files (Teczki imigrant\u00f3w)", 
-    "thousands_separator": " ", 
+    "billions": "billion", 
     "millions_abbrev": "mln", 
+    "thousands_separator": " ", 
     "subtitle": "Na tropie pieni\u0119dzy", 
     "millions": "milion\u00f3w"
   }, 

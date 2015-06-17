@@ -2,8 +2,9 @@
   "i18n": {
     "decimal_separator": ",", 
     "title": "The Migrants Files", 
-    "thousands_separator": ".", 
+    "billions": "billion", 
     "millions_abbrev": "M", 
+    "thousands_separator": ".", 
     "subtitle": "El rastro econ\u00f3mico", 
     "millions": "millones"
   }, 

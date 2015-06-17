@@ -2,8 +2,9 @@
   "i18n": {
     "decimal_separator": ",", 
     "title": "The Migrants Files", 
-    "thousands_separator": ".", 
+    "billions": "billion", 
     "millions_abbrev": "mill", 
+    "thousands_separator": ".", 
     "subtitle": "Die Kosten seit 2000", 
     "millions": "Millionen"
   }, 
@@ -92,7 +93,7 @@
       "subnodes": [
         {
           "color": "", 
-          "text": "Die 11 Kilometer lange Mauer in Melilla kostete fast 40 Millionen Euro. Spanische Steuerzahler zahlen pro Jahr 10 Millionen f\u00fcr die Instandhaltung.", 
+          "text": "Pro Jahr investiert Spanien zus\u00e4tzlich 10 Millionen in die Instandhaltung der Mauern in Melilla und Ceuta.", 
           "id": "10", 
           "title": "Melilla", 
           "tags": "", 
