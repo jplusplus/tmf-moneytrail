@@ -9,109 +9,120 @@
   }, 
   "children": [
     {
-      "parent": "", 
-      "tags": "", 
       "color": "#e28956", 
       "text": "Dopo il 1999 il controllo delle frontiere e l'immigrazione sono considerate problematiche europee. Gli stati membri ha destinato circa un miliardo di euro per coordinare le proprie politiche grazie a progetti specifici come la rete Seahorse, il Frontex, Eurodac, eu-LISA e altri", 
+      "id": "1", 
+      "NOTE": "Since 1999, border control and migration are European issues. Member states have spent close to 1 billion euro to coordinate their response, through programs such as Seahorse network, Frontex, Eurodac, eu-LISA and more.", 
       "title": "Coodinamento europeo", 
+      "tags": "", 
       "amount": 954717510, 
       "subnodes": [
         {
-          "parent": "1", 
-          "tags": "", 
           "color": "", 
           "text": "EURODAC \u00e8 il sistema che archivia le impronte digitali di tutti i richiedenti asilo in Europa. Il numero non include gli scanner per impronte acquistati dagli stati membri.", 
+          "id": "9", 
+          "NOTE": "EURODAC is the system that stores the fingerprints of all asylum seekers in Europe. The figure does not include the fingerprint scanners bought by member states.", 
           "title": "EURODAC", 
+          "tags": "", 
           "amount": 8117510, 
-          "id": "9"
+          "parent": "1"
         }, 
         {
-          "parent": "1", 
-          "tags": "", 
           "color": "", 
           "text": "Frontex \u00e8 l'agenzia europea che coordina le attivit\u00e0 di controllo dei confini e i trasferimenti dei migranti tra gli stati membri.", 
+          "id": "2", 
+          "NOTE": "Frontex is the European agency that coordinates efforts in border control and deportations between member states.", 
           "title": "FRONTEX", 
+          "tags": "", 
           "amount": 669600000, 
-          "id": "2"
+          "parent": "1"
         }
       ], 
-      "id": "1"
+      "parent": ""
     }, 
     {
-      "parent": "", 
-      "tags": "", 
       "color": "#c19a64", 
       "text": "Oltre 60 miliardi di euro sono stati spesi in programmi europei di ricerca e sviluppo dal 2000. Almeno 39 progetti di questi programmi sono stati dedicati a ricerche su come tenere migranti e rifugiati fuori dall'Europa.", 
+      "id": "3", 
+      "NOTE": "Over 60 billions were spent in European R&D programs since 2000. At least 39 programs were dedicated to research on how to keep migrants and refugees out.", 
       "title": "Programmi di ricerca e sviluppo", 
+      "tags": "", 
       "amount": 230000000, 
       "subnodes": [
         {
-          "parent": "3", 
-          "tags": "", 
           "color": "", 
           "text": "Cinque programmi di Ricerca e Sviluppo sono stati appositamenti dedicati per creare nasi artificiali per \"annusare\" e individuare migranti e rifugiati che tentanto di nascondersi in corrispondenza con i posti di blocco di frontiera nel tentativo di attraversare i confini.", 
+          "id": "11", 
+          "NOTE": "Five R&D projects were specifically focused on creating artificial sniffers that can smell refugees and migrants trying to hide at border crossing points.", 
           "title": "Ricerche sui nasi artificiali che individiano i migranti", 
+          "tags": "", 
           "amount": 16000000, 
-          "id": "11"
+          "parent": "3"
         }
       ], 
-      "id": "3"
+      "parent": ""
     }, 
     {
-      "parent": "", 
-      "tags": "", 
       "color": "#edd084", 
       "text": "L'Europa e gli stati membri hanno aiutato la Tunisia (durante la reggenza di Ben Al\u00ec), l'Egitto, la Libya, l'Algeria e la Mauritania per impedire il transito verso l'Europa a migranti e rifugiati, molto spesso non tenendo conto le implicazioni sui diritti umani.", 
+      "id": "4", 
+      "NOTE": "The EU and member states have helped Tunisia (under Ben Ali's rule), Egypt, Libya, Algeria and Mauritania to prevent refugees and migrants from crossing into Europe, most often disregarding concerns for human rights.", 
       "title": "Assistenza tecnica a dittature di vicinato", 
+      "tags": "", 
       "amount": 74658000, 
-      "id": "4"
+      "parent": ""
     }, 
     {
-      "parent": "", 
-      "tags": "", 
       "color": "#e1e3a7", 
       "text": "Gli stati membri allocano enormi fondi per deportare gli stranieri in voli charter o autobus, ma anche incentivandoli perch\u00e9 rientrino nei Paesi d'origine volontariamente. La cifra non include le deportazioni all'interno dell'Europa (regolati dal trattato di Dublino).", 
+      "id": "5", 
+      "NOTE": "Member states spend lavishly to deport foreigners in charter planes or buses or to offer them incentives for voluntary returns. This figure does not include deportations within Europe under the Dublin Regulation.", 
       "title": "Rimpatri", 
+      "tags": "", 
       "amount": 11300000000, 
-      "id": "5"
+      "parent": ""
     }, 
     {
-      "parent": "", 
-      "tags": "", 
       "color": "#a2dcd5", 
       "text": "Muri e barriere sono stati eretti dagli stati membri alle frontiere di Spagna, Grecia e Bulgaria.", 
+      "id": "6", 
+      "NOTE": "Walls have been erected by member states at the borders to Spain, Greece and Bulgaria.", 
       "title": "Muri e fortificazioni", 
+      "tags": "", 
       "amount": 76600000, 
       "subnodes": [
         {
-          "parent": "6", 
-          "tags": "", 
           "color": "", 
           "text": "Il muro di Melilla \u00e8 stato costruito con una spesa di 40 milioni di euro e adesso costa 10 milioni di euro per la manutenzione ai contribuenti spagnoli.", 
+          "id": "10", 
+          "NOTE": "The 11-kilometer wall cost close to \u20ac40 million to build and now costs the Spanish taxpayers over \u20ac10m in maintenance.", 
           "title": "Muro di Melilla", 
+          "tags": "", 
           "amount": 47000000, 
-          "id": "10"
+          "parent": "6"
         }
       ], 
-      "id": "6"
+      "parent": ""
     }, 
     {
-      "parent": "", 
-      "tags": "", 
       "color": "#74c8b7", 
       "text": "Droni, motoscafi, speedboats, binocoli a infrarossi: le polizie di frontiere hanno acquistato numerosi prodotti dai principali produttori di armi (Airbus, Indra, Finmeccanica)", 
+      "id": "7", 
+      "NOTE": "Drones, speedboats, night vision goggles, jeeps... Border guards went on a shopping spree that hugely benefited Airbus, Indra and other arms manufacturers.", 
       "title": "Strumenti per le guardie di frontiere europee", 
+      "tags": "", 
       "amount": 225710000, 
-      "id": "7"
+      "parent": ""
     }, 
     {
-      "parent": "", 
-      "tags": "", 
       "color": "#87beb9", 
       "text": "L'Unione Europea e gli stati membri hanno costruito centri di detenzione pronti per l'uso e destinati a migranti e rifugiati in Libia e Ukraina.", 
+      "id": "8", 
+      "NOTE": "The EU and member states have built ready-to-use detention centers for migrants and refugees in Libya and Ukraine.", 
       "title": "Centri di detenzione in paesi terzi", 
+      "tags": "", 
       "amount": 45800000, 
-      "id": "8"
+      "parent": ""
     }
   ], 
   "title": "root"
