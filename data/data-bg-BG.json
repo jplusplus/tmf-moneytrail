@@ -2,10 +2,10 @@
   "i18n": {
     "decimal_separator": ", ", 
     "title": "\u041c\u0438\u0433\u0440\u0430\u043d\u0442\u0441\u043a\u0438 \u0434\u043e\u0441\u0438\u0435\u0442\u0430", 
-    "thousands_separator": "- ", 
+    "thousands_separator": " ", 
     "millions_abbrev": "\u043c\u043b\u043d", 
     "subtitle": "\u041f\u043e \u0441\u043b\u0435\u0434\u0438\u0442\u0435 \u043d\u0430 \u043f\u0430\u0440\u0438\u0442\u0435", 
-    "millions": "\u043c\u0438\u043b\u0438\u043e\u043d\u0438"
+    "millions": "\u043c\u0438\u043b\u0438\u043e\u043da"
   }, 
   "children": [
     {
