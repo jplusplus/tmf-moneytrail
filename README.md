@@ -58,20 +58,12 @@ See the [TRANSLATING.md](https://github.com/jplusplus/tmf-moneytrail/blob/master
 
 To embed the app in an iframe add the following code in the parent page.
 
-In the body of the HTML, where you want the iframe to appear, add this div
+In the body of the HTML, where you want the iframe to appear, add this code:
 
     <div id="mf-moneytrail"></div>
 
-
-At the bottom of the HTML, just before closing the `</body>` add a link to [pym.js](http://blog.apps.npr.org/pym.js/dist/pym.min.js)
-
-    <script src="js/pym.min.js"></script>
-
-Below pym.js add the following
-
-        <script>
-            var pymParent = new pym.Parent('mf-moneytrail', 'http://jplusplus.github.io/tmf-moneytrail/index.html', {});
-        </script>
+    <script src="https://jplusplus.github.io/tmf-moneytrail/js/pym.min.js"></script>
+    <script>var pymParent = new pym.Parent('mf-moneytrail', 'http://jplusplus.github.io/tmf-moneytrail/index.html', {}); </script>
         
 Pym.js will generate the `<iframe>` code inside the `<div id="mf-moneytrail"></div>` div.
 
