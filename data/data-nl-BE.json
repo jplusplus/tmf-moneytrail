@@ -1,0 +1,130 @@
+{
+  "i18n": {
+    "decimal_separator": ",", 
+    "title": "The Migrants' Files", 
+    "billions": "miljard", 
+    "millions_abbrev": "mln.", 
+    "thousands_separator": ".", 
+    "subtitle": "De miljardeneconomie van de migratie", 
+    "millions": "miljoen"
+  }, 
+  "children": [
+    {
+      "color": "#e28956", 
+      "text": "Sinds 1999 worden grenscontrole en migratie op Europees niveau behandeld. Lidstaten hebben bijna 1 miljard euro uitgegeven om hun acties te co\u00f6rdineren door middel van programma's als het Seahorse network, Frontex, Eurodac, EU-LISA, en meer.", 
+      "id": "1", 
+      "title": "Europese co\u00f6rdinatie", 
+      "tags": "", 
+      "amount": 954717510, 
+      "subnodes": [
+        {
+          "color": "", 
+          "text": "Eurodac is het systeem dat de vingerafdrukken van alle asielzoekers in Europa opslaat. Het bedrag omvat niet de vingerafdrukscanners die door de lidstaten zijn aangekocht.", 
+          "id": "9", 
+          "title": "Eurodac", 
+          "tags": "", 
+          "amount": 8117510, 
+          "parent": "1", 
+          "NOTE": "EURODAC is the system that stores the fingerprints of all asylum seekers in Europe. The figure does not include the fingerprint scanners bought by member states."
+        }, 
+        {
+          "color": "", 
+          "text": "Frontex is het Europees agentschap dat de inspanningen op vlak van grenscontrole en deportaties tussen de lidstaten co\u00f6rdineert.", 
+          "id": "2", 
+          "title": "Frontex", 
+          "tags": "", 
+          "amount": 669600000, 
+          "parent": "1", 
+          "NOTE": "Frontex is the European agency that coordinates efforts in border control and deportations between member states."
+        }
+      ], 
+      "parent": "", 
+      "NOTE": "Since 1999, border control and migration are European issues. Member states have spent close to 1 billion euro to coordinate their response, through programs such as Seahorse network, Frontex, Eurodac, eu-LISA and more."
+    }, 
+    {
+      "color": "#c19a64", 
+      "text": "Meer dan 60 miljard euro werd sinds 2000 uitgegeven aan Europese onderzoeks- en ontwikkelinsprojecten. Minstens 39 programma's spitsten zich toe op het zoeken van manieren om migranten en vluchtelingen buiten de Europese Unie te houden.", 
+      "id": "3", 
+      "title": "Onderzoek en ontwikkeling", 
+      "tags": "", 
+      "amount": 230000000, 
+      "subnodes": [
+        {
+          "color": "", 
+          "text": "Vijf projecten waren er specifiek op gericht om kunstmatige sniffers te ontwikkelen die vluchtelingen en migranten die zich verstoppen aan de grenzen zouden kunnen ruiken.", 
+          "id": "11", 
+          "title": "Onderzoek naar kunstmatige sniffers om vluchtelingen en migranten op te sporen", 
+          "tags": "", 
+          "amount": 16000000, 
+          "parent": "3", 
+          "NOTE": "Five R&D projects were specifically focused on creating artificial sniffers that can smell refugees and migrants trying to hide at border crossing points."
+        }
+      ], 
+      "parent": "", 
+      "NOTE": "Over 60 billions were spent in European R&D programs since 2000. At least 39 programs were dedicated to research on how to keep migrants and refugees out."
+    }, 
+    {
+      "color": "#edd084", 
+      "text": "De Europese Unie en afzonderlijke lidstaten hebben Tunesi\u00eb (onder Ben Ali), Egypte, Libi\u00eb, Algerije, en Mauritani\u00eb geholpen te voorkomen dat vluchtelingen en migranten Europa konden bereiken. Meestal werden mensenrechten hierbij verwaarloosd.", 
+      "id": "4", 
+      "title": "Technische ondersteuning aan dictaturen", 
+      "tags": "", 
+      "amount": 74658000, 
+      "parent": "", 
+      "NOTE": "The EU and member states have helped Tunisia (under Ben Ali's rule), Egypt, Libya, Algeria and Mauritania to prevent refugees and migrants from crossing into Europe, most often disregarding concerns for human rights."
+    }, 
+    {
+      "color": "#e1e3a7", 
+      "text": "Lidstaten gaven rijkelijk geld uit om mensen te deporteren per vliegtuig of bussen of om hen te overtuigen vrijwillig terug te keren. Dit bedrag omvat geen deportaties die plaatsvonden binnen Europe onder de Dublin-verordening.", 
+      "id": "5", 
+      "title": "Deportaties", 
+      "tags": "", 
+      "amount": 11300000000, 
+      "parent": "", 
+      "NOTE": "Member states spend lavishly to deport foreigners in charter planes or buses or to offer them incentives for voluntary returns. This figure does not include deportations within Europe under the Dublin Regulation."
+    }, 
+    {
+      "color": "#a2dcd5", 
+      "text": "Muren zijn gebouwd door de lidstaten aan de grenzen van Spanje, Griekenland, en Bulgarije.", 
+      "id": "6", 
+      "title": "Versterking van de grenzen", 
+      "tags": "", 
+      "amount": 76600000, 
+      "subnodes": [
+        {
+          "color": "", 
+          "text": "De bouw van de 11 kilometer lange muur kostte ongeveer 40 miljoen euro. Nu kost de muur de Spaanse belastingbetaler meer dan 10 miljoen euro in onderhoud.", 
+          "id": "10", 
+          "title": "De muur in Melilla", 
+          "tags": "", 
+          "amount": 47000000, 
+          "parent": "6", 
+          "NOTE": "The 11-kilometer wall cost close to \u20ac40 million to build and now costs the Spanish taxpayers over \u20ac10m in maintenance."
+        }
+      ], 
+      "parent": "", 
+      "NOTE": "Walls have been erected by member states at the borders to Spain, Greece and Bulgaria."
+    }, 
+    {
+      "color": "#74c8b7", 
+      "text": "Drones, speedboten, nachtbrillen, jeeps, ... Grenspolitie kochten massaal materiaal aan. Deze aankopen waren erg voordelig voor Airbus, Indra, en andere wapenfabrikanten.", 
+      "id": "7", 
+      "title": "Uitrusting voor Europese grenspolitie", 
+      "tags": "", 
+      "amount": 225710000, 
+      "parent": "", 
+      "NOTE": "Drones, speedboats, night vision goggles, jeeps... Border guards went on a shopping spree that hugely benefited Airbus, Indra and other arms manufacturers."
+    }, 
+    {
+      "color": "#87beb9", 
+      "text": "De Europese Unie en de lidstaten hebben detentiecentra gebouwd in Libi\u00eb en Oekra\u00efne.", 
+      "id": "8", 
+      "title": "Detentiecentra in andere landen", 
+      "tags": "", 
+      "amount": 45800000, 
+      "parent": "", 
+      "NOTE": "The EU and member states have built ready-to-use detention centers for migrants and refugees in Libya and Ukraine."
+    }
+  ], 
+  "title": "root"
+}
